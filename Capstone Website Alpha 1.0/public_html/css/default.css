@@ -15,14 +15,47 @@
 
 .index_table table,th,td
 {
-	border: 1px solid black; 
+	border: 1px solid white; 
 }
 
-.color_1 td 
+.color_1 
 {
+	background-color: black; 
+
 
 }
-.color_2 td 
+.color_1 a
 {
+	color: white;
+}
+.color_1 a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+.color_2 
+{
+	background-color: orange; 
+	color: brown; 
 
 }
+.magic_navigation ul 
+{
+	padding: 5px 5px; 
+
+}
+.magic_navigation li
+{
+	display: inline;
+	padding: 7px; 
+}
+.magic_navigation a
+{
+	text-decoration: none;
+	color: brown; 
+	padding: 5px 5px 5px 5px ;
+
+}
+
+
+
