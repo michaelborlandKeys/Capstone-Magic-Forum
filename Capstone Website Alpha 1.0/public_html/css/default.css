@@ -1,0 +1,28 @@
+#footer_position
+{
+	position: relative;
+	bottom: 0px; 
+	left: 0px;
+	width: 75%; 
+	height: 100px;
+    padding:25px;
+
+}
+.footer_style h6
+{
+	text-decoration: underline;
+}
+
+.index_table table,th,td
+{
+	border: 1px solid black; 
+}
+
+.color_1 td 
+{
+
+}
+.color_2 td 
+{
+
+}
