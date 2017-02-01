@@ -1,18 +1,8 @@
-#footer_position
-{
-	position: relative;
-	bottom: 0px; 
-	left: 0px;
-	width: 75%; 
-	height: 100px;
-    padding:25px;
 
-}
-.footer_style h6
+.below_menu_container
 {
-	text-decoration: underline;
+	padding-top: 50px;
 }
-
 .index_table table,th,td
 {
 	border: 1px solid white; 
@@ -38,6 +28,23 @@
 	background-color: orange; 
 	color: brown; 
 
+
+
+}
+.nav
+{ 
+
+    font-weight: bold; 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: orange;
+    position: absolute;
+    top:0px;
+    left: 200px;
+    min-width: 25%;
+    min-height: 35px;
+    max-width: 75%;
+    max-height: 40px;
+
 }
 .magic_navigation ul 
 {
@@ -56,6 +63,25 @@
 	padding: 5px 5px 5px 5px ;
 
 }
+.magic_navigation a:hover
+{
+	color: white;
+}
 
+
+#footer_position
+{
+	position: relative;
+	bottom: 0px; 
+	left: 0px;
+	width: 75%; 
+	height: 100px;
+    padding:25px;
+
+}
+.footer_style h6
+{
+	text-decoration: underline;
+}
 
 

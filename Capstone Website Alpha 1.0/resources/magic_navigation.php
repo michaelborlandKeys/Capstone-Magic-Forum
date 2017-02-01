@@ -16,20 +16,49 @@
 						<a href="magic_home.php">Home</a>
 					</li> 
 
-					<li>
+					<li class="dropdown">
 						<a href="magic_format_home.php">Competitive Format Forum</a>
-					</li>  
-
-					<li>
-						<a href="fnm_discussion_forum.php">FNM Forum</a>
-					</li>
-
-					<li>
-					    <a href="magic_online_forum.php">Magic Online Forum</a>
+						<a href="magic_format_home.php" class="dropdown-toggle" data-toggle="dropdown">
+						<div class="caret">
+						</div></a>
+						<ul class="dropdown-menu">
+						<li class="dropdown-header">Format Discussions</li>
+						<li><a href="standard_forum.php">Standard Forum</a></li>
+						<li class="divider"></li>
+						<li><a href="modern_forum.php">Modern Forum</a></li>
+						<li class="divider"></li>
+						<li><a href="legacy_forum.php">Legacy Forum</a></li>
+						<li class="divider"></li>
+						<li><a href="commander_forum.php">Commander Forum</a></li>	
+					</ul>
 					</li> 
-			 </ul>
+				<li class="dropdown">
+					<a href="tournament_home.php">Tournament Cental Forum</a>
+					<a href="tounament_home.php" class="dropdown-toggle" data-toggle="dropdown">
+					<div class="caret">
+					</div></a> 
+					<ul class="dropdown-menu">	
+					<li class="dropdown-header">Tournament Discussion Forums</li>
+						<li>
+							<a href="fnm_discussion_forum.php">FNM Forum</a>
+						</li>
+						<li class="divider"></li>
 
-		   </nav>
+						<li> <a href="magic_online_forum.php">Magic Online Forum</a>
+						</li> 
+						<li class="divider"></li>
+						<li><a href="pptq_forum.php">Preliminary Pro-Tour Qaualifier</a></li>
+						<li class="divider"></li>
+						<li><a href="rptq_forum.php">Regional Pro-Tour Qaualifier</a></li>
+							<li class="divider"></li>
+						<li><a href="pro_tour_forum.php">Pro-Tour</a></li>
+							<li class="dropdown-header">If i get to it Deck Submission and discussion</li>
+						<li class="list-group-item disabled"><a href="#">Deck Discussion Submission</a></li>
+					</ul>
+			  </li>
+		   </ul>
+
+	   </nav>
+	</div>
 		</div>
 			</div>
-				</div>
