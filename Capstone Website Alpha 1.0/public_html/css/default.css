@@ -1,4 +1,9 @@
+body
+{
+	background-color: brown; 
+	color:white;
 
+}
 .below_menu_container
 {
 	padding-top: 50px;
@@ -36,7 +41,7 @@
 
     font-weight: bold; 
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    background-color: orange;
+    background-color: black;
     position: absolute;
     top:0px;
     left: 200px;
@@ -59,14 +64,18 @@
 .magic_navigation a
 {
 	text-decoration: none;
-	color: brown; 
+	color: white; 
 	padding: 5px 5px 5px 5px ;
 
 }
 .magic_navigation a:hover
 {
-	color: white;
+	color: orange;
+	
 }
+
+
+
 
 
 #footer_position
