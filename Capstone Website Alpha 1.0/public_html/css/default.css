@@ -11,6 +11,7 @@ body
 .index_table table,th,td
 {
 	border: 1px solid white; 
+
 }
 
 .color_1 
@@ -60,11 +61,13 @@ body
 {
 	display: inline;
 	padding: 7px; 
+
 }
 .magic_navigation a
 {
 	text-decoration: none;
 	color: white; 
+
 	padding: 5px 5px 5px 5px ;
 
 }
@@ -75,8 +78,71 @@ body
 }
 
 
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+{
+	background-color: brown;
+}
+.nav a:hover, a:focus
+{
+	background-color: brown; 
+}
+
+.dropdown-menu .divider
+{
+
+background-color: transparent;	 
 
 
+
+}
+
+ .dropdown-menu>li>a:hover, a:focus
+
+{
+	color: orange; 
+}
+ul.dropdown-menu 
+{
+	z-index: 1; 
+}
+
+
+  ul.dropdown-menu
+ {
+ 	background-color: brown;
+ }
+
+
+
+  .dropdown-menu li>a
+{
+ color: white;
+}
+/*
+looking up a solution to fix the bug it is not hovering and changing color. 
+.dropdown-header
+{
+	color: white; 
+	text-decoration: underline; 
+}
+*/
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled
+{
+	background-color: brown;
+	border:transparent;
+}
+.list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover
+{
+	background-color: brown;
+	border:transparent;
+
+}
+
+.button{
+	position: fixed;
+	top: 0px;
+	left: 100px; 
+}
 
 #footer_position
 {
