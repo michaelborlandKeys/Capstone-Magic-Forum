@@ -14,7 +14,7 @@ Basically, I combined part of 2 assignments from my CIS-320 class to achieve the
 function description(event)
 {
 var appendString = "Welcome to the Magic Format Home Page,"+
-				"here is where you will find the latest updates on the discussions of what's going on in all formats."
+				"here is where you will find the latest updates on the discussions of whats going on in all formats."
 				+"The Home page with have top commented comments across all pages in this section, and any major site section,"
 				+ "or game updates posted promptly."; 
 
