@@ -13,7 +13,7 @@
 <h1 class="changing_heading" id="default_heading">Welcome to the Magic-Forum Index</h1>
 <p><small>	This Page is meant to be a spot where you can find all the main pages, then discover even deeper into the conversation threads. </small></p>
 
-	<table class="index_table">
+	<table id="index_links_table" class="index_table">
 	    <tbody>
 	        <tr>
 	            <td class="color_1"><a href="index.php">Index</a></td>

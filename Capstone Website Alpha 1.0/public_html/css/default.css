@@ -37,30 +37,33 @@ body
 
 
 }
+
+ @media (min-width:850px) {
+
 .nav
 { 
-
+	font-size: 10px; 
     font-weight: bold; 
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: black;
     position: absolute;
     top:0px;
     left: 200px;
-    min-width: 25%;
     min-height: 35px;
-    max-width: 75%;
+    max-width: 700px;
     max-height: 40px;
+}
 
 }
 .magic_navigation ul 
 {
-	padding: 5px 5px; 
+	padding: 3px 3px; 
 
 }
 .magic_navigation li
 {
 	display: inline;
-	padding: 7px; 
+	padding: 5px; 
 
 }
 .magic_navigation a
@@ -68,7 +71,7 @@ body
 	text-decoration: none;
 	color: white; 
 
-	padding: 5px 5px 5px 5px ;
+	padding: 3px 3px 3px 3px ;
 
 }
 .magic_navigation a:hover
