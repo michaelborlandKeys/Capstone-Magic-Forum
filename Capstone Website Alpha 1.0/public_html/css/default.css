@@ -66,6 +66,7 @@ body
 	padding: 5px; 
 
 }
+
 .magic_navigation a
 {
 	text-decoration: none;
@@ -89,6 +90,11 @@ body
 {
 	background-color: brown; 
 }
+  ul.dropdown-menu li>a
+{
+ color: white;
+
+}
 
 .dropdown-menu .divider
 {
@@ -98,37 +104,25 @@ background-color: transparent;
 
 
 }
-
- .dropdown-menu>li>a:hover, a:focus
-
+ ul.dropdown-menu
+ {
+ 	background-color: brown;
+ }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
 {
-	color: orange; 
+	color:black;
+	
 }
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover
+{
+	background: orange;
+}
+
 ul.dropdown-menu 
 {
 	z-index: 1; 
 }
 
-
-  ul.dropdown-menu
- {
- 	background-color: brown;
- }
-
-
-
-  .dropdown-menu li>a
-{
- color: white;
-}
-/*
-looking up a solution to fix the bug it is not hovering and changing color. 
-.dropdown-header
-{
-	color: white; 
-	text-decoration: underline; 
-}
-*/
 .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled
 {
 	background-color: brown;
