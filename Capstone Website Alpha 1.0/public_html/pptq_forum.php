@@ -17,7 +17,7 @@
 
 
 </div>
-<button  class="btn" type="button"  id="description_V_2">View Site Description</button> 
+<button  class="btn" type="button"  id="description_Button_V_2">View Site Description</button> 
 
 
 <?php include("../resources/magic_footer.php");?>

@@ -31,11 +31,13 @@ var appendString = "Welcome to the Magic Format Home Page,"+
 }
 
 }
+var description_Button = $('#description');
+description_Button.on("click", description);
 
 function description_V_2(event)
 {
-	var appendString_V_2 = "HI";
-
+	var appendString_V_2 = "Welcome to the discussion board for Pre-Pro Tour Qualifiers,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
 	if($("#PPTQ_description").is(":hidden"))  {
  	 $("#PPTQ_description").show();  
  	 	$("#PPTQ_description").append("<p>"+appendString_V_2+"</p>");	
@@ -50,8 +52,73 @@ function description_V_2(event)
 
 }
 
-var description_Button_V_2 = $('#description_V_2');
-description_Button_V_2.on("click",description_V_2)
+var description_Button_V_2 = $('#description_Button_V_2');
+description_Button_V_2.on("click",description_V_2);
 
-var description_Button = $('#description');
-description_Button.on("click", description);
+function description_V_3(event)
+{
+	var appendString_V_3 = "Welcome to the discussion board for Tournament's home page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+	if($("#TH_description").is(":hidden"))  {
+ 	 $("#TH_description").show();  
+ 	 	$("#TH_description").append("<p>"+appendString_V_3+"</p>");	
+}
+ 	
+  else {
+  ($("#TH_description").is(":visible")) 
+  	 $("#TH_description").hide();  
+  	 	 $("#TH_description").empty(); 
+  	 	  
+}
+
+}
+
+var description_Button_V_3 = $('#description_Button_V_3');
+description_Button_V_3.on("click",description_V_3);
+function description_V_4(event)
+{
+	var appendString_V_4 = "Welcome to the discussion board for Regional Pro-Tour Qualifier page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+	if($("#RPTQ_description").is(":hidden"))  {
+ 	 $("#RPTQ_description").show();  
+ 	 	$("#RPTQ_description").append("<p>"+appendString_V_4+"</p>");	
+}
+ 	
+  else {
+  ($("#RPTQ_description").is(":visible")) 
+  	 $("#RPTQ_description").hide();  
+  	 	 $("#RPTQ_description").empty(); 
+  	 	  
+}
+
+}
+
+ var description_Button_V_4 = $('#description_Button_V_4');
+description_Button_V_4.on("click",description_V_4);
+
+
+// clickable buttons calling all the description load functions on each page. 
+
+
+var description_Button_V_9 = $('#description_Button_V_9');
+description_Button_V_9.on("click",description_Button_V_9);
+
+var description_Button_V_8 = $('#description_Button_V_8');
+description_Button_V_8.on("click",description_Button_V_8);
+
+var description_Button_V_7 = $('#description_Button_V_7');
+description_Button_V_7.on("click",description_Button_V_7);
+
+ var description_Button_V_6 = $('#description_Button_V_6');
+description_Button_V_6.on("click",description_Button_V_6);
+
+ var description_Button_V_5 = $('#description_Button_V_5');
+description_Button_V_4.on("click",description_Button_V_5);
+
+
+
+
+
+
+
+
