@@ -10,6 +10,13 @@
 <body>
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to Magic-Forum Tournament Home </h1>
+<div id="magic_description">
+
+
+
+
+</div>
+<button  class="btn" type="button"  id="description">View Site Description</button> 
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>

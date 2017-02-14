@@ -1,0 +1,20 @@
+/* this entire script is identical style info for the different id's of descriptions th*/
+#magic_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+
+}
+
+#PPTQ_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+
+}

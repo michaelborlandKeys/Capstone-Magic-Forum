@@ -32,5 +32,26 @@ var appendString = "Welcome to the Magic Format Home Page,"+
 
 }
 
+function description_V_2(event)
+{
+	var appendString_V_2 = "HI";
+
+	if($("#PPTQ_description").is(":hidden"))  {
+ 	 $("#PPTQ_description").show();  
+ 	 	$("#PPTQ_description").append("<p>"+appendString_V_2+"</p>");	
+}
+ 	
+  else {
+  ($("#PPTQ_description").is(":visible")) 
+  	 $("#PPTQ_description").hide();  
+  	 	 $("#PPTQ_description").empty(); 
+  	 	  
+}
+
+}
+
+var description_Button_V_2 = $('#description_V_2');
+description_Button_V_2.on("click",description_V_2)
+
 var description_Button = $('#description');
 description_Button.on("click", description);

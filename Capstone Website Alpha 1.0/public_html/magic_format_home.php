@@ -13,11 +13,12 @@
 <div id="magic_description">
 
 
-	
 
 
 </div>
 <button  class="btn" type="button"  id="description">View Site Description</button> 
+<br />
+<br />
 
 
 

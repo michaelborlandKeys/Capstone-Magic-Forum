@@ -4,6 +4,7 @@ body
 	color:white;
 
 }
+
 .below_menu_container
 {
 	padding-top: 50px;
@@ -33,13 +34,7 @@ body
 {
 	background-color: orange; 
 	color: brown; 
-
-
-
 }
-
-
-
 
 .nav
 { 
@@ -146,18 +141,25 @@ ul.dropdown-menu
 }
 
 
-.button{
-	position: fixed;
-	top: 0px;
-	left: 100px; 
+/* defualt css to the buttons that won't change.*/
+.btn{
+	position: relative;
+	top: 30px;
+	left: 55px; 
+
+}
+.btn {
+	color: black; 
+	background-color: orange; 
 }
 
-#footer_position
+
+.footer_style footer
 {
 	position: relative;
 	bottom: 0px; 
 	left: 0px;
-	width: 75%; 
+	min-width: 100%; 
 	height: 100px;
     padding:25px;
 

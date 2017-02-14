@@ -11,6 +11,15 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to  Magic Peliminary Pro-Tour Qualifier Forum</h1>
 
+<div id="PPTQ_description">
+
+
+
+
+</div>
+<button  class="btn" type="button"  id="description_V_2">View Site Description</button> 
+
+
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>
 </body>
