@@ -43,16 +43,16 @@ body
 
 .nav
 { 
-	font-size: 14px; 
+	font-size: 12px; 
     font-weight: bold; 
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     background-color: black;
     position: absolute;
     top:0px;
-    left: 200px;
+    left: 0px;
     min-height: 55px;
     min-width: 45%; 
-    max-width: 75%;
+    max-width: 85%;
     max-height: 60px;
 }
 
