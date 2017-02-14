@@ -11,13 +11,15 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to Friday Night Magic Forum</h1>
 
-<div id="magic_description">
+<div id="FNM_description">
 
 
 
 
 </div>
-<button  class="btn" type="button"  id="description">View Site Description</button> 
+<button  class="btn" type="button"  id="description_Button_V_5">View Site Description</button> 
+<br />
+<br />
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>

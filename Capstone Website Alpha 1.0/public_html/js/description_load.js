@@ -57,7 +57,7 @@ description_Button_V_2.on("click",description_V_2);
 
 function description_V_3(event)
 {
-	var appendString_V_3 = "Welcome to the discussion board for Tournament's home page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+	var appendString_V_3 = "Welcome to the discussion board for  Magic Tournament's home page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
 	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
 	if($("#TH_description").is(":hidden"))  {
  	 $("#TH_description").show();  
@@ -93,28 +93,123 @@ function description_V_4(event)
 
 }
 
- var description_Button_V_4 = $('#description_Button_V_4');
+ var description_Button_V_4 = $('#description_V_4');
 description_Button_V_4.on("click",description_V_4);
 
 
+function description_V_5(event)
+{
+  var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#FNM_description").is(":hidden"))  {
+   $("#FNM_description").show();  
+    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+}
+  
+  else {
+  ($("#FNM_description").is(":visible")) 
+     $("#FNM_description").hide();  
+       $("#FNM_description").empty(); 
+        
+}
+
+}
+var description_Button_V_5 = $('#description_Button_V_5');
+description_Button_V_5.on("click",description_V_5);
+
+
+function description_V_6(event)
+{
+  var appendString_V_6 = "Welcome to the discussion board for The Commander Format,come here to discuss what's going on in the Commander world, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#commander_description").is(":hidden"))  {
+   $("#commander_description").show();  
+    $("#commander_description").append("<p>"+appendString_V_6+"</p>"); 
+}
+  
+  else {
+  ($("#commander_description").is(":visible")) 
+     $("#commander_description").hide();  
+       $("#commander_description").empty(); 
+        
+}
+
+}
+
+ var description_Button_V_6 = $('#description_Button_V_6');
+description_Button_V_6.on("click",description_V_6);
 // clickable buttons calling all the description load functions on each page. 
 
 
-var description_Button_V_9 = $('#description_Button_V_9');
-description_Button_V_9.on("click",description_Button_V_9);
+function description_V_7(event)
+{
+  var appendString_V_5 = "Welcome to the discussion board for The Magic Pro-Tour,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#FNM_description").is(":hidden"))  {
+   $("#FNM_description").show();  
+    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+}
+  
+  else {
+  ($("#FNM_description").is(":visible")) 
+     $("#FNM_description").hide();  
+       $("#FNM_description").empty(); 
+        
+}
 
-var description_Button_V_8 = $('#description_Button_V_8');
-description_Button_V_8.on("click",description_Button_V_8);
-
+}
 var description_Button_V_7 = $('#description_Button_V_7');
-description_Button_V_7.on("click",description_Button_V_7);
+description_Button_V_7.on("click",description_V_7);
 
- var description_Button_V_6 = $('#description_Button_V_6');
-description_Button_V_6.on("click",description_Button_V_6);
+function description_V_8(event)
+{
+  var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#FNM_description").is(":hidden"))  {
+   $("#FNM_description").show();  
+    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+}
+  
+  else {
+  ($("#FNM_description").is(":visible")) 
+     $("#FNM_description").hide();  
+       $("#FNM_description").empty(); 
+        
+}
 
- var description_Button_V_5 = $('#description_Button_V_5');
-description_Button_V_4.on("click",description_Button_V_5);
+}
+var description_Button_V_8 = $('#description_Button_V_8');
+description_Button_V_8.on("click",description_V_8);
 
+
+
+function description_V_9(event)
+{
+  var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#FNM_description").is(":hidden"))  {
+   $("#FNM_description").show();  
+    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+}
+  
+  else {
+  ($("#FNM_description").is(":visible")) 
+     $("#FNM_description").hide();  
+       $("#FNM_description").empty(); 
+        
+}
+
+}
+
+var description_Button_V_9 = $('#description_Button_V_9');
+description_Button_V_9.on("click",description_V_9);
+
+
+
+
+
+
+ 
 
 
 

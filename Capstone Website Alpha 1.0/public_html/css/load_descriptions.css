@@ -40,4 +40,21 @@
 
 }
 
+#FNM_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
+
+#commander_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
 

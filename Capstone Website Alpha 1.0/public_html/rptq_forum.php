@@ -18,6 +18,8 @@
 
 </div>
 <button  class="btn" type="button"  id="description_V_4">View Site Description</button> 
+<br />
+<br /> 
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>
