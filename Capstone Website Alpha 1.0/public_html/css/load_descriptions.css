@@ -57,4 +57,47 @@
 	max-width: 650px;
 	padding-bottom: 15px;
 }
+#PT_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
 
+#modern_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
+
+#standard_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
+
+#legacy_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}
+
+#MTGO_description
+{
+	position: relative;
+	left: 0px; 
+	top: 50px;
+	max-width: 650px;
+	padding-bottom: 15px;
+}

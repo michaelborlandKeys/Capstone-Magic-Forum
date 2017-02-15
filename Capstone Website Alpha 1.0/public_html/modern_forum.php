@@ -11,6 +11,16 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to the Magic: The Gathering Modern Forum</h1>
 
+<div id="modern_description">
+
+
+
+
+</div>
+<button  class="btn" type="button"  id="description_Button_V_9">View Site Description</button> 
+<br />
+<br />
+
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>
 </body>

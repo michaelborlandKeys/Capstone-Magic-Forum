@@ -10,10 +10,18 @@
 <body>
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to Magic Online Forum</h1>
+<div id="MTGO_description">
+	
 
 
 
-<button  class="btn" type="button"  id="description">View Site Description</button> 
+</div>
+
+
+<button  class="btn" type="button"  id="description_Button_V_11">View Site Description</button> 
+
+<br /> 
+<br />
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>
 </body>
