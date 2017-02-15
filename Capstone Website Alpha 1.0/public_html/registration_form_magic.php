@@ -2,7 +2,7 @@
 <html lang="eng">
 <head>
 	<meta charset="utf-8">
-	<title> Magic-Forum Log In </title>
+	<title> Magic-Forum Registration Form </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php include ("../resources/common_scripts_head.php");?>
 

@@ -1,5 +1,7 @@
-<div id="button_nav_header">
+<div  class="btn-group" id="button_nav_header">
 		<p id="log_in_register">Log In and Register Forms</p>
+		<a href="log_in_form_magic.php" class="btn btn-lg" id="log_in" >Log In</a>
+		<a href="registration_form_magic.php" class="btn btn-lg" id="register" >Register</a>
 </div>
 		 	<div class="container">
 	<div class="below_menu_container">

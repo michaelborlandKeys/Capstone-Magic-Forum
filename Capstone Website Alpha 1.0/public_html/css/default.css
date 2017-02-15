@@ -4,17 +4,28 @@ body
 	color:white;
 
 }
+
 #button_nav_header
 {
-	position: absolute;
+	position:absolute;
 	top: 0px;
-	right: 5px; 
-	font-size: 10px;
+	right: 0px; 
+	font-size: 1em;
 	text-decoration: underline;
 	font-weight: bold;
-	max-width: 135px;
+
+
+
 }
 
+ .btn-group a
+ {
+ 	position:absolute;
+	top: 0px;
+	left:5px; 
+	
+
+ }
 
 .below_menu_container
 {
@@ -164,7 +175,15 @@ ul.dropdown-menu
 	background-color: orange; 
 }
 
+#log_in {
+	color: white; 
+	background-color:darkblue; 
+}
+#register
+{
 
+
+}
 .footer_style footer
 {
 	position: relative;
