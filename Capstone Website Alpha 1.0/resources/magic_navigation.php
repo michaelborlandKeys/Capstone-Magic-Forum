@@ -1,7 +1,11 @@
-<div class="container">
+<div id="button_nav_header">
+		<p id="log_in_register">Log In and Register Forms</p>
+</div>
+		 	<div class="container">
 	<div class="below_menu_container">
 		<div class="nav">
 		 	<nav class="magic_navigation">
+		 	
 			 <ul>
 
 					<li>
