@@ -37,6 +37,34 @@ body
 
 }
 
+/* Form CSS chages made so they were readable*/
+.registration_form table,th,td
+{
+	border-style: none;
+	color: black;
+}
+fieldset
+{
+	color: black; 
+
+}
+select
+{
+	color: black; 
+
+}
+input
+{
+	color: black;
+}
+#logIn
+{
+	border-style: none;
+	color: black;
+
+}
+
+
 .color_1 
 {
 	background-color: black; 
@@ -164,26 +192,47 @@ ul.dropdown-menu
 
 
 /* defualt css to the buttons that won't change.*/
-.btn{
+.btn
+{
 	position: relative;
 	top: 30px;
 	left: 55px; 
 
 }
-.btn {
+.btn 
+{
 	color: black; 
 	background-color: orange; 
 }
 
-#log_in {
+#log_in 
+{
 	color: white; 
 	background-color:darkblue; 
 }
+#log_in:hover
+{
+color: red; 
+	background-color:white; 	
+
+}
+
+#register:hover
+{
+	color: black; 
+	background-color:white; 
+
+}
+
 #register
 {
+	color: white; 
+	background-color:darkgreen; 
 
 
 }
+
+
 .footer_style footer
 {
 	position: relative;
