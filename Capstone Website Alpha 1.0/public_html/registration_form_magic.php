@@ -47,7 +47,7 @@ unset($_SESSION['magic_form']);
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-		<form action="registration_magic_form_process.php" autocomplete="off"   method="post">
+		<form action="registration_magic_form_process.php" autocomplete="off" style="background-color: white" method="post">
 		<!-- enter name and password feilds-->
  <table class= "registration_form">
  	<?php 
@@ -149,18 +149,19 @@ unset($_SESSION['magic_form']);
 }?>"   /></td> 
 </tr>
 
-</table>
 
 
 
 
 
-    <label for="countries">&ast;Country:</label>
+
+    <tr>
+    <td><b>Country</b></td>
     
 
   
 
-    <select>
+    <td><select>
 	<!--  the List of  countries was found at  http://www.state.gov/misc/list/-->
 			<option label= "Afghanistan" value="Afghanistan"></option>
 			<option  label= "Albania" value="Albania"> </option>
@@ -355,16 +356,32 @@ unset($_SESSION['magic_form']);
 			<option label="Zambia" value="Zambia"></option>
 			<option label="Zimbabwe" value="Zimbabwe"></option>
 
-</select>
+</select></td>
 
+</tr>	
+<tr>
+<td><b>*Who Recommened you to my site?</b></td>
+<td><select>
+	<option label="a friend suggested that you check my website out." value="a friend suggested that you check my website out."></option>	
+	<option label="a co-worker recommended you to check out the site." value="a co-worker recommended you to check out the site."> </option>
+	<option label="a teacher recommended you to look at this site." value="a teacher recommended you to look at this site."></option>
+	<option label="a family member recommended you to my site." value="a family member recommended you to my site."></option>
+	<option label="Other" value="Other"></option> 
 
+</select></td>
+</tr>
+<tr>
+	<td></td>
+</tr>
+
+</table>
 
  	
 
 
 
 
-<fieldset  id="gender"style="width:275px">
+<fieldset  id="gender" style="width:275px">
 <label for="sex">&ast;Gender:</label><br />
 	<input type="radio" id="sex" name="sex" value="Male" <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Male" ) {echo "checked ";} ?> />Male <br />
 	<input type="radio"  id="sex02" name="sex" value="Female"  <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Female" ) {echo "checked ";} ?> />Female <br />
@@ -373,20 +390,9 @@ unset($_SESSION['magic_form']);
 
 </fieldset>
 
-<label for="recommendedsite">&ast;Who Recommened you to my site?</label>
-    <input name="recommendedsite" id="recommendedsite" list="recommendedsite_datalist" placeholder="choose who recommended you:" value="<?php if( isset($magic_form['recommendedsite'])){echo htmlentities($magic_form['recommendedsite']);
-}?>" >
 
-      <datalist id="recommendedsite_datalist">
-	<select>
-	<option label="a friend suggested that you check my website out." value="a friend suggested that you check my website out."></option>	
-	<option label="a co-worker recommended you to check out the site." value="a co-worker recommended you to check out the site."> </option>
-	<option label="a teacher recommended you to look at this site." value="a teacher recommended you to look at this site."></option>
-	<option label="a family member recommended you to my site." value="a family member recommended you to my site."></option>
-	<option label="Other" value="Other"></option> 
 
-</select>
-</datalist>
+    
 
  <br />
 
@@ -410,11 +416,10 @@ unset($_SESSION['magic_form']);
 
 
 </fieldset>
-<p>Comment below, if you think there is any way to improve the registration process</p>
-<br />
+<p style="color: black;font-weight: bold">Comment below, if you think there is any way to improve the registration process</p>
 	<label for="commentsorcomplaints">Comments: &lpar;optional&rpar;</label>
-	<br />
-    <textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
+
+    <textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
 }	?></textarea>
     <br />
 <input class="magic_formSubmit" type="submit" value="Submit"  />
