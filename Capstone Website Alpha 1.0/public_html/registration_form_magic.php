@@ -17,7 +17,7 @@ unset($_SESSION['messages']);
 unset($_SESSION['magic_form']); 
 }	
 ?>	
-<a href="index.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a></br></br></br>
+<a href="index.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
 
 <div id="magic_formHeader">
 <h1>Registration Form </h1>
@@ -65,34 +65,28 @@ unset($_SESSION['magic_form']);
  	?>
 		<tr>
 
-		<td><label for="firstname"> &ast;First Name: </label></td>
-		<td><input type="text" id="firstname" name="firstname" placeholder="First Name" value=  "<?php if( isset($magic_form['firstname'])){ echo htmlentities($magic_form['firstname']); }?>" />
+			<td><label  for="firstname" > &ast;First Name</label></td><br />
+		   </tr>
+		   <tr>
+			<td><input type="text" id="firstname" name="firstname" placeholder="First Name" value=  "<?php if( isset($magic_form['firstname'])){ echo htmlentities($magic_form['firstname']); }?>" /></td>
+			</tr>
+			<tr>
+			<td><label for="lastname"> &ast;Last Name:  </label></td>
+		   </tr>
+		   <tr>
+			<td><input type="text" id="lastname" name="lastname" placeholder="Last Name" value= "<?php if( isset($magic_form['lastname'])){echo htmlentities($magic_form['lastname']);
+	}?>" /> </td>   
 
-			
-
-
-
-
-
- 	
-
-</td>
+	
 		</tr>
-		<tr>
-		<td><label for="lastname"> &ast;Last Name:  </label></td>
-		<td><input type="text" id="lastname" name="lastname" placeholder="Last Name" value= "<?php if( isset($magic_form['lastname'])){echo htmlentities($magic_form['lastname']);
-}?>" />    
-
-</td>
-</tr>
 
 
 
 		
 		
 		<tr>
-			<td><label for="birthday"> &ast;Birthday:</label></td>
-			<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2016-01-01"  placeholder="What is your Birthday?" value="<?php if( isset($magic_form['birthday'])){echo htmlentities($magic_form['birthday']);
+			<td><label for="birthday" > &ast;Birthday:</label></td>
+			<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2016-01-01"   value="<?php if( isset($magic_form['birthday'])){echo htmlentities($magic_form['birthday']);
 }?>"  /> 
 
 		</td>
@@ -105,7 +99,7 @@ unset($_SESSION['magic_form']);
 		</tr>
 
 		<tr>
-		<td><label for="confirmemail"> &ast;Confirm Email:</label></td>
+		<td><label  for="confirmemail"> &ast;Confirm Email:</label></td>
 		<td><input type="text" id="confirmemail" name="confirmemail" placeholder="Confirm Email" value="<?php if( isset($magic_form['confirmemail'])){echo htmlentities($magic_form['confirmemail']);}?>" />
        </td>
 		</tr>
@@ -144,7 +138,7 @@ unset($_SESSION['magic_form']);
 </tr>
 
 <tr>
-<td><label for="phonenumber"> &ast;Phone Number: </label></td>
+<td><label for="phonenumber" > &ast;Phone Number: </label></td>
 <td><input type="text" id="phonenumber" name="phonenumber" placeholder="e.g. 909-852-5657" value="<?php if( isset($magic_form['phonenumber'])){echo htmlentities($magic_form['phonenumber']);
 }?>"   /></td> 
 </tr>
@@ -156,12 +150,8 @@ unset($_SESSION['magic_form']);
 
 
     <tr>
-    <td><b>Country</b></td>
     
-
-  
-
-    <td><select>
+    <td><label for="countries">Country:</label><select name="countries">
 	<!--  the List of  countries was found at  http://www.state.gov/misc/list/-->
 			<option label= "Afghanistan" value="Afghanistan"></option>
 			<option  label= "Albania" value="Albania"> </option>
@@ -358,7 +348,70 @@ unset($_SESSION['magic_form']);
 
 </select></td>
 
-</tr>	
+
+</tr>
+<tr>
+	<td><label for="state">State:</label><select name="state" id="state">
+			<option label= "Alabama" value="Alabama"></option>
+			<option  label= "Alaska" value="Alaska "> </option>
+			<option  label= "Arizona"  value="Arizona"></option>
+			<option  label= "Arkansas" value="Arkansas"></option>
+			<option  label="California"  value="California"></option>
+			<option  label= "Colorado" value="Colorado"></option>	
+			<option  label= "Connecticut" value="Connecticut"> </option>
+			<option  label= "Delaware" value="Delaware"> </option>
+			<option  label= "Florida" value="Florida"> </option>
+			<option  label= "Georgia" value="Georgia"> </option>
+			<option  label= "Hawaii" value="Hawaii"> </option>
+			<option  label= "Idaho" value="Idaho"> </option>
+			<option  label= "Illinois" value="Illinois"> </option>
+			<option  label= "Indiana" value="Indiana"> </option>
+			<option  label= "Iowa" value="Iowa"> </option>
+			<option  label= "Kansas" value="Kansas"> </option>
+			<option  label= "Kentucky" value="Kentucky"> </option>
+			<option  label= "Louisiana" value="Louisiana"> </option>
+			<option  label= "Maine" value="Maine"> </option>
+			<option  label= "Maryland" value="Maryland"> </option>
+			<option  label= "Massachusetts" value="Massachusetts"> </option>
+			<option  label= "Michigan" value="Michigan"> </option>
+			<option  label= "Minnesota" value="Minnesota"> </option>
+			<option  label= "Mississippi" value="Mississippi"> </option>
+			<option  label= "Missouri" value="Missouri"> </option>
+			<option  label= "Montana" value="Montana"> </option>
+			<option  label= "Nebraska" value="Nebraska"> </option>
+			<option  label= "Nevada" value="Nevada"> </option>
+			<option  label= "New Hampshire" value="New Hampshire"> </option>
+			<option  label= "New Jersey" value="New Jersey"> </option>
+			<option  label= "New Mexico" value="New Mexico"> </option>
+			<option  label= "New York" value="New York"> </option>
+			<option  label= "North Carolina" value="North Carolina"> </option>
+			<option  label= "North Dakota" value="North Dakota"> </option>
+			<option  label= "Ohio" value="Ohio"> </option>
+			<option  label= "Oklahoma" value="Oklahoma"> </option>
+			<option  label= "Oregon" value="Oregon"> </option>
+			<option  label= "Pennsylvania" value="Pennsylvania"> </option>
+			<option  label= "Rhode Island" value="Rhode Island"> </option>
+			<option  label= "South Carolina" value="South Carolina"> </option>
+			<option  label= "South Dakota" value="South Dakota"> </option>
+			<option  label= "Tennessee" value="Tennessee"> </option>
+			<option  label= "Texas" value="Texas"> </option>
+			<option  label= "Utah" value="Utah"> </option>
+			<option  label= "Vermont" value="Vermont"> </option>
+			<option  label= "Virginia" value="Virginia"> </option>
+			<option  label= "Washington" value="Washington"> </option>
+			<option  label= "District of Columbia" value="District of Columbia"> </option>
+			<option  label= "West Virginia" value="West Virginia"> </option>
+			<option  label= "Wisconsin" value="Wisconsin"> </option>
+			<option label="Wyoming" value="Wyoming"></option>
+			<option class="divider" label= "US Territory or City" value="US Territory or City" disabled></option>	
+			<option  label= "Puerto Rico" value="Puerto Rico"> </option>
+			<option  label= "Guam" value="Guam"> </option>
+			<option  label= "American Samoa" value="American Samoa"> </option>
+			<option  label= "U.S. Virgin Islands" value="U.S. Virgin Islands"> </option>
+			<option  label= "Northern Mariana Islands" value="Northern Mariana Islands"> </option>
+		</select></td>
+
+	</tr>	
 <tr>
 <td><b>*Who Recommened you to my site?</b></td>
 <td><select>
@@ -416,11 +469,15 @@ unset($_SESSION['magic_form']);
 
 
 </fieldset>
-<p style="color: black;font-weight: bold">Comment below, if you think there is any way to improve the registration process</p>
-	<label for="commentsorcomplaints">Comments: &lpar;optional&rpar;</label>
 
-    <textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
-}	?></textarea>
+<table>
+	<tr>
+	<td><label for="commentsorcomplaints">Comments: &lpar;optional&rpar;</label></td>
+	</tr>
+	<tr>
+	
+    <td><textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
+}	?></textarea></td></tr></table>
     <br />
 <input class="magic_formSubmit" type="submit" value="Submit"  />
 
@@ -431,9 +488,7 @@ unset($_SESSION['magic_form']);
 
 
 
-</body>
 
-</html>
 
 
 

@@ -45,7 +45,10 @@ body
 }
 fieldset
 {
+	position: relative;
+	left: 0px; 
 	color: black; 
+
 
 }
 select
@@ -230,6 +233,12 @@ color: red;
 	background-color:darkgreen; 
 
 
+}
+
+.form_label input
+{
+	position:absolute; 
+	left: 25px; 
 }
 
 
