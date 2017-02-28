@@ -47,7 +47,7 @@ unset($_SESSION['magic_form']);
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-		<form action="registration_magic_form_process.php" autocomplete="off" style="background-color: white" method="post">
+		<form action="registration_magic_form_process.php" id="form_register" autocomplete="off" style="background-color: white" method="post">
 		<!-- enter name and password feilds-->
  <table class= "registration_form">
  	<?php 
@@ -479,7 +479,7 @@ unset($_SESSION['magic_form']);
     <td><textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
 }	?></textarea></td></tr></table>
     <br />
-<input class="magic_formSubmit" type="submit" value="Submit"  />
+<input class="magic_formSubmit" id="form_submit" type="submit" value="Submit"  />
 
 
 
