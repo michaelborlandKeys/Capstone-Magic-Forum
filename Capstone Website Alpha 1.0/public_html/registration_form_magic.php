@@ -17,8 +17,9 @@ unset($_SESSION['messages']);
 unset($_SESSION['magic_form']); 
 }	
 ?>	
-<a href="index.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
-
+<div>	
+<a href="magic_home.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
+</div>
 <div id="magic_formHeader">
 <h1>Registration Form </h1>
 
@@ -151,7 +152,7 @@ unset($_SESSION['magic_form']);
 
     <tr>
     
-    <td><label for="countries">Country:</label><select name="countries">
+    <td><label for="countries">Country:</label><select id="countries" name="countries">
 	<!--  the List of  countries was found at  http://www.state.gov/misc/list/-->
 			<option label= "Afghanistan" value="Afghanistan"></option>
 			<option  label= "Albania" value="Albania"> </option>
@@ -351,7 +352,7 @@ unset($_SESSION['magic_form']);
 
 </tr>
 <tr>
-	<td><label for="state">State:</label><select name="state" id="state">
+	<td><label for="state">State:</label><select id="state" name="state" >
 			<option label= "Alabama" value="Alabama"></option>
 			<option  label= "Alaska" value="Alaska "> </option>
 			<option  label= "Arizona"  value="Arizona"></option>

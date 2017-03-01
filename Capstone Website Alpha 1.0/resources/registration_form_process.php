@@ -561,7 +561,7 @@ if(empty($_REQUEST['yes'])) {
 
  }else{      
 $_SESSION['messages']=$messages; 
-$_SESSION['form']=$form;
+$_SESSION['magic_form']=$magic_form;
 
 header("Location: registration_form.php");
  }
