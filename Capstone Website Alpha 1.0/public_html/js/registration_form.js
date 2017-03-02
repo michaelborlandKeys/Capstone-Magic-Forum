@@ -4,10 +4,10 @@ function submitRegistration() {
     var valid_First_name = $('#firstname').val();
     var valid_Last_name = $('#lastname').val();
     var valid_email = $('#email').val();
-    var valid_Username = $('#username')
+    var valid_Username = $('#username').val(); 
     var confirm_email= $('#confirmemail').val(); 
     var confirm_password = $('#confirmpassword').val(); 
-    var valid_zipcode = $('#zipcode')
+    var valid_zipcode = $('#zipcode').val(); 
     var valid_phone = $('#phonenumber').val();
     var valid_state= $('#state').val(); 
     var valid_gender= $('input[name="sex"]:checked').val(); 
