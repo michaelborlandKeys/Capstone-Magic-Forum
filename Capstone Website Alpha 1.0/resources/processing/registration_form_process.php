@@ -421,30 +421,7 @@ if(empty($_REQUEST['sex'])) {
     }
 }
 
-if(empty($_REQUEST['recommendedsite'])) {
-    
-    $error=TRUE;
-    
-    $messages['recommendedsite']="Error, Invalid Option";
 
-    } else {
-    
-    $recommendedsite= $_REQUEST['recommendedsite'];
-    $form['recommendedsite']=$recommendedsite; 
-
-  if(!($recommendedsite=="a friend suggested that you check my website out."
-    or $recommendedsite=="a co-worker recommended you to check out the site."
-    or $recommendedsite=="a teacher recommended you to look at this site."
-    or $recommendedsite=="a family member recommended you to my site."
-    or $recommendedsite=="Other")) {
-  
-    $error=TRUE; 
-    $messages['recommendedsite']="Error, Invalid Option";
-
-  } else{
-    $_SESSION['recommendedsite']=$recommendedsite; 
-  }
-    }
 
 if(empty($_REQUEST['termsofservice'])) {
     
