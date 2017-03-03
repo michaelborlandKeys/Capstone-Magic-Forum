@@ -52,7 +52,7 @@ function submitRegistration() {
         else
         {
 
-            
+            valid_form = false; 
             console.log("Invalid First Name");
 
 
@@ -224,7 +224,7 @@ function submitRegistration() {
             console.log("Invalid Comment");
         }
 
-/* 
+
        if(valid_form == true){
             // call new  servlet here
            
@@ -248,16 +248,16 @@ function submitRegistration() {
             $('#zipcode').val("");
             $('#countries').val("");
             $('#username').val(""); 
-            $('#state').clear();
-            $('#gender').clear();
-            $('#acceptDecline').clear();
-            $('#goodmagic_form').clear(); 
+            $('#state').val("");
+            $('#gender').val("");
+            $('#acceptDecline').val("");
+            $('#goodmagic_form').val("");
             $('#commentsorcomplaints').val(""); 
             $('#phonenumber').val("");
-            $('#birthday').clear();
+            $('#birthday').val(""); 
 
             
-       }*/ 
+       }
 
 
 }

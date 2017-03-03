@@ -28,34 +28,32 @@ it is on page one for now
 <?php
  session_start(); 
 
-  	$error=FALSE; 
-	$firstname=$_REQUEST['firstname'];
-	$lastname=$_REQUEST['lastname'];
-	$birthday=$_REQUEST['birthday'];
-	$email=$_REQUEST['email'];
-	$confirmemail=$_REQUEST['confirmemail'];
-	$newpassword=$_REQUEST['newpassword']; 
-	$confirmpassword=$_REQUEST['confirmpassword']; 
-	$username=$_REQUEST['username'];
-	$addressline1=$_REQUEST['addressline1']; 
-	$addressline2=$_REQUEST['addressline2']; 
-	$city=$_REQUEST['city'];
-	$zipcode=$_REQUEST['zipcode'];
-	$phonenumber=$_REQUEST['phonenumber'];
-	$countries=$_REQUEST['countries'];
-	$sex=$_REQUEST['sex'];
-	$recommendedsite=$_REQUEST['recommendedsite'];
-	$termsofservice=$_REQUEST['termsofservice'];
-	$yes=$_REQUEST['yes']; 
-	$commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
+    $error=FALSE; 
+    $firstname=$_REQUEST['firstname'];
+    $lastname=$_REQUEST['lastname'];
+    $birthday=$_REQUEST['birthday'];
+    $email=$_REQUEST['email'];
+    $confirmemail=$_REQUEST['confirmemail'];
+    $newpassword=$_REQUEST['newpassword']; 
+    $confirmpassword=$_REQUEST['confirmpassword']; 
+    $username=$_REQUEST['username'];
+    $city=$_REQUEST['city'];
+    $zipcode=$_REQUEST['zipcode'];
+    $phonenumber=$_REQUEST['phonenumber'];
+    $countries=$_REQUEST['countries'];
+    $sex=$_REQUEST['sex'];
+    $recommendedsite=$_REQUEST['recommendedsite'];
+    $termsofservice=$_REQUEST['termsofservice'];
+    $yes=$_REQUEST['yes']; 
+    $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
 
 
 
  if(empty($_REQUEST['id'])) {
-    $form['id']="";
+    $magic_form['id']="";
 } else {
     
-     $form['id'] = $_REQUEST['id'];
+     $magic_form['id'] = $_REQUEST['id'];
    
     if (!preg_match("/^[0-9]{1,25}$/", $form['id'])) {
         
@@ -74,9 +72,9 @@ if(empty($_REQUEST['firstname'])) {
 } else {
     
     $firstname = $_REQUEST['firstname'];
-    $form['firstname']=$firstname; 
+    $magic_form['firstname']=$firstname; 
 
-    if (!preg_match("/^[A-Za-z]{1,25}$/", $firstname)) {
+    if (!preg_match("/^[A-Za-z]{2,15}$/", $firstname)) {
     
         $error=TRUE;
   
@@ -98,9 +96,9 @@ if(empty($_REQUEST['lastname'])) {
 } else {
    
     $lastname = $_REQUEST['lastname'];
-    $form['lastname']=$lastname; 
+    $magic_form['lastname']=$lastname; 
 
-    if (!preg_match("/^[A-Za-z]{1,25}$/", $lastname)) {
+    if (!preg_match("/^[A-Za-z]{2,15}$/", $lastname)) {
        
         $error=TRUE;
       
@@ -121,7 +119,7 @@ if(empty($_REQUEST['birthday'])) {
 } else {
  
     $birthday = $_REQUEST['birthday'];
-    $form['birthday']=$birthday; 
+    $magic_form['birthday']=$birthday; 
     
     if (!preg_match("/^\d{4}\-\d{2}\-\d{2}$/", $birthday)) {
      
@@ -146,7 +144,7 @@ if(empty($_REQUEST['email'])) {
 } else {
  
     $email = $_REQUEST['email'];
-      $form['email']=$email; 
+      $magic_form['email']=$email; 
     
 
  
@@ -171,7 +169,7 @@ if(empty($_REQUEST['email'])) {
 } else {
    
     $confirmemail = $_REQUEST['confirmemail'];
-    $form['confirmemail']=$confirmemail;
+    $magic_form['confirmemail']=$confirmemail;
 
    
     if ($confirmemail!=$email) {
@@ -199,7 +197,7 @@ if(empty($_REQUEST['newpassword'])) {
 } else {
    
     $newpassword = $_REQUEST['newpassword'];
-    $form['newpassword']=$newpassword; 
+    $magic_form['newpassword']=$newpassword; 
    
     if (!preg_match("/^([a-zA-Z0-9_\.-]{8,16})$/", $newpassword)) {
       
@@ -222,7 +220,7 @@ if(empty($_REQUEST['confirmpassword'])) {
 } else {
     
     $confirmpassword = $_REQUEST['confirmpassword'];
-    $form['confirmpassword']=$confirmpassword; 
+    $magic_form['confirmpassword']=$confirmpassword; 
       
 
      if($confirmpassword!=$newpassword){
@@ -252,7 +250,7 @@ if(empty($_REQUEST['username'])) {
 } else {
     
     $username = $_REQUEST['username'];
-    $form['username']=$username;
+    $magic_form['username']=$username;
     
   if (!preg_match("/^([a-zA-Z0-9_]{4,12})$/", $username)){
      
@@ -269,45 +267,6 @@ if(empty($_REQUEST['username'])) {
 
 }
 
-
-if(empty($_REQUEST['addressline1'])) {
-
-    $error=TRUE;
-    
-    $messages['addressline1']="Error, Re-enter  a valid address";
-} else {
-
-    $addressline1 = $_REQUEST['addressline1'];
-    $form['addressline1']=$addressline1;
-    
-    if (!preg_match("/^.{3,50}$/", $addressline1)) {
-        
-        $error=TRUE;
-            
-        $messages['addressline1']="Error, Re-enter  a valid address"; 
-
-    }else{
-        $_SESSION['addressline1']=$addressline1;
-
-    }
-}
-
-
-
-
-    $addressline2 = $_REQUEST['addressline2'];
-    $form['addressline2']=$addressline2;
-    
-    if (!preg_match("/^.{0,50}$/", $addressline2)) {
-        
-        $error=TRUE;
-       
-        $messages['addressline2']="Error, Re-enter  a valid address into address line 2"; 
-
-    }else{
-        $_SESSION['addressline2']=$addressline2; 
-    }
-
     if(empty($_REQUEST['city'])) {
     
     $error=TRUE;
@@ -316,7 +275,7 @@ if(empty($_REQUEST['addressline1'])) {
 } else {
     
     $city= $_REQUEST['city'];
-    $form['city']=$city; 
+    $magic_form['city']=$city; 
 
     if (!preg_match("/^[A-Za-z\s-']{2,35}$/",$city )) {
     
@@ -340,7 +299,7 @@ if(empty($_REQUEST['addressline1'])) {
 } else {
     
     $zipcode= $_REQUEST['zipcode'];
-    $form['zipcode']=$zipcode; 
+    $magic_form['zipcode']=$zipcode; 
 
     if (!preg_match("/^\d{5}$/",$zipcode )) {
     
@@ -364,7 +323,7 @@ if(empty($_REQUEST['addressline1'])) {
 } else {
     
     $phonenumber= $_REQUEST['phonenumber'];
-    $form['phonenumber']=$phonenumber; 
+    $magic_form['phonenumber']=$phonenumber; 
 
     if (!preg_match("/^\d{3}\-\d{3}\-\d{4}$/",$phonenumber )) {
     
@@ -387,7 +346,7 @@ if(empty($_REQUEST['countries'])) {
 } else {
     
     $countries= $_REQUEST['countries'];
-    $form['countries']=$countries; 
+    $magic_form['countries']=$countries; 
 
     if (!preg_match("/^[A-Za-z\s&-']{2,35}$/",$countries )) {
     
@@ -408,7 +367,7 @@ if(empty($_REQUEST['sex'])) {
 } else {
     
     $sex= $_REQUEST['sex'];
-    $form['sex']=$sex; 
+    $magic_form['sex']=$sex; 
 
     if (!($sex=="Male" or $sex=="Female" or $sex=="Undecided" or $sex=="Other") ) {
     
@@ -431,7 +390,7 @@ if(empty($_REQUEST['termsofservice'])) {
 }else {
     
     $termsofservice= $_REQUEST['termsofservice'];
-    $form['termsofservice']=$termsofservice; 
+    $magic_form['termsofservice']=$termsofservice; 
 
     if(!($termsofservice=="I Agree")){
 
@@ -453,7 +412,7 @@ if(empty($_REQUEST['yes'])) {
 }else {
     
     $yes= $_REQUEST['yes'];
-    $form['yes']=$yes; 
+    $magic_form['yes']=$yes; 
 
     if($yes=="Yes"  or
      $yes=="No"){
@@ -464,7 +423,7 @@ if(empty($_REQUEST['yes'])) {
         }
 
      $commentsorcomplaints = $_REQUEST['commentsorcomplaints'];
-     $form['commentsorcomplaints']=$commentsorcomplaints; 
+     $magic_form['commentsorcomplaints']=$commentsorcomplaints; 
     if (!preg_match("/^.{0,255}$/", $commentsorcomplaints)) {
         
         $error=TRUE;
@@ -476,6 +435,8 @@ if(empty($_REQUEST['yes'])) {
 
     }
 
+    //http://phpcodechecker.com/
+
 
      if($error==FALSE) {
         /* Set up the database connection */
@@ -485,35 +446,32 @@ if(empty($_REQUEST['yes'])) {
      
         /* Escape the string to prevent SQL injection */
 
-         $id_safe = mysqli_escape_string($connection_to_database,$form['id']); 
-        $firstname_safe = mysqli_escape_string($connection_to_database,$form['firstname']);
-        $lastname_safe = mysqli_escape_string($connection_to_database,$form['lastname']);
-        $birthday_safe = mysqli_escape_string($connection_to_database,$form['birthday']);
-        $email_safe = mysqli_escape_string($connection_to_database,$form['email']);
-        $confirmemail_safe = mysqli_escape_string($connection_to_database,$form['confirmemail']);
-        $newpassword_safe = mysqli_escape_string($connection_to_database,$form['newpassword']);
-        $confirmpassword_safe = mysqli_escape_string($connection_to_database,$form['confirmpassword']);
-        $username_safe = mysqli_escape_string($connection_to_database,$form['username']);
-        $addressline1_safe = mysqli_escape_string($connection_to_database,$form['addressline1']);
-        $addressline2_safe = mysqli_escape_string($connection_to_database,$form['addressline2']);
-        $city_safe = mysqli_escape_string($connection_to_database,$form['city']);
-        $zipcode_safe = mysqli_escape_string($connection_to_database,$form['zipcode']);
-        $phonenumber_safe = mysqli_escape_string($connection_to_database,$form['phonenumber']);
-        $countries_safe = mysqli_escape_string($connection_to_database,$form['countries']);
-        $sex_safe = mysqli_escape_string($connection_to_database,$form['sex']);
-        $recommendedsite_safe = mysqli_escape_string($connection_to_database,$form['recommendedsite']);
-        $termsofservice_safe = mysqli_escape_string($connection_to_database,$form['termsofservice']);
+         $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
+        $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
+        $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
+        $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
+        $email_safe = mysqli_escape_string($connection_to_database,$magic_form['email']);
+        $confirmemail_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmemail']);
+        $newpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['newpassword']);
+        $confirmpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmpassword']);
+        $username_safe = mysqli_escape_string($connection_to_database,$magic_form['username']);
+        $city_safe = mysqli_escape_string($connection_to_database,$magic_form['city']);
+        $zipcode_safe = mysqli_escape_string($connection_to_database,$magic_form['zipcode']);
+        $phonenumber_safe = mysqli_escape_string($connection_to_database,$magic_form['phonenumber']);
+        $countries_safe = mysqli_escape_string($connection_to_database,$magic_form['countries']);
+        $sex_safe = mysqli_escape_string($connection_to_database,$magic_form['sex']);
+        $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
         $yes_safe = mysqli_escape_string($connection_to_database,$form['yes']);
-        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$form['commentsorcomplaints']);
+        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
         
         if($id_safe==""){
 
 
      
         /* Construct the SQL statement */
-        $insert_query="insert into people2 (first,last,birthday,nemail,cemail,npassword,cpassword,username,address1,address2,
-        city,zipcode,phonenumber,country,sex,recommend,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
-        '$confirmpassword_safe','$username_safe','$addressline1_safe','$addressline2_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$sex_safe','$recommendedsite_safe','$termsofservice_safe','$yes_safe',
+        $insert_query="insert into people2 (first,last,birthday,nemail,cemail,npassword,cpassword,username,
+        city,zipcode,phonenumber,country,sex,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
+        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$sex_safe','$termsofservice_safe','$yes_safe',
         '$commentsorcomplaints_safe')";
        
         } else {
@@ -534,13 +492,13 @@ if(empty($_REQUEST['yes'])) {
     
     
  
-    header("Location: registration_form_finished.php"); 
+    header("Location: index.php"); 
 
  }else{      
 $_SESSION['messages']=$messages; 
 $_SESSION['magic_form']=$magic_form;
 
-header("Location: registration_form.php");
+header("Location: ../registration_form_magic.php");
  }
 
     ?>
@@ -554,7 +512,7 @@ header("Location: registration_form.php");
 
 
   
-	
+    
 
 
 
@@ -562,21 +520,5 @@ header("Location: registration_form.php");
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

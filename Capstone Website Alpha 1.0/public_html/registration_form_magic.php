@@ -18,7 +18,7 @@ unset($_SESSION['magic_form']);
 }	
 ?>	
 <div>	
-<a href="magic_home.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
+<a  href="magic_home.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
 </div>
 <div id="magic_formHeader">
 <h1>Registration Form </h1>
@@ -48,7 +48,7 @@ unset($_SESSION['magic_form']);
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form id="form_register" autocomplete="off" style="background-color: white" method="post">
+<form action="processing/registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" style="background-color: white" method="post">
 		<!-- enter name and password feilds-->
  	<table id="registration_form">
 		 	<?php
