@@ -48,7 +48,7 @@ it is on page one for now
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
 
 
-
+/*
  if(empty($_REQUEST['id'])) {
     $magic_form['id']="";
 } else {
@@ -62,7 +62,7 @@ it is on page one for now
         $messages['id']="Error, can't Alter that record.</p>";
     }
 }   
-
+*/
 
 if(empty($_REQUEST['firstname'])) {
     
@@ -438,15 +438,15 @@ if(empty($_REQUEST['yes'])) {
     //http://phpcodechecker.com/
 
 
-     if($error==FALSE) {
-        /* Set up the database connection */
-        include ("../resources/db_setup.php");
+    // if($error==FALSE) {
+      /* Set up the database connection */
+       // include ("../resources/db_setup.php");
      
-     $connection_to_database = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
+    // $connection_to_database = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
      
         /* Escape the string to prevent SQL injection */
 
-         $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
+    /*      $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
         $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
         $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
         $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
@@ -462,14 +462,14 @@ if(empty($_REQUEST['yes'])) {
         $sex_safe = mysqli_escape_string($connection_to_database,$magic_form['sex']);
         $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
         $yes_safe = mysqli_escape_string($connection_to_database,$form['yes']);
-        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
+        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);*/
         
-        if($id_safe==""){
+        /*if($id_safe==""){
 
 
      
         /* Construct the SQL statement */
-        $insert_query="insert into people2 (first,last,birthday,nemail,cemail,npassword,cpassword,username,
+        /*$insert_query="insert into people2 (first,last,birthday,nemail,cemail,npassword,cpassword,username,
         city,zipcode,phonenumber,country,sex,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
         '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$sex_safe','$termsofservice_safe','$yes_safe',
         '$commentsorcomplaints_safe')";
@@ -485,9 +485,9 @@ if(empty($_REQUEST['yes'])) {
           } 
 
         /* Run the SQL statement */
-        mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
-        mysqli_close($connection_to_database);
-
+       /* mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
+        mysqli_close($connection_to_database);*/
+if($error == FALSE ){
 
     
     
