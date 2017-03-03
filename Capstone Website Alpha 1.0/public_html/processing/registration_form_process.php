@@ -68,13 +68,13 @@ if(empty($_REQUEST['firstname'])) {
     
     $error=TRUE;
     
-    $messages['firstname']="Error, Bad First Name Retype";
+    $messages['firstname']="Error, Bad First Name RetypGHGHGGHe".$_REQUEST['firstname'];
 } else {
     
     $firstname = $_REQUEST['firstname'];
     $magic_form['firstname']=$firstname; 
 
-    if (!preg_match("/^[A-Za-z]{2,15}$/", $firstname)) {
+    if (!preg_match("^[A-Za-z]{2,15}$", $firstname)) {
     
         $error=TRUE;
   

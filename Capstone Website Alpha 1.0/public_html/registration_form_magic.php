@@ -40,8 +40,8 @@ unset($_SESSION['magic_form']);
 <?php
 
  if(!empty($messages)) {
-          foreach ($messages as $message) {
-              echo "<p class=Errors>$message</p>" ; 
+          foreach ($messages as $key=> $message) {
+              echo "<p class=Errors>message[$key]:$message</p>" ; 
 
           }
   }
