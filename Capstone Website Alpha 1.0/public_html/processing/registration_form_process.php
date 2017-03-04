@@ -74,7 +74,7 @@ if(empty($_REQUEST['firstname'])) {
     $firstname = $_REQUEST['firstname'];
     $magic_form['firstname']=$firstname; 
 
-    if (!preg_match("^[A-Za-z]{2,15}$", $firstname)) {
+    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $firstname)) {
     
         $error=TRUE;
   
@@ -85,6 +85,7 @@ if(empty($_REQUEST['firstname'])) {
 
     }
 }
+
  
 
 
@@ -501,24 +502,8 @@ $_SESSION['magic_form']=$magic_form;
 header("Location: ../registration_form_magic.php");
  }
 
+
     ?>
-
-
-   
-
-
-
-
-
-
-  
-    
-
-
-
-  <br/>
 
 </body>
 </html>
-
-

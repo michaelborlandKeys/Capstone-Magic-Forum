@@ -228,7 +228,7 @@ function submitRegistration() {
        if(valid_form == true){
             // call new  servlet here
            
-       $('#form_register').submit(); 
+        console.log("form is valid")
                
             
          

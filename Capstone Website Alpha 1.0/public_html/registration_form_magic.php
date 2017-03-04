@@ -48,8 +48,8 @@ unset($_SESSION['magic_form']);
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form action="processing/registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" style="background-color: white" method="post">
-		<!-- enter name and password feilds-->
+<form action="processing/registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" method="post">
+		
  	<table id="registration_form">
 		 	<?php
 		 	if(isset($magic_form['id'])){
@@ -65,14 +65,13 @@ unset($_SESSION['magic_form']);
 					<td><label  for="firstname" > &ast;First Name</label></td>
 				   </tr>
 				   <tr>
-					<td><input type="text" id="firstname" name="firstname" placeholder="First Name" value=  "<?php if( isset($magic_form['firstname'])){ echo htmlentities($magic_form['firstname']); }?>" /></td>
+					<td><input type="text" id="firstname" name="firstname" placeholder="First Name" /></td>
 					</tr>
 					<tr>
 					<td><label for="lastname"> &ast;Last Name</label></td>
 				   </tr>
 				   <tr>
-					<td><input type="text" id="lastname" name="lastname" placeholder="Last Name" value= "<?php if( isset($magic_form['lastname'])){echo htmlentities($magic_form['lastname']);
-			}?>" /> </td>   
+					<td><input type="text" id="lastname" name="lastname" placeholder="Last Name" /> </td>   
 
 			
 				</tr>
@@ -81,8 +80,7 @@ unset($_SESSION['magic_form']);
 					<td><label for="birthday" > &ast;Birthday</label></td>
 				</tr>
 				<tr>
-					<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2016-01-01"   value="<?php if( isset($magic_form['birthday'])){echo htmlentities($magic_form['birthday']);
-		}?>"  /> 
+					<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2016-01-01"  /> 
 
 				</td>
 				</tr>
@@ -91,15 +89,14 @@ unset($_SESSION['magic_form']);
 				<td><label for="email"> &ast;Email </label></td>
 				</tr>
 				<tr>
-				<td><input type="text" id="email" name="email" placeholder="Email" value="<?php if( isset($magic_form['email'])){echo htmlentities($magic_form['email']);
-		}?>"  /> </td>
+				<td><input type="text" id="email" name="email" placeholder="Email"  /> </td>
 				</tr>
 
 				<tr>
 				<td><label  for="confirmemail"> &ast;Confirm Email</label></td>
 				</tr>
 				<tr>
-				<td><input type="text" id="confirmemail" name="confirmemail" placeholder="Confirm Email" value="<?php if( isset($magic_form['confirmemail'])){echo htmlentities($magic_form['confirmemail']);}?>" />
+				<td><input type="text" id="confirmemail" name="confirmemail" placeholder="Confirm Email" />
 		       </td>
 				</tr>
 
@@ -107,9 +104,7 @@ unset($_SESSION['magic_form']);
 				<td><label for="newpassword">  &ast;New Password: </label></td>
 				</tr>
 				<tr>
-				<td><input type="password" id="newpassword" name="newpassword" placeholder=" New Password" value="<?php if( isset($magic_form['newpassword'])){echo htmlentities($magic_form['newpassword']);
-
-				}?>"/> 
+				<td><input type="password" id="newpassword" name="newpassword" placeholder=" New Password" "/> 
 				</td>
 
 				</tr>
@@ -118,40 +113,34 @@ unset($_SESSION['magic_form']);
 				<td><label for="confirmpassword"> &ast;Confirm Password: </label></td>
 				</tr>
 				<tr>
-				<td><input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" value="<?php if( isset($magic_form['confirmpassword'])){echo htmlentities($magic_form['confirmpassword']);
-		}?>" /> </td>
+				<td><input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password"  /> </td>
 				</tr>
 				<tr>
 				<td><label for="username"> &ast;Username: </label></td>
 				</tr>
 				<tr>
-				<td><input type="text" id="username" name="username" placeholder="Username" value="<?php if( isset($magic_form['username'])){echo htmlentities($magic_form['username']);
-
-		}?>"/></td>
+				<td><input type="text" id="username" name="username" placeholder="Username" /></td>
 			  </tr>
 
 		<tr>
 		<td><label for="city">  &ast;City: </label></td>
 		</tr>
 		<tr>
-		<td><input type="text" id="city" name="city" placeholder="City" value="<?php if( isset($magic_form['city'])){echo htmlentities($magic_form['city']);
-		}?>"  /></td>
+		<td><input type="text" id="city" name="city" placeholder="City" /></td>
 		</tr>
 
 		<tr>
 		<td><label for="zipcode"> &ast;Zip Code </label></td>
 		</tr>
 		<tr>
-		<td><input type="text" id="zipcode" name="zipcode" placeholder="e.g. 50125" value= "<?php if( isset($magic_form['zipcode'])){echo htmlentities($magic_form['zipcode']);
-		}?>"   /> </td>
+		<td><input type="text" id="zipcode" name="zipcode" placeholder="e.g. 50125" /> </td>
 		</tr>
 
 		<tr>
 		<td><label for="phonenumber" > &ast;Phone Number: </label></td>
 		</tr>
 		<tr>
-		<td><input type="text" id="phonenumber" name="phonenumber" placeholder="e.g. 909-852-5657" value="<?php if( isset($magic_form['phonenumber'])){echo htmlentities($magic_form['phonenumber']);
-		}?>"   /></td> 
+		<td><input type="text" id="phonenumber" name="phonenumber" placeholder="e.g. 909-852-5657"/></td> 
 		</tr>
 
 		  
@@ -424,10 +413,10 @@ unset($_SESSION['magic_form']);
 
 		<fieldset  id="gender" style="width:275px">
 		<label for="sex">&ast;Gender:</label><br />
-			<input type="radio" id="sex" name="sex" value="Male" <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Male" ) {echo "checked ";} ?> />Male <br />
-			<input type="radio"  id="sex02" name="sex" value="Female"  <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Female" ) {echo "checked ";} ?> />Female <br />
-			<input type="radio" id="sex03" name="sex" value="Other"  <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Other" ) {echo "checked ";} ?> /> Other <br />
-			<input type="radio"  id="sex04" name="sex" value="Undecided"  <?php if( isset($magic_form['sex']) and $magic_form['sex']=="Undecided" ) {echo "checked ";} ?> />Undecided<br />
+			<input type="radio" id="sex" name="sex" value="Male" />Male <br />
+			<input type="radio"  id="sex02" name="sex" value="Female" />Female <br />
+			<input type="radio" id="sex03" name="sex" value="Other" /> Other <br />
+			<input type="radio"  id="sex04" name="sex" value="Undecided" />Undecided<br />
 
 		</fieldset>
 		 <br />
@@ -435,17 +424,17 @@ unset($_SESSION['magic_form']);
 		 <fieldset id="acceptDecline" style="width:275px">
 		 	<label for="termsofservice">&ast;Terms of Service</label>
 		<br /> 
-					<input type="checkbox" id="termsofservice"  name="termsofservice" value="I Agree"  <?php if( isset($magic_form['termsofservice']) and $magic_form['termsofservice']=="I Agree" ) {echo "checked ";} ?> /> I Agree with the Terms of Service<br />
-					<input type="checkbox" id="termsofservice02" name="termsofservice" value="I Disagree" <?php if( isset($magic_form['termsofservice']) and $magic_form['termsofservice']=="I Disagree" )  {echo "checked ";} ?>/> I Disagree with the Terms of Service<br />
-					<a href="terms_of_service.php"> Terms of Service</a>
+					<input type="checkbox" id="termsofservice"  name="termsofservice" value="I Agree" /> I Agree with the Terms of Service<br />
+					<input type="checkbox" id="termsofservice02" name="termsofservice" value="I Disagree" /> I Disagree with the Terms of Service <br />
+					
 		 <br />
 		</fieldset >
 
 		<fieldset id="goodmagic_form" style="width:275px">
 			<label for="yes">&ast;Was this magic_form easy to complete?</label>
 		<br />
-			<input type="radio" id="yes"  name="yes" value="Yes"  <?php if( isset($magic_form['yes']) and $magic_form['yes']=="Yes" )  {echo "checked ";} ?>/>Yes <br />
-			<input type="radio" id="no"  name="yes" value="No" <?php if( isset($magic_form['yes']) and $magic_form['yes']=="No" )  {echo "checked ";} ?> />No <br />
+			<input type="radio" id="yes"  name="yes" value="Yes" />Yes <br />
+			<input type="radio" id="no"  name="yes" value="No"/>No <br />
 		</fieldset>
 
 		<table>
@@ -454,12 +443,11 @@ unset($_SESSION['magic_form']);
 				</tr>
 			<tr>
 				
-			    <td><textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ><?php if( isset($magic_form['commentsorcomplaints'])){echo htmlentities($magic_form['commentsorcomplaints']);
-			}	?></textarea></td>
+			    <td><textarea  name="commentsorcomplaints" id="commentsorcomplaints" rows="6" cols="40" style="color:black;" placeholder="Comments"  ></textarea></td>
 		    </tr>
 		</table>
 		    <br />
-		<input class="magic_formSubmit" id="form_submit" type="submit" value="Submit"  />
+		<input type="submit" name="submit_form" value="Submit">
 </form>
 
 <?php include("../resources/magic_footer.php");?>
