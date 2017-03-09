@@ -42,10 +42,10 @@ it is on page one for now
     $phonenumber=$_REQUEST['phonenumber'];
     $countries=$_REQUEST['countries'];
     $sex=$_REQUEST['sex'];
-    $recommendedsite=$_REQUEST['recommendedsite'];
     $termsofservice=$_REQUEST['termsofservice'];
     $yes=$_REQUEST['yes']; 
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
+    $state=$_REQUEST['states'];
 
 
 /*
@@ -68,7 +68,7 @@ if(empty($_REQUEST['firstname'])) {
     
     $error=TRUE;
     
-    $messages['firstname']="Error, Bad First Name RetypGHGHGGHe".$_REQUEST['firstname'];
+    $messages['firstname']="Error,  First Name can't be empty ".$_REQUEST['firstname'];
 } else {
     
     $firstname = $_REQUEST['firstname'];
@@ -93,13 +93,13 @@ if(empty($_REQUEST['lastname'])) {
 
     $error=TRUE;
     
-    $messages['lastname']="Error, please retype Last Name ";
+    $messages['lastname']="Error, Last Name field can't be empty ";
 } else {
    
     $lastname = $_REQUEST['lastname'];
     $magic_form['lastname']=$lastname; 
 
-    if (!preg_match("/^[A-Za-z]{2,15}$/", $lastname)) {
+    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $lastname)) {
        
         $error=TRUE;
       
@@ -116,7 +116,7 @@ if(empty($_REQUEST['birthday'])) {
 
     $error=TRUE;
    
-    $messages['birthday']="Error,please re-enter a Valid Date";
+    $messages['birthday']="Error,Birthday Field can't be empty";
 } else {
  
     $birthday = $_REQUEST['birthday'];
@@ -141,7 +141,7 @@ if(empty($_REQUEST['email'])) {
    
     $error=TRUE;
 
-    $messages['email']="Error, invalid Email Address please type in a valid one.";
+    $messages['email']="Error, Email Address can't be empty";
 } else {
  
     $email = $_REQUEST['email'];
@@ -166,7 +166,7 @@ if(empty($_REQUEST['email'])) {
     
     $error=TRUE;
     
-    $messages['confirmemail']="Error, Email Addresses don't match please make sure both fields match.";
+    $messages['confirmemail']="Error, Confirm Email can't be empty";
 } else {
    
     $confirmemail = $_REQUEST['confirmemail'];
@@ -194,7 +194,7 @@ if(empty($_REQUEST['newpassword'])) {
     
     $error=TRUE;
   
-    $messages['newpassword']="Error, Invalid Password Please Retype";
+    $messages['newpassword']="Error, Password field can't be empty";
 } else {
    
     $newpassword = $_REQUEST['newpassword'];
@@ -217,7 +217,7 @@ if(empty($_REQUEST['confirmpassword'])) {
     
     $error=TRUE;
     
-    $messages["confirmpassword"]="Error,  Passwords Don't Match Please Retype";
+    $messages["confirmpassword"]="Error, confirm password can't be empty";
 } else {
     
     $confirmpassword = $_REQUEST['confirmpassword'];
@@ -247,7 +247,7 @@ if(empty($_REQUEST['username'])) {
     
     $error=TRUE;
     
-    $messages['username']="Error, Invalid Username Please Retype</p>";
+    $messages['username']="Error, Username field can't be empty";
 } else {
     
     $username = $_REQUEST['username'];
@@ -272,7 +272,7 @@ if(empty($_REQUEST['username'])) {
     
     $error=TRUE;
     
-    $messages['city']="Error, Bad City Name Please Retype";
+    $messages['city']="Error, City field can't be empty";
 } else {
     
     $city= $_REQUEST['city'];
@@ -296,7 +296,7 @@ if(empty($_REQUEST['username'])) {
     
     $error=TRUE;
     
-    $messages['zipcode']="Error, Bad Zip Code  Please Retype";
+    $messages['zipcode']="Error, Zip Code field can't be empty";
 } else {
     
     $zipcode= $_REQUEST['zipcode'];
@@ -320,7 +320,7 @@ if(empty($_REQUEST['username'])) {
     
     $error=TRUE;
     
-    $messages['phonenumber']="Error, Bad Phone Number Please Retype";
+    $messages['phonenumber']="Error, Phone Number can't be empty";
 } else {
     
     $phonenumber= $_REQUEST['phonenumber'];
@@ -343,7 +343,7 @@ if(empty($_REQUEST['countries'])) {
     
     $error=TRUE;
     
-    $messages['countries']="Error, Invalid Country Please Re-Enter";
+    $messages['countries']="Error, Country field can't be empty";
 } else {
     
     $countries= $_REQUEST['countries'];
@@ -359,12 +359,33 @@ if(empty($_REQUEST['countries'])) {
         $_SESSION['countries']=$countries; 
     }
 }
+if(empty($_REQUEST['states'])) {
+    
+    $error=TRUE;
+    
+    $messages['states']="Error, State Field can't be empty";
+} else {
+    
+    $state= $_REQUEST['states'];
+    $magic_form['countries']=$countries; 
+
+    if (!preg_match("/^[A-Za-z\s&-']{2,35}$/",$state )) {
+    
+        $error=TRUE;
+  
+        $messages['states']="Error,Invalid State Please Re-Enter";
+         
+    } else{
+        $_SESSION['states']=$state; 
+    }
+}
+
 
 if(empty($_REQUEST['sex'])) {
     
     $error=TRUE;
     
-    $messages['sex']="Error, Invalid Gender";
+    $messages['sex']="Error, Gender radio can't be blank";
 } else {
     
     $sex= $_REQUEST['sex'];
@@ -439,15 +460,15 @@ if(empty($_REQUEST['yes'])) {
     //http://phpcodechecker.com/
 
 
-    // if($error==FALSE) {
+
       /* Set up the database connection */
        // include ("../resources/db_setup.php");
-     
-    // $connection_to_database = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
-     
-        /* Escape the string to prevent SQL injection */
 
-    /*      $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
+
+         /* if($error==FALSE) {
+     $connection_to_database = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
+     
+         $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
         $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
         $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
         $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
@@ -463,37 +484,36 @@ if(empty($_REQUEST['yes'])) {
         $sex_safe = mysqli_escape_string($connection_to_database,$magic_form['sex']);
         $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
         $yes_safe = mysqli_escape_string($connection_to_database,$form['yes']);
-        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);*/
-        
-        /*if($id_safe==""){
+        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
+        $state_safe = mysqli_escape_string($connection_to_database,$magic_form['states'])
+        if($id_safe==""){
 
 
      
-        /* Construct the SQL statement */
-        /*$insert_query="insert into people2 (first,last,birthday,nemail,cemail,npassword,cpassword,username,
-        city,zipcode,phonenumber,country,sex,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
-        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$sex_safe','$termsofservice_safe','$yes_safe',
+        
+        $insert_query="insert into user_insert (first,last,birthday,nemail,cemail,npassword,cpassword,username,
+        city,zipcode,phonenumber,country,state,sex,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
+        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe',
         '$commentsorcomplaints_safe')";
        
         } else {
 
 
-        $insert_query="update people2 set first='$firstname_safe',last='$lastname_safe',birthday='$birthday_safe',nemail='$email_safe',cemail='$confirmemail_safe',npassword='$newpassword_safe',cpassword='$confirmpassword_safe',
-        username='$username_safe',address1='$addressline1_safe',address2='$addressline2_safe',city='$city_safe',zipcode='$zipcode_safe',phonenumber='$phonenumber_safe',country='$countries_safe',sex='$sex_safe',recommend='$recommendedsite_safe',
+        $insert_query="update user_insert set first='$firstname_safe',last='$lastname_safe',birthday='$birthday_safe',nemail='$email_safe',cemail='$confirmemail_safe',npassword='$newpassword_safe',cpassword='$confirmpassword_safe',
+        username='$username_safe',city='$city_safe',zipcode='$zipcode_safe',phonenumber='$phonenumber_safe',country='$countries_safe',state='state_safe',sex='$sex_safe',recommend='$recommendedsite_safe',
         agree='$termsofservice_safe',ecomplete='$yes_safe',comments='$commentsorcomplaints_safe' where id='$id_safe'"; 
 
 
-          } 
+          } */
 
         /* Run the SQL statement */
-       /* mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
+      /* mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
         mysqli_close($connection_to_database);*/
-if($error == FALSE ){
 
-    
+    if($error == FALSE){
     
  
-    header("Location: index.php"); 
+    header("Location: ../registration_form_finished.php"); 
 
  }else{      
 $_SESSION['messages']=$messages; 

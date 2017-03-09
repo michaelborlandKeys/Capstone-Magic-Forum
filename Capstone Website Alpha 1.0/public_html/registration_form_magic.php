@@ -40,8 +40,8 @@ unset($_SESSION['magic_form']);
 <?php
 
  if(!empty($messages)) {
-          foreach ($messages as $key=> $message) {
-              echo "<p class=Errors>message[$key]:$message</p>" ; 
+          foreach ($messages as $message) {
+              echo "<p class=Errors>$message</p>" ; 
 
           }
   }
@@ -148,6 +148,7 @@ unset($_SESSION['magic_form']);
 			<tr><td><label for="countries">Country:</label></td></tr>	      
 			<tr><td><select id="countries" name="countries">
 			<!--  the List of  countries was found at  http://www.state.gov/misc/list/-->
+					<option label="" value=""></option>
 					<option label= "Afghanistan" value="Afghanistan"></option>
 					<option  label= "Albania" value="Albania"> </option>
 					<option  label= "Algeria"  value="Algeria"></option>
@@ -350,6 +351,7 @@ unset($_SESSION['magic_form']);
 			<tr><td><label for="state">State:</label></td></tr>
 			<tr>
 			<td><select id="state" name="state" >
+					<option label="" value=""></option>
 					<option label= "Alabama" value="Alabama"></option>
 					<option  label= "Alaska" value="Alaska "> </option>
 					<option  label= "Arizona"  value="Arizona"></option>
@@ -410,7 +412,7 @@ unset($_SESSION['magic_form']);
 				</select></td>
 			</tr>	
    </table>
-
+<!--<div id=" form_second_part">-->
 		<fieldset  id="gender" style="width:275px">
 		<label for="sex">&ast;Gender:</label><br />
 			<input type="radio" id="sex" name="sex" value="Male" />Male <br />
@@ -447,7 +449,7 @@ unset($_SESSION['magic_form']);
 		    </tr>
 		</table>
 		    <br />
-		<input type="submit" name="submit_form" value="Submit">
+		<input type="submit"  name="submit_form" id="form_submit" value="Submit">
 </form>
 
 <?php include("../resources/magic_footer.php");?>

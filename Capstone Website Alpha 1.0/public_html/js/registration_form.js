@@ -18,7 +18,7 @@ function submitRegistration() {
     var valid_country = $('#countries').val(); 
     var valid_city=$('#city').val(); 
     var valid_password=$('#newpassword').val(); 
-    var valid_confirm_passward= $('#confirmpassword').val();
+    
 
 
     var error = false;  
@@ -229,6 +229,37 @@ function submitRegistration() {
             // call new  servlet here
            
         console.log("form is valid")
+
+    var url = "public_html/registration_form_process";
+    var dataToServer = { firstname : valid_First_name,
+                        lastname : valid_Last_name,
+                        birthday : valid_birthday, 
+                        email: valid_email , 
+                        confirmemail:confirm_email,
+                        newpassword: valid_password,
+                        confirmpassword: confirm_password,
+                        username:valid_Username,
+                        city:valid_city,
+                        zipcode:valid_zipcode,
+                        phonenumbe: valid_phone,
+                        countries: valid_country,
+                        state:valid_state,
+                        sex:valid_gender,
+                        termsofservice:valid_terms,
+                        yes:valid_goodForm,
+                        commentsorcomplaints:valid_comment
+
+                        };
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: JSON.stringify(dataToServer),
+                        success: function()  {
+                        
+                        },
+                        contentType: "application/json",
+                        dataType: 'text' // Could be JSON or whatever too
+                    });
                
             
          
