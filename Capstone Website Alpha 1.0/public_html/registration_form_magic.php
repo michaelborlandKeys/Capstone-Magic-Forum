@@ -80,7 +80,7 @@ unset($_SESSION['magic_form']);
 					<td><label for="birthday" > &ast;Birthday</label></td>
 				</tr>
 				<tr>
-					<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2016-01-01"  /> 
+					<td><input type="date" id="birthday" name="birthday" min="1900-01-01" max="2019-01-01"  /> 
 
 				</td>
 				</tr>
@@ -449,7 +449,7 @@ unset($_SESSION['magic_form']);
 		    </tr>
 		</table>
 		    <br />
-		<input type="submit"  name="submit_form" id="form_submit" value="Submit">
+		<input type="submit"  name="submit_form"  value="Submit">
 </form>
 
 <?php include("../resources/magic_footer.php");?>

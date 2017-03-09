@@ -230,7 +230,7 @@ function submitRegistration() {
            
         console.log("form is valid")
 
-    var url = "public_html/registration_form_process";
+  /*  var url = "public_html/registration_form_process";
     var dataToServer = { firstname : valid_First_name,
                         lastname : valid_Last_name,
                         birthday : valid_birthday, 
@@ -259,7 +259,7 @@ function submitRegistration() {
                         },
                         contentType: "application/json",
                         dataType: 'text' // Could be JSON or whatever too
-                    });
+                    });*/
                
             
          
