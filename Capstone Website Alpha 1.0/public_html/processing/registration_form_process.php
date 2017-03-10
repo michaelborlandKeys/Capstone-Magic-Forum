@@ -45,7 +45,7 @@ it is on page one for now
     $termsofservice=$_REQUEST['termsofservice'];
     $yes=$_REQUEST['yes']; 
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
-    $state=$_REQUEST['states'];
+    $states=$_REQUEST['states'];
 
 
 /*
@@ -366,17 +366,17 @@ if(empty($_REQUEST['states'])) {
     $messages['states']="Error, State Field can't be empty";
 } else {
     
-    $state= $_REQUEST['states'];
-    $magic_form['countries']=$countries; 
+    $states= $_REQUEST['states'];
+    $magic_form['states']=$states; 
 
-    if (!preg_match("/^[A-Za-z\s&-']{2,35}$/",$state )) {
+    if (!preg_match("/^[A-Za-z\s-']{2,35}$/",$states )) {
     
         $error=TRUE;
   
         $messages['states']="Error,Invalid State Please Re-Enter";
          
     } else{
-        $_SESSION['states']=$state; 
+        $_SESSION['states']=$states; 
     }
 }
 
@@ -485,7 +485,7 @@ if(empty($_REQUEST['yes'])) {
         $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
         $yes_safe = mysqli_escape_string($connection_to_database,$form['yes']);
         $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
-        $state_safe = mysqli_escape_string($connection_to_database,$magic_form['states'])
+        $states_safe = mysqli_escape_string($connection_to_database,$magic_form['states'])
         if($id_safe==""){
 
 
@@ -493,7 +493,7 @@ if(empty($_REQUEST['yes'])) {
         
         $insert_query="insert into user_insert (first,last,birthday,nemail,cemail,npassword,cpassword,username,
         city,zipcode,phonenumber,country,state,sex,agree,ecomplete,comments) values ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe',
-        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe',
+        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$states_safe','$sex_safe','$termsofservice_safe','$yes_safe',
         '$commentsorcomplaints_safe')";
        
         } else {

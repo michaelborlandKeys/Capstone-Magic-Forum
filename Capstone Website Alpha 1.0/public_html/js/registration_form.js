@@ -46,6 +46,7 @@ function submitRegistration() {
 
         if(regExpression_First_Name.test(valid_First_name))
         {
+            valid_form=true;
             console.log("Valid First Name");
 
         }
@@ -226,40 +227,36 @@ function submitRegistration() {
 
 
        if(valid_form == true){
+     
             // call new  servlet here
            
         console.log("form is valid")
 
-  /*  var url = "public_html/registration_form_process";
-    var dataToServer = { firstname : valid_First_name,
-                        lastname : valid_Last_name,
-                        birthday : valid_birthday, 
-                        email: valid_email , 
-                        confirmemail:confirm_email,
-                        newpassword: valid_password,
-                        confirmpassword: confirm_password,
-                        username:valid_Username,
-                        city:valid_city,
-                        zipcode:valid_zipcode,
-                        phonenumbe: valid_phone,
-                        countries: valid_country,
-                        state:valid_state,
-                        sex:valid_gender,
-                        termsofservice:valid_terms,
-                        yes:valid_goodForm,
-                        commentsorcomplaints:valid_comment
+   
+        
+            $('#firstname').val();
+            $('#lastname').val();
+            $('#email').val();
+            $('#confirmemail').val(); 
+            $('#newpassword').val(); 
+            $('#confirmpassword').val(); 
+            $('#city').val(); 
+            $('#zipcode').val();
+            $('#countries').val();
+            $('#username').val(); 
+            $('#state').val();
+            $('#gender').val();
+            $('#acceptDecline').val();
+            $('#goodmagic_form').val();
+            $('#commentsorcomplaints').val(); 
+            $('#phonenumber').val();
+            $('#birthday').val(); 
 
-                        };
-                    $.ajax({
-                        type: 'POST',
-                        url: url,
-                        data: JSON.stringify(dataToServer),
-                        success: function()  {
-                        
-                        },
-                        contentType: "application/json",
-                        dataType: 'text' // Could be JSON or whatever too
-                    });*/
+
+
+        $('#form_register').submit();
+
+
                
             
          
@@ -268,25 +265,7 @@ function submitRegistration() {
         else
         {
             valid_form == false;
-            
-            $('#firstname').val("");
-            $('#lastname').val("");
-            $('#email').val("");
-            $('#confirmemail').val(""); 
-            $('#newpassword').val(""); 
-            $('#confirmpassword').val(""); 
-            $('#city').val(""); 
-            $('#zipcode').val("");
-            $('#countries').val("");
-            $('#username').val(""); 
-            $('#state').val("");
-            $('#gender').val("");
-            $('#acceptDecline').val("");
-            $('#goodmagic_form').val("");
-            $('#commentsorcomplaints').val(""); 
-            $('#phonenumber').val("");
-            $('#birthday').val(""); 
-
+     
             
        }
 
