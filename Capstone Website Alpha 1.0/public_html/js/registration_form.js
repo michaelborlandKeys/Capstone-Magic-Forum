@@ -18,7 +18,7 @@ function submitRegistration() {
     var valid_country = $('#countries').val(); 
     var valid_city=$('#city').val(); 
     var valid_password=$('#newpassword').val(); 
-    var valid_confirm_passward= $('#confirmpassword').val();
+    
 
 
     var error = false;  
@@ -46,13 +46,14 @@ function submitRegistration() {
 
         if(regExpression_First_Name.test(valid_First_name))
         {
+            valid_form=true;
             console.log("Valid First Name");
 
         }
         else
         {
 
-            
+            valid_form = false; 
             console.log("Invalid First Name");
 
 
@@ -224,11 +225,38 @@ function submitRegistration() {
             console.log("Invalid Comment");
         }
 
-/* 
+
        if(valid_form == true){
+     
             // call new  servlet here
            
-       $('#form_register').submit(); 
+        console.log("form is valid")
+
+   
+        
+            $('#firstname').val();
+            $('#lastname').val();
+            $('#email').val();
+            $('#confirmemail').val(); 
+            $('#newpassword').val(); 
+            $('#confirmpassword').val(); 
+            $('#city').val(); 
+            $('#zipcode').val();
+            $('#countries').val();
+            $('#username').val(); 
+            $('#state').val();
+            $('#gender').val();
+            $('#acceptDecline').val();
+            $('#goodmagic_form').val();
+            $('#commentsorcomplaints').val(); 
+            $('#phonenumber').val();
+            $('#birthday').val(); 
+
+
+
+        $('#form_register').submit();
+
+
                
             
          
@@ -237,27 +265,9 @@ function submitRegistration() {
         else
         {
             valid_form == false;
+     
             
-            $('#firstname').val("");
-            $('#lastname').val("");
-            $('#email').val("");
-            $('#confirmemail').val(""); 
-            $('#newpassword').val(""); 
-            $('#confirmpassword').val(""); 
-            $('#city').val(""); 
-            $('#zipcode').val("");
-            $('#countries').val("");
-            $('#username').val(""); 
-            $('#state').clear();
-            $('#gender').clear();
-            $('#acceptDecline').clear();
-            $('#goodmagic_form').clear(); 
-            $('#commentsorcomplaints').val(""); 
-            $('#phonenumber').val("");
-            $('#birthday').clear();
-
-            
-       }*/ 
+       }
 
 
 }
