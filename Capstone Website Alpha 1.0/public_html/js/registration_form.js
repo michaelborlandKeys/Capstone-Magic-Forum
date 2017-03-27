@@ -1,5 +1,14 @@
+
+/* This function is checking the user input on the user side for validity.
+It will also, if i get it fully functioning with back-end, this will display messages,
+ and style  information to the user depending on success or failure of the submitted form.*/  
+ //currently the back end is displaying messages to the user, and i have not written the script to change style based on form state. 
+ // once it has been fixed it will be more secure against a battery of possible intrusions. 
+ // the fully functioning for will have both back-end and front end validation for security reasons, to better prevent injection attacks,
+ // and potential cross site scripting. 
 function submitRegistration() {
-    //Fetching all field values to check for front-end user correctness.
+// Variables declared for getting the user information out of the form fields to validate and send over to the server-side, 
+//and into the database. 
 
     var valid_First_name = $('#firstname').val();
     var valid_Last_name = $('#lastname').val();
@@ -20,11 +29,11 @@ function submitRegistration() {
     var valid_password=$('#newpassword').val(); 
     
 
-
+// Boolean variables to set the form state depending on whether the user has entered valid, or invalid data. 
     var error = false;  
     var valid_form = false;
 
-    // regular expressions to validate the forum 
+    // regular expressions that are used to test the validity of the form fields 
     var regExpression_First_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
     var regExpression_Last_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
     var regExpression_Email = /^([0-9a-zA-Z]+[-._+&amp;])+[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/;
@@ -43,6 +52,8 @@ function submitRegistration() {
 
     /* Logic on the front end User side that checks for if the user has entered
     Valid, or invalid data in each input field.  */
+    //the if is using the test method on the data the user has enter, and using the regular expression to test with.
+    // This is the same across the majority of the program see comments below for changes in the logic structure.
 
         if(regExpression_First_Name.test(valid_First_name))
         {
@@ -66,7 +77,7 @@ function submitRegistration() {
         else
         {
             
-            //valid_form = false;
+     
             console.log("Invalid Last Name");
 
         }
@@ -80,10 +91,16 @@ function submitRegistration() {
         else
         {
          
-            //valid_form = false;
+            
             console.log("Invalid Birthday");
 
         }
+/* The two input fields that are not the same, even though they look the same,
+ how i have chosen to strictly, only take matching sets on both, and if it is empty it will fail as well. 
+ If you forget to type in the confirm, i have strictly filtered and said its 
+ invalid, even if it is truly valid based on regular expression. 
+ My reason for this is on the registration for i want to make sure the match before i consider them valid. 
+*/
 
         if(regExpression_Email.test(valid_email) && valid_email==confirm_email)
         {
@@ -167,6 +184,9 @@ function submitRegistration() {
             console.log("Invalid Phone");
 
         }
+// i could validate state and country the same way, as the check box, but it would be really inefficient, and take a long time. 
+// regular expression is the better way to validate in this case. 
+
         if(regexpression_Countries.test(valid_country))
         {
             console.log("Valid Country");
@@ -184,8 +204,11 @@ function submitRegistration() {
             console.log("Invalid State");
         }
 
-
+// This validation check is different because it is checking for gender in a radio button form field, 
+//and they are handled differently, when testing for valid, or invalid data 
   
+  // The check box field is validated in a similar manner as the radio button, i have to check for the value the button will send me. 
+
         if(valid_gender =="Male" || valid_gender=="Female" 
             || valid_gender =="Undecided" || valid_gender =="Other")  
         {
@@ -205,6 +228,7 @@ function submitRegistration() {
          {
             console.log("Disagreed");
          }
+         // i have made some fields optional, so i have made a simple or to express the optional nature. 
 
         if(valid_goodForm =="Yes"|| valid_goodForm =="No")
         {
@@ -228,7 +252,7 @@ function submitRegistration() {
 
        if(valid_form == true){
      
-            // call new  servlet here
+            // make sure it is true, and send it to the back end 
            
         console.log("form is valid")
 
@@ -264,6 +288,7 @@ function submitRegistration() {
 
         else
         {
+            // Declare form false and when style for errors is implemented make sure it shows up here.And is cleared before they re-attempt form. 
             valid_form == false;
      
             
@@ -271,6 +296,7 @@ function submitRegistration() {
 
 
 }
+// Button that the sunmitRegistration is attached to 
 
  var registration_magic = $('#form_submit');
 registration_magic.on("click",submitRegistration);
