@@ -466,7 +466,7 @@ unset($_SESSION['magic_form']);
 
 
 
-		<input type="submit"  name="submit_form"  value="Submit">
+		<input type="submit" id="form_submit"  name="submit_form"  value="Submit">
 </form>
 
 <?php include("../resources/magic_footer.php");?>

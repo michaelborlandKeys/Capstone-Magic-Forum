@@ -9,7 +9,7 @@ It will also, if i get it fully functioning with back-end, this will display mes
 function submitRegistration() {
 // Variables declared for getting the user information out of the form fields to validate and send over to the server-side, 
 //and into the database. 
-
+    var valid_ID = $('#id').val(); 
     var valid_First_name = $('#firstname').val();
     var valid_Last_name = $('#lastname').val();
     var valid_email = $('#email').val();
@@ -256,29 +256,19 @@ function submitRegistration() {
            
         console.log("form is valid")
 
-   
-        
-            $('#firstname').val();
-            $('#lastname').val();
-            $('#email').val();
-            $('#confirmemail').val(); 
-            $('#newpassword').val(); 
-            $('#confirmpassword').val(); 
-            $('#city').val(); 
-            $('#zipcode').val();
-            $('#countries').val();
-            $('#username').val(); 
-            $('#state').val();
-            $('#gender').val();
-            $('#acceptDecline').val();
-            $('#goodmagic_form').val();
-            $('#commentsorcomplaints').val(); 
-            $('#phonenumber').val();
-            $('#birthday').val(); 
 
-
-
-        $('#form_register').submit();
+       console.log("is form vaild")
+                var url = "./processing/registration_form_process.php";
+                var dataToServer = {id:valid_ID, firstName:valid_First_name,lastname:valid_Last_name,
+                birthday : valid_birthday , email: valid_email, confirmemail: confirm_email, 
+                newpassword:valid_password,confirmpassword:confirm_password,username:valid_Username,
+                city:valid_city,zipcode:valid_zipcode,phonenumber:valid_phone,
+                countries:valid_country,states:valid_state, sex:valid_gender,
+                termsofservice:valid_terms,yes:valid_goodForm,commentsorcomplaints:valid_comment
+                };
+            $.post(url, dataToServer, function (dataFromServer) {
+                console.log("Finished validating front end.");
+            });
 
 
                

@@ -465,27 +465,10 @@ if(empty($_REQUEST['yes'])) {
        // include ("../resources/db_setup.php");
 
 
-         /* if($error==FALSE) {
+          if($error==FALSE) {
      $connection_to_database = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
      
-         $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
-        $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
-        $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
-        $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
-        $email_safe = mysqli_escape_string($connection_to_database,$magic_form['email']);
-        $confirmemail_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmemail']);
-        $newpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['newpassword']);
-        $confirmpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmpassword']);
-        $username_safe = mysqli_escape_string($connection_to_database,$magic_form['username']);
-        $city_safe = mysqli_escape_string($connection_to_database,$magic_form['city']);
-        $zipcode_safe = mysqli_escape_string($connection_to_database,$magic_form['zipcode']);
-        $phonenumber_safe = mysqli_escape_string($connection_to_database,$magic_form['phonenumber']);
-        $countries_safe = mysqli_escape_string($connection_to_database,$magic_form['countries']);
-        $sex_safe = mysqli_escape_string($connection_to_database,$magic_form['sex']);
-        $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
-        $yes_safe = mysqli_escape_string($connection_to_database,$form['yes']);
-        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
-        $states_safe = mysqli_escape_string($connection_to_database,$magic_form['states'])
+       \
         if($id_safe==""){
 
 
@@ -504,11 +487,11 @@ if(empty($_REQUEST['yes'])) {
         agree='$termsofservice_safe',ecomplete='$yes_safe',comments='$commentsorcomplaints_safe' where id='$id_safe'"; 
 
 
-          } */
+          }
 
         /* Run the SQL statement */
-      /* mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
-        mysqli_close($connection_to_database);*/
+       sqlsrv_query($connection_to_database, $insert_query) or die("Insert query didn't excute!");
+        sqlsrv_close($connection_to_database);
 
     if($error == FALSE){
     
