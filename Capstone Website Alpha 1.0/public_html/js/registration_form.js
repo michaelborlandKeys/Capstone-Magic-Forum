@@ -258,7 +258,7 @@ function submitRegistration() {
 
 
        console.log("is form vaild")
-                var url = "./processing/registration_form_process.php";
+                var url = "registration_form_process.php";
                 var dataToServer = {id:valid_ID, firstName:valid_First_name,lastname:valid_Last_name,
                 birthday : valid_birthday , email: valid_email, confirmemail: confirm_email, 
                 newpassword:valid_password,confirmpassword:confirm_password,username:valid_Username,

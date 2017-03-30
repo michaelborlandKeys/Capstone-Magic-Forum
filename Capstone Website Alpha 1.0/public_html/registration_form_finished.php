@@ -14,17 +14,21 @@
 </head>
 <body>
 <?php include("../resources/navigation_menu.php");	?>
-<br />
-<br />
-<br />
+
 <h1>You Have Finished The Registration Process Valid Output Below</h1>
 
 <?php 
 
+if(isset($_SESSION['messages'])) {
+$messages=$_SESSION['messages']; 
+$magic_form=$_SESSION['magic_form']; 
+unset($_SESSION['messages']); 
+unset($_SESSION['magic_form']); 
+}	
 
 
 
-$magic_form=$_SESSION['magic_form'];
+
 echo "Your Name is:"; 
 echo $magic_form['firstname'];
 echo " ";

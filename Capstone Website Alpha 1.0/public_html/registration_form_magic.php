@@ -48,13 +48,13 @@ unset($_SESSION['magic_form']);
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form action="processing/registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" method="post">
+<form action="registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" method="post">
 		
  	<table id="registration_form">
 		 	<?php
 		 	if(isset($magic_form['id'])){
-		 	$id_safe=htmlentities($magic_form['id']); 
-		 		echo "<input  type='hidden' name='id' value='$id_safe'>";
+		 	$id=htmlentities($magic_form['id']); 
+		 		echo "<input  type='hidden' name='id' value='$id'>";
 
 
 		 	}
