@@ -30,27 +30,9 @@ it is on page one for now
 
     $error=FALSE;
     // undefined variables 
-    $firstname=""; 
-    $lastname=""; 
-    $birthday="";
-    $email="";
-    $confirmemail="";
-    $newpassword=""; 
-    $confirmpassword=""; 
-    $username="";
-    $city="";
-    $zipcode="";
-    $phonenumber="";
-    $countries="";    
-    $commentsorcomplaints=""; 
-    $states="";
-    $sex="";
- $termsofservice=""; 
-    $yes="";
-    $id=0; 
 
-   // $id=$_REQUEST['id']; 
-    /*$firstname=$_REQUEST['firstname'];
+
+    $firstname=$_REQUEST['firstname'];
     $lastname=$_REQUEST['lastname'];
     $birthday=$_REQUEST['birthday'];
     $email=$_REQUEST['email'];
@@ -68,7 +50,7 @@ it is on page one for now
     $yes=$_REQUEST['yes']; 
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
 
- */
+ 
 // seesions are not set for id yes sex, or termsofservice
  if(empty($_REQUEST['id'])) {
     $magic_form['id']="";
@@ -489,26 +471,74 @@ if(empty($_REQUEST['yes'])) {
           if($error==FALSE) {
 
  //$serverName="VM01301-SQL2012\MSSQLSERVER";
- $serverName="192.168.37.128";
- $connectionInfo=array(
-        "UID" => "keys",
-        "PWD" =>"hello.world",
-        "Database"=>"Capstone_test_DataBase",); 
- $conn=sqlsrv_connect($serverName,$connectionInfo); 
- $connection_to_database =sqlsrv_connect($serverName,$connectionInfo);
- if ($connection_to_database){
-    echo "connected!";
- }
+include("../resources/db_setup.php"); 
+
+  
+ $connection_to_database =mysql_connect($username,$password,$database,$serverName);
+
+
+         $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
+        $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
+        $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
+        $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
+        $email_safe = mysqli_escape_string($connection_to_database,$form['email']);
+        $confirmemail_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmemail']);
+        $newpassword_safe = mysqli_escape_string($connection_to_database,$form['newpassword']);
+        $confirmpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmpassword']);
+        $username_safe = mysqli_escape_string($connection_to_database,$magic_form['username']);
+        $city_safe = mysqli_escape_string($connection_to_database,$magic_form['city']);
+        $zipcode_safe = mysqli_escape_string($connection_to_database,$form['zipcode']);
+        $phonenumber_safe = mysqli_escape_string($connection_to_database,$magic_form['phonenumber']);
+        $countries_safe = mysqli_escape_string($connection_to_database,$magic_form['countries']);
+         $state_safe = mysqli_escape_string($connection_to_database,$magic_form['states']);
+        $sex_safe = mysqli_escape_string($connection_to_database,$magic_form['sex']);
+        $termsofservice_safe = mysqli_escape_string($connection_to_database,$magic_form['termsofservice']);
+        $yes_safe = mysqli_escape_string($connection_to_database,$magic_form['yes']);
+        $commentsorcomplaints_safe = mysqli_escape_string($connection_to_database,$magic_form['commentsorcomplaints']);
        
-        if($id==""){
+        if($id_safe==""){
 
-echo $id;
+
+
+        /* Construct the SQL statement */
+        $insert_query="INSERT INTO test_user (first,last,birthday,nemail,cemail,npassword,cpassword,username,
+        city,zipcode,phonenumber,country,state,sex,terms,ecomplete,comments) VALUES ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe','
+        $confirmemail_safe','$newpassword_safe',
+        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
+       
+        } else {
+
+
+        $insert_query="UPDATE test_user SET first='$firstname_safe',last='$lastname_safe',birthday='$birthday_safe',nemail='$email_safe',cemail='$confirmemail_safe',npassword='$newpassword_safe',cpassword='$confirmpassword_safe',
+        username='$username_safe',address1='$addressline1_safe',address2='$addressline2_safe',city='$city_safe',zipcode='$zipcode_safe',phonenumber='$phonenumber_safe',country='$countries_safe',sex='$sex_safe',recommend='$recommendedsite_safe',
+        agree='$termsofservice_safe',ecomplete='$yes_safe',comments='$commentsorcomplaints_safe' where id='$id_safe'"; 
+
+
+
+
+          } 
+
+    mysql_connect($connection_to_database, $insert_query) or die("Insert query didn't excute!");
+    mysql_close($connection_to_database);
+
+ 
+    header("Location: registration_form_finished.php"); 
+}else{      
+$_SESSION['messages']=$messages; 
+$_SESSION['magic_form']=$magic_form;
+
+header("Location: registration_form_magic.php");
+ }
+    ?>
+
+          <?php   
+     /*     // The attempt to connect via sql. 
           //$connection_to_database =sqlsrv_connect($serverName,$connectionInfo) or die("Cannot Connect to the User database!");
-        
-        $insert_query="INSERT INTO User_basic_info (User_First_Name,User_Last_Name,User_Birthday,User_New_Email,User_Confirm_Email,User_New_Pass,User_Confirm_Pass,Username_magic,
+    $insert_query="INSERT INTO User_basic_info (User_First_Name,User_Last_Name,User_Birthday,User_New_Email,User_Confirm_Email,User_New_Pass,User_Confirm_Pass,Username_magic,
         User_city,User_zip,User_Phone,User_Country,User_State,User_gender,User_terms,User_easy,User_comments) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-          $insert_query="SELECT * FROM User_basic_info"; 
-
+       
+  
+      
 
       $setParams = array(1,$firstname,2,$lastname,3,$birthday,4,$nemail,5,$cemail,
         6,$newpassword,7,$confirmpassword,8,$username,9,$city,10,$zipcode,
@@ -538,26 +568,11 @@ $stmt = sqlsrv_prepare( $conn, $insert_query, array(&$firstname,&$lastname,&$bir
                  $setParams = array($id,$firstname,$lastname,$birthday,$nemail,$cemail,
                 $npassword,$cpassword,$username,$city,$zipcode,$phonenumber,
                 $country,$state,$sex,$agree,$ecomplete,$comments);
-          }
+          }*/
 
         /* Run the SQL statement */
 
-     sqlsrv_query($conn, $insert_query,$setParams) or die("Insert query didn't excute!");
-       sqlsrv_close($connection_to_database);
-
-    if($error == FALSE){
-    
- 
-    header("Location: registration_form_finished.php"); 
-
- }else{      
-$_SESSION['messages']=$messages; 
-$_SESSION['magic_form']=$magic_form;
-
-header("Location: registration_form_magic.php");
- }
-}
-    ?>
+     ?>
 
 </body>
 </html>

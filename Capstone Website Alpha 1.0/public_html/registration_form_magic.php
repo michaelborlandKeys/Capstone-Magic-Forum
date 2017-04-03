@@ -53,8 +53,8 @@ unset($_SESSION['magic_form']);
  	<table id="registration_form">
 		 	<?php
 		 	if(isset($magic_form['id'])){
-		 	$id=htmlentities($magic_form['id']); 
-		 		echo "<input  type='hidden' name='id' value='$id'>";
+		 	$id_safe=htmlentities($magic_form['id']); 
+		 		echo "<input  type='hidden' name='id' value='$id_safe'>";
 
 
 		 	}
