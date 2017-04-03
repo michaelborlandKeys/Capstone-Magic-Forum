@@ -18,7 +18,7 @@ it is on page one for now
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Test Print magic_form to screen</title>
+  <title>Test Print magic_magic_form to screen</title>
 
 </head>
  
@@ -29,8 +29,28 @@ it is on page one for now
  session_start(); 
 
     $error=FALSE;
-    $id=$_REQUEST['id']; 
-    $firstname=$_REQUEST['firstname'];
+    // undefined variables 
+    $firstname=""; 
+    $lastname=""; 
+    $birthday="";
+    $email="";
+    $confirmemail="";
+    $newpassword=""; 
+    $confirmpassword=""; 
+    $username="";
+    $city="";
+    $zipcode="";
+    $phonenumber="";
+    $countries="";    
+    $commentsorcomplaints=""; 
+    $states="";
+    $sex="";
+ $termsofservice=""; 
+    $yes="";
+    $id=0; 
+
+   // $id=$_REQUEST['id']; 
+    /*$firstname=$_REQUEST['firstname'];
     $lastname=$_REQUEST['lastname'];
     $birthday=$_REQUEST['birthday'];
     $email=$_REQUEST['email'];
@@ -38,6 +58,7 @@ it is on page one for now
     $newpassword=$_REQUEST['newpassword']; 
     $confirmpassword=$_REQUEST['confirmpassword']; 
     $username=$_REQUEST['username'];
+
     $city=$_REQUEST['city'];
     $zipcode=$_REQUEST['zipcode'];
     $phonenumber=$_REQUEST['phonenumber'];
@@ -46,20 +67,20 @@ it is on page one for now
     $termsofservice=$_REQUEST['termsofservice'];
     $yes=$_REQUEST['yes']; 
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
-    $states=$_REQUEST['states'];
 
+ */
 // seesions are not set for id yes sex, or termsofservice
  if(empty($_REQUEST['id'])) {
-    $magic_magic_form['id']="";
+    $magic_form['id']="";
 } else {
     
-     $magic_magic_form['id'] = $_REQUEST['id'];
+     $magic_form['id'] = $_REQUEST['id'];
    
-    if (!preg_match("/^[0-9]{1,25}$/", $magic_magic_form['id'])) {
+    if (!preg_match("/^[0-9]{1,25}$/", $_REQUEST['id'])) {
         
         $error=TRUE;
      
-        $messages['id']="Error, can't Alter that record.</p>";
+        $messages['id']="Error, can't Alter that record.";
     }
 }   
 
@@ -68,11 +89,11 @@ if(empty($_REQUEST['firstname'])) {
     
     $error=TRUE;
     
-    $messages['firstname']="Error,  First Name can't be empty ".$_REQUEST['firstname'];
+    $messages['firstname']="Error,  First Name can't be empty "; 
 } else {
     
     $firstname = $_REQUEST['firstname'];
-    $magic_magic_form['firstname']=$firstname; 
+    $magic_form['firstname']=$firstname; 
 
     if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $firstname)) {
     
@@ -97,7 +118,7 @@ if(empty($_REQUEST['lastname'])) {
 } else {
    
     $lastname = $_REQUEST['lastname'];
-    $magic_magic_form['lastname']=$lastname; 
+    $magic_form['lastname']=$lastname; 
 
     if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $lastname)) {
        
@@ -120,7 +141,7 @@ if(empty($_REQUEST['birthday'])) {
 } else {
  
     $birthday = $_REQUEST['birthday'];
-    $magic_magic_form['birthday']=$birthday; 
+    $magic_form['birthday']=$birthday; 
     
     if (!preg_match("/^\d{4}\-\d{2}\-\d{2}$/", $birthday)) {
      
@@ -145,7 +166,7 @@ if(empty($_REQUEST['email'])) {
 } else {
  
     $email = $_REQUEST['email'];
-      $magic_magic_form['email']=$email; 
+      $magic_form['email']=$email; 
     
 
  
@@ -170,7 +191,7 @@ if(empty($_REQUEST['email'])) {
 } else {
    
     $confirmemail = $_REQUEST['confirmemail'];
-    $magic_magic_form['confirmemail']=$confirmemail;
+    $magic_form['confirmemail']=$confirmemail;
 
    
     if ($confirmemail!=$email) {
@@ -198,7 +219,7 @@ if(empty($_REQUEST['newpassword'])) {
 } else {
    
     $newpassword = $_REQUEST['newpassword'];
-    $magic_magic_form['newpassword']=$newpassword; 
+    $magic_form['newpassword']=$newpassword; 
    
     if (!preg_match("/^([a-zA-Z0-9_\.-]{8,16})$/", $newpassword)) {
       
@@ -221,7 +242,7 @@ if(empty($_REQUEST['confirmpassword'])) {
 } else {
     
     $confirmpassword = $_REQUEST['confirmpassword'];
-    $magic_magic_form['confirmpassword']=$confirmpassword; 
+    $magic_form['confirmpassword']=$confirmpassword; 
       
 
      if($confirmpassword!=$newpassword){
@@ -251,7 +272,7 @@ if(empty($_REQUEST['username'])) {
 } else {
     
     $username = $_REQUEST['username'];
-    $magic_magic_form['username']=$username;
+    $magic_form['username']=$username;
     
   if (!preg_match("/^([a-zA-Z0-9_]{4,12})$/", $username)){
      
@@ -276,7 +297,7 @@ if(empty($_REQUEST['username'])) {
 } else {
     
     $city= $_REQUEST['city'];
-    $magic_magic_form['city']=$city; 
+    $magic_form['city']=$city; 
 
     if (!preg_match("/^[A-Za-z\s-']{2,35}$/",$city )) {
     
@@ -300,7 +321,7 @@ if(empty($_REQUEST['username'])) {
 } else {
     
     $zipcode= $_REQUEST['zipcode'];
-    $magic_magic_form['zipcode']=$zipcode; 
+    $magic_form['zipcode']=$zipcode; 
 
     if (!preg_match("/^\d{5}$/",$zipcode )) {
     
@@ -324,7 +345,7 @@ if(empty($_REQUEST['username'])) {
 } else {
     
     $phonenumber= $_REQUEST['phonenumber'];
-    $magic_magic_form['phonenumber']=$phonenumber; 
+    $magic_form['phonenumber']=$phonenumber; 
 
     if (!preg_match("/^\d{3}\-\d{3}\-\d{4}$/",$phonenumber )) {
     
@@ -347,7 +368,7 @@ if(empty($_REQUEST['countries'])) {
 } else {
     
     $countries= $_REQUEST['countries'];
-    $magic_magic_form['countries']=$countries; 
+    $magic_form['countries']=$countries; 
 
     if (!preg_match("/^[A-Za-z\s&-']{2,35}$/",$countries )) {
     
@@ -367,7 +388,7 @@ if(empty($_REQUEST['states'])) {
 } else {
     
     $states= $_REQUEST['states'];
-    $magic_magic_form['states']=$states; 
+    $magic_form['states']=$states; 
 
     if (!preg_match("/^[A-Za-z\s-']{2,35}$/",$states )) {
     
@@ -389,7 +410,7 @@ if(empty($_REQUEST['sex'])) {
 } else {
     
     $sex= $_REQUEST['sex'];
-    $magic_magic_form['sex']=$sex; 
+    $magic_form['sex']=$sex; 
 
     if (!($sex=="Male" or $sex=="Female" or $sex=="Undecided" or $sex=="Other") ) {
     
@@ -412,7 +433,7 @@ if(empty($_REQUEST['termsofservice'])) {
 }else {
     
     $termsofservice= $_REQUEST['termsofservice'];
-    $magic_magic_form['termsofservice']=$termsofservice;
+    $magic_form['termsofservice']=$termsofservice;
 
     if(!($termsofservice=="I Agree")){
 
@@ -434,7 +455,7 @@ if(empty($_REQUEST['yes'])) {
 }else {
     
     $yes= $_REQUEST['yes'];
-    $magic_magic_form['yes']=$yes; 
+    $magic_form['yes']=$yes; 
 
     if($yes=="Yes"  or
      $yes=="No"){
@@ -443,16 +464,17 @@ if(empty($_REQUEST['yes'])) {
                 $_SESSION['yes']=$yes; 
             }
         }
-
-     $commentsorcomplaints = $_REQUEST['commentsorcomplaints'];
-     $magic_magic_form['commentsorcomplaints']=$commentsorcomplaints; 
+   
+     $magic_form['commentsorcomplaints']=$commentsorcomplaints; 
     if (!preg_match("/^.{0,255}$/", $commentsorcomplaints)) {
         
         $error=TRUE;
        
         $messages['commentsorcomplaints']="Error,You exceeded character amount."; 
 
-    } else{
+    } else{     
+
+        
         $_SESSION['commentsorcomplaints']=$commentsorcomplaints; 
 
     }
@@ -464,50 +486,75 @@ if(empty($_REQUEST['yes'])) {
       /* Set up the database connection */
  
 
-
           if($error==FALSE) {
 
-    include("db_setup.php");
-
-  
+ //$serverName="VM01301-SQL2012\MSSQLSERVER";
+ $serverName="192.168.37.128";
+ $connectionInfo=array(
+        "UID" => "keys",
+        "PWD" =>"hello.world",
+        "Database"=>"Capstone_test_DataBase",); 
+ $conn=sqlsrv_connect($serverName,$connectionInfo); 
+ $connection_to_database =sqlsrv_connect($serverName,$connectionInfo);
+ if ($connection_to_database){
+    echo "connected!";
+ }
        
         if($id==""){
 
-
-     
+echo $id;
+          //$connection_to_database =sqlsrv_connect($serverName,$connectionInfo) or die("Cannot Connect to the User database!");
         
-        $insert_query="INSERT INTO user_insert (first,last,birthday,nemail,cemail,npassword,cpassword,username,
-        city,zipcode,phonenumber,country,state,sex,agree,ecomplete,comments) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $insert_query="INSERT INTO User_basic_info (User_First_Name,User_Last_Name,User_Birthday,User_New_Email,User_Confirm_Email,User_New_Pass,User_Confirm_Pass,Username_magic,
+        User_city,User_zip,User_Phone,User_Country,User_State,User_gender,User_terms,User_easy,User_comments) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+          $insert_query="SELECT * FROM User_basic_info"; 
 
-        $setParams = array(1,$firstname,2,$lastname,3,$birthday,4,$nemail,5,$cemail,6,$npassword,7,$cpassword,8,$username,9,$city,10,$zipcode,11,$phonenumber,12,$country,13,$state,14,$sex,15,$agree,16,$ecomplete,17,$comments);
-       
+
+      $setParams = array(1,$firstname,2,$lastname,3,$birthday,4,$nemail,5,$cemail,
+        6,$newpassword,7,$confirmpassword,8,$username,9,$city,10,$zipcode,
+        11,$phonenumber,12,$country,13,$state,14,$sex,15,$agree,16,$ecomplete,17,$comments);
+
+
+$stmt = sqlsrv_prepare( $conn, $insert_query, array(&$firstname,&$lastname,&$birthday,&$nemail,&$cemail,
+    &$newpassword,&$confirmpassword,&$username,&$city,&$zipcode,&$phonenumber,
+                &$country,&$state,&$sex,&$agree,&$ecomplete,&$comments));
+
+
+
+
+         
         } else {
 
 
-        $insert_query="UPDATE user_insert SET first=(?),last=(?),birthday=(?),nemail=(?),cemail=(?),npassword=(?),cpassword=(?),
-        username=(?),city=(?),zipcode=(?),phonenumber=(?),country=(?),state=(?),sex=(?),recommend=(?),
-        agree=(?),ecomplete=(?),comments=(?) WHERE id=(?)"; 
+        $insert_query="UPDATE User_basic_info SET Username_ID=(?), User_First_Name=(?),
+        User_Last_Name=(?),User_Birthday=(?),User_New_Email=(?),
+        User_Confirm_Email=(?),User_New_Pass=(?),User_Confirm_Pass=(?),
+        Username_magic=(?),User_city=(?),User_zip=(?),User_Phone=(?),User_Country=(?),
+        User_State=(?),User_gender=(?),User_terms=(?),User_easy=(?),User_comments=(?)"; 
 
-             $setParams = array($firstname,$lastname,$birthday,$nemail,$cemail,
+            
+
+
+                 $setParams = array($id,$firstname,$lastname,$birthday,$nemail,$cemail,
                 $npassword,$cpassword,$username,$city,$zipcode,$phonenumber,
                 $country,$state,$sex,$agree,$ecomplete,$comments);
-
           }
 
         /* Run the SQL statement */
-       sqlsrv_query($conn, $insert_query,$setParams) or die("Insert query didn't excute!");
-        sqlsrv_close($connection_to_database);
+
+     sqlsrv_query($conn, $insert_query,$setParams) or die("Insert query didn't excute!");
+       sqlsrv_close($connection_to_database);
 
     if($error == FALSE){
     
  
-    header("Location: registration_magic_form_finished.php"); 
+    header("Location: registration_form_finished.php"); 
 
  }else{      
 $_SESSION['messages']=$messages; 
-$_SESSION['magic_magic_form']=$magic_magic_form;
+$_SESSION['magic_form']=$magic_form;
 
-header("Location: registration_magic_form_magic.php");
+header("Location: registration_form_magic.php");
  }
 }
     ?>
