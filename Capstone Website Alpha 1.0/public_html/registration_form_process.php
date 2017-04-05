@@ -40,7 +40,6 @@ it is on page one for now
     $newpassword=$_REQUEST['newpassword']; 
     $confirmpassword=$_REQUEST['confirmpassword']; 
     $username=$_REQUEST['username'];
-
     $city=$_REQUEST['city'];
     $zipcode=$_REQUEST['zipcode'];
     $phonenumber=$_REQUEST['phonenumber'];

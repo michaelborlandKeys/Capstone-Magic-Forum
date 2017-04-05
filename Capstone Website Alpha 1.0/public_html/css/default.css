@@ -1,3 +1,4 @@
+
 body
 {
 	background-color: brown; 
@@ -27,19 +28,65 @@ textarea
 	color:black
 
 }
-
 #button_nav_header
 {
 	position:absolute;
 	top: 0px;
-	right: 0px; 
-	font-size: 1em;
+	right: 15px; 
+	font-size: 1.5em;
 	text-decoration: underline;
 	font-weight: bold;
 
 
 
 }
+
+
+#second_button_menu
+{
+	position:absolute;
+	top: 70px;
+	right: 0px; 
+	font-size: 1.25em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#third_button_menu
+{
+	position:absolute;
+	top: 185px;
+	right: 0px; 
+	font-size: 1.25em;
+	text-decoration: underline;
+	font-weight: bold;
+
+
+}
+
+#fourth_button_menu
+{
+		position:absolute;
+	top: 295px;
+	right: 0px; 
+	font-size: 1.25em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#projectResources
+{
+	position:relative;
+	top: 250px;
+	right: 0px; 
+	font-size: 1em;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+}
+
+
+
 
  .btn-group a
  {
@@ -49,6 +96,9 @@ textarea
 	
 
  }
+
+
+
 
 .below_menu_container
 {

@@ -3,22 +3,22 @@
 		<a href="log_in_form_magic.php" class="btn btn-lg" id="log_in" >Log In</a>
 		<a href="registration_form_magic.php" class="btn btn-lg" id="register" >Register</a>
 </div>
-	<div class="docLinks btn-group below_menu_container">
-		<h2>Documentation Separated by Language</h2>
+	<div class="docLinks btn-group below_menu_container" id="second_button_menu">
+		<p>Documentation Separated by Language</p>
 		<!--The First link is to test placing-->
 		<a href="documentation_home.php" class=" btn btn-lg" id="Docs1">Documentation Home</a>
-		<h3>Project Cited Resources</h3>
+		<h3 id="projectResources">Project Cited Resources</h3>
 		
 	</div>
 
-		<div class="docLinks btn-group below_menu_container">
-			<h3>User Guide and Support Links</h3>
-			<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
+		<div class="docLinks btn-group below_menu_container" id="third_button_menu">
+			<p>User Guide and Support Links</p>
+			<a href="user_guide.php" class=" btn btn-md" id="Docs7"> Site User Guide</a>
 		
 		</div>
 
-				<div class="docLinks btn-group below_menu_container">
-						<h4>Magic Forum Online's Magic:The Gathering Resources Links</h4>
+				<div class="docLinks btn-group below_menu_container" id="fourth_button_menu">
+						<p id="">Magic Forum Online's Magic:The Gathering Resources Links</p>
 				</div>
 
 
@@ -45,11 +45,10 @@
 						<a href="magic_format_home.php" class="dropdown-toggle" data-toggle="dropdown">
 						<div class="caret">
 						</div></a>
-						<ul class="dropdown-menu">
+					<ul class="dropdown-menu">
 						<li class="dropdown-header">Format Discussions</li>
 						<li><a href="standard_forum.php">Standard Forum</a></li>
-						<li><a href="modern_forum.php">Modern Forum</a></li>
-						
+						<li><a href="modern_forum.php">Modern Forum</a></li>	
 						<li><a href="legacy_forum.php">Legacy Forum</a></li>	
 					    <li><a href="commander_forum.php">Commander Forum</a></li>	
 					</ul>
