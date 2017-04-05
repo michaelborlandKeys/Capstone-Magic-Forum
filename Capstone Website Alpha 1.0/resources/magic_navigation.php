@@ -18,7 +18,7 @@
 		</div>
 
 				<div class="docLinks btn-group below_menu_container" id="fourth_button_menu">
-						<p id="">Magic Forum Online's Magic:The Gathering Resources Links</p>
+						<p>Magic Forum Online's Magic:The Gathering Resources Links</p>
 				</div>
 
 

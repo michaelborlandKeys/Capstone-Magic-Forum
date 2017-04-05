@@ -276,9 +276,19 @@ ul.dropdown-menu
 	left: 25px; 
 }
 
+#userSupportGroup
+{
+	position:relative;
+	top: 250px;
+	left:-740px; 
+	font-size: 1em;
+	font-weight: bold;
+
+}
+
 .footer_style footer
 {
-	position: relative;
+	position: absolute;
 	bottom: 0px; 
 	left: 0px;
 	min-width: 100%; 

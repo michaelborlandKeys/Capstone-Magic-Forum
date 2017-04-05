@@ -39,6 +39,7 @@
 	            <td class="color_1"><a href="magic_online_forum.php">Magic Online Forum</a></td>
 	            <td class="color_2">For the Magic Player that sits behind a screen, instead of a table </td>
 	        </tr>
+	
 	        </tbody>
 	        </table>
 <div  class="footer_style" id="footer_position" >
