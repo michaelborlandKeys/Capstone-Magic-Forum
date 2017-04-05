@@ -1,9 +1,7 @@
-
 body
 {
 	background-color: brown; 
 	color:white;
-
 }
 
 fieldset
@@ -11,13 +9,10 @@ fieldset
 	position: relative;
 	left: 0px; 
 	color: black; 
-
-
 }
 select
 {
 	color: black; 
-
 }
 input
 {
@@ -26,49 +21,45 @@ input
 textarea
 {
 	color:black
-
 }
 #button_nav_header
 {
 	position:absolute;
 	top: 0px;
-	right: 15px; 
+	right: 0px; 
 	font-size: 1.5em;
 	text-decoration: underline;
 	font-weight: bold;
-
-
-
 }
 
 
 #second_button_menu
 {
 	position:absolute;
-	top: 70px;
-	right: 0px; 
-	font-size: 1.25em;
+	top: 150px;
+	right: 0px;
+	padding-right: 0px;
+	font-size: 1.5em;
 	text-decoration: underline;
 	font-weight: bold;
 }
+
 #third_button_menu
 {
 	position:absolute;
-	top: 185px;
+	top: 285px;
 	right: 0px; 
 	font-size: 1.25em;
 	text-decoration: underline;
 	font-weight: bold;
-
-
 }
 
 #fourth_button_menu
 {
-		position:absolute;
-	top: 295px;
+	position:absolute;
+	top: 405px;
 	right: 0px; 
-	font-size: 1.25em;
+	font-size: 1em;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -76,28 +67,19 @@ textarea
 #projectResources
 {
 	position:relative;
-	top: 250px;
+	top: 350px;
 	right: 0px; 
 	font-size: 1em;
 	text-decoration: underline;
 	font-weight: bold;
 }
 
-}
-
-
-
-
  .btn-group a
  {
  	position:absolute;
 	top: 0px;
 	left:5px; 
-	
-
  }
-
-
 
 
 .below_menu_container
@@ -121,14 +103,12 @@ textarea
 {
 	border-style: none;
 	color: black;
-
 }
 
 
 .color_1 
 {
 	background-color: black; 
-
 
 }
 .color_1 a
@@ -177,17 +157,13 @@ textarea
 {
 	text-decoration: none;
 	color: white; 
-
 	padding: 3px 3px 3px 3px ;
-
 }
 .magic_navigation a:hover
 {
 	color: orange;
 	
 }
-
-
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
 {
@@ -197,7 +173,6 @@ textarea
 {
 	background-color: brown; 
 }
-
 
   ul.dropdown-menu li>a
 {
@@ -212,9 +187,7 @@ textarea
 .dropdown-menu .divider
 {
 
-background-color: transparent;	 
-
-
+	background-color: transparent;	 
 
 }
  ul.dropdown-menu
@@ -237,12 +210,12 @@ ul.dropdown-menu
 }
 
 
-
 .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled
 {
 	background-color: brown;
 	border:transparent;
 }
+
 .list-group-item.disabled, .list-group-item.disabled:focus, .list-group-item.disabled:hover
 {
 	background-color: brown;
@@ -250,8 +223,8 @@ ul.dropdown-menu
 
 }
 
-
 /* defualt css to the buttons that won't change.*/
+
 .btn
 {
 	position: relative;
@@ -259,6 +232,7 @@ ul.dropdown-menu
 	left: 55px; 
 
 }
+
 .btn 
 {
 	color: black; 
@@ -272,23 +246,20 @@ ul.dropdown-menu
 }
 #log_in:hover
 {
-color: red; 
+	color: red; 
 	background-color:white; 	
-
 }
 
 #register:hover
 {
 	color: black; 
 	background-color:white; 
-
 }
 
 #register
 {
 	color: white; 
 	background-color:darkgreen; 
-
 
 }
 
@@ -305,7 +276,6 @@ color: red;
 	left: 25px; 
 }
 
-
 .footer_style footer
 {
 	position: relative;
@@ -315,11 +285,9 @@ color: red;
 	height: 100px;
     padding:25px;
     padding-top: 20px;
-
 }
+
 .footer_style h6
 {
 	text-decoration: underline;
 }
-
-
