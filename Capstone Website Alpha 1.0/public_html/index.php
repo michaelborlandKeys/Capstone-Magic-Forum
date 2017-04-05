@@ -32,6 +32,10 @@
 	            <td class="color_2"> Where anyone goes to discuss whats going on in competitive Magic</td>
 	        </tr>
 	        <tr>
+	        	<td><sub><a href="standard_forum.php">Standard</a></sub></td>
+	        	<td></td>
+	        </tr>
+	        <tr>
 	            <td class="color_1"><a href="fnm_discussion_forum.php">FNM Forum</a></td>
 	            <td class="color_2">Where people go to discuss whats going on at their Friday Night Magic events.</td>
 	        </tr>
