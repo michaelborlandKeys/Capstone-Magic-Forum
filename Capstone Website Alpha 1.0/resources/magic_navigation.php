@@ -3,13 +3,31 @@
 		<a href="log_in_form_magic.php" class="btn btn-lg" id="log_in" >Log In</a>
 		<a href="registration_form_magic.php" class="btn btn-lg" id="register" >Register</a>
 </div>
+	<div class="docLinks btn-group below_menu_container">
+		<h2>Documentation Separated by Language</h2>
+		<!--The First link is to test placing-->
+		<a href="documentation_home.php" class=" btn btn-lg" id="Docs1">Documentation Home</a>
+		<h3>Project Cited Resources</h3>
+		
+	</div>
+
+		<div class="docLinks btn-group below_menu_container">
+			<h3>User Guide and Support Links</h3>
+			<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
+		
+		</div>
+
+				<div class="docLinks btn-group below_menu_container">
+						<h4>Magic Forum Online's Magic:The Gathering Resources Links</h4>
+				</div>
+
+
+
 		 	<div class="container">
 	<div class="below_menu_container">
 		<div class="nav">
 		 	<nav class="magic_navigation">
-		 	
 			 <ul>
-
 					<li>
 						<a href="index.php"> Magic-Forum Index</a>
 					</li>
