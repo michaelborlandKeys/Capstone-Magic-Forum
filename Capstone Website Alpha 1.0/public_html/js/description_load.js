@@ -37,7 +37,7 @@ description_Button.on("click", description);
 function description_V_2(event)
 {
 	var appendString_V_2 = "Welcome to the discussion board for Pre-Pro Tour Qualifiers,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+	"New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
 	if($("#PPTQ_description").is(":hidden"))  {
  	 $("#PPTQ_description").show();  
  	 	$("#PPTQ_description").append("<p>"+appendString_V_2+"</p>");	
@@ -58,7 +58,7 @@ description_Button_V_2.on("click",description_V_2);
 function description_V_3(event)
 {
 	var appendString_V_3 = "Welcome to the discussion board for  Magic Tournament's home page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+	"New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
 	if($("#TH_description").is(":hidden"))  {
  	 $("#TH_description").show();  
  	 	$("#TH_description").append("<p>"+appendString_V_3+"</p>");	
@@ -78,7 +78,7 @@ description_Button_V_3.on("click",description_V_3);
 function description_V_4(event)
 {
 	var appendString_V_4 = "Welcome to the discussion board for Regional Pro-Tour Qualifier page,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-	"New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+	"New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
 	if($("#RPTQ_description").is(":hidden"))  {
  	 $("#RPTQ_description").show();  
  	 	$("#RPTQ_description").append("<p>"+appendString_V_4+"</p>");	
@@ -100,7 +100,7 @@ description_Button_V_4.on("click",description_V_4);
 function description_V_5(event)
 {
   var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  "New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
   if($("#FNM_description").is(":hidden"))  {
    $("#FNM_description").show();  
     $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
@@ -121,7 +121,7 @@ description_Button_V_5.on("click",description_V_5);
 function description_V_6(event)
 {
   var appendString_V_6 = "Welcome to the discussion board for The Commander Format,come here to discuss what's going on in the Commander world, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  "New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
   if($("#commander_description").is(":hidden"))  {
    $("#commander_description").show();  
     $("#commander_description").append("<p>"+appendString_V_6+"</p>"); 
@@ -144,16 +144,16 @@ description_Button_V_6.on("click",description_V_6);
 function description_V_7(event)
 {
   var appendString_V_7 = "Welcome to the discussion board for The Magic Pro-Tour,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
-  if($("#FNM_description").is(":hidden"))  {
-   $("#FNM_description").show();  
-    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+  "New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#PT_description").is(":hidden"))  {
+   $("#PT_description").show();  
+    $("#PT_description").append("<p>"+appendString_V_7+"</p>"); 
 }
   
   else {
-  ($("#FNM_description").is(":visible")) 
-     $("#FNM_description").hide();  
-       $("#FNM_description").empty(); 
+  ($("#PT_description").is(":visible")) 
+     $("#PT_description").hide();  
+       $("#PT_description").empty(); 
         
 }
 
@@ -163,17 +163,17 @@ description_Button_V_7.on("click",description_V_7);
 
 function description_V_8(event)
 {
-  var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
-  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
-  if($("#FNM_description").is(":hidden"))  {
-   $("#FNM_description").show();  
-    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+  var appendString_V_8 = "Welcome to the discussion board for the Standard format,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidelines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#standard_description").is(":hidden"))  {
+   $("#standard_description").show();  
+    $("#standard_description").append("<p>"+appendString_V_8+"</p>"); 
 }
   
   else {
-  ($("#FNM_description").is(":visible")) 
-     $("#FNM_description").hide();  
-       $("#FNM_description").empty(); 
+  ($("#standard_description").is(":visible")) 
+     $("#standard_description").hide();  
+       $("#standard_description").empty(); 
         
 }
 
@@ -185,17 +185,17 @@ description_Button_V_8.on("click",description_V_8);
 
 function description_V_9(event)
 {
-  var appendString_V_5 = "Welcome to the discussion board for Friday Night Magic,come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  var appendString_V_9 = "Welcome to the discussion board for Modern magic players, to come here to discuss what's  going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
   "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
-  if($("#FNM_description").is(":hidden"))  {
-   $("#FNM_description").show();  
-    $("#FNM_description").append("<p>"+appendString_V_5+"</p>"); 
+  if($("#modern_description").is(":hidden"))  {
+   $("#modern_description").show();  
+    $("#modern_description").append("<p>"+appendString_V_9+"</p>"); 
 }
   
   else {
-  ($("#FNM_description").is(":visible")) 
-     $("#FNM_description").hide();  
-       $("#FNM_description").empty(); 
+  ($("#modern_description").is(":visible")) 
+     $("#modern_description").hide();  
+       $("#modern_description").empty(); 
         
 }
 
@@ -203,6 +203,48 @@ function description_V_9(event)
 
 var description_Button_V_9 = $('#description_Button_V_9');
 description_Button_V_9.on("click",description_V_9);
+
+function description_V_10(event)
+{
+  var appendString_V_10 = "Welcome to the discussion board for Magic:The Gathering Online players, to come here to discuss what's going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#MTGO_description").is(":hidden"))  {
+   $("#MTGO_description").show();  
+    $("#MTGO_description").append("<p>"+appendString_V_10+"</p>"); 
+}
+  
+  else {
+  ($("#MTGO_description").is(":visible")) 
+     $("#MTGO_description").hide();  
+       $("#MTGO_description").empty(); 
+        
+}
+
+}
+
+var description_Button_V_10 = $('#description_Button_V_10');
+description_Button_V_10.on("click",description_V_10);
+
+function description_V_11(event)
+{
+  var appendString_V_11 = "Welcome to the discussion board for Legacy format magic players to come here to discuss what's going on, talk with friends in an open forum setting. This sites goal is connect magic players, and build a geniune community,"+
+  "New Players welcome on all pages, site moderation guidlines to be posted later. I want this to be a place where people can openly and constructively discuss all popular formats. giving players a place to come for advice on deck construction.";
+  if($("#legacy_description").is(":hidden"))  {
+   $("#legacy_description").show();  
+    $("#legacy_description").append("<p>"+appendString_V_11+"</p>"); 
+}
+  
+  else {
+  ($("#legacy_description").is(":visible")) 
+     $("#legacy_description").hide();  
+       $("#legacy_description").empty(); 
+        
+}
+
+}
+
+var description_Button_V_11 = $('#description_Button_V_11');
+description_Button_V_11.on("click",description_V_11);
 
 
 

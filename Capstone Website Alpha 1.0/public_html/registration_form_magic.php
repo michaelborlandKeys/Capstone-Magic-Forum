@@ -118,7 +118,7 @@ unset($_SESSION['magic_form']);
 				<td><label for="confirmpassword"> &ast;Confirm Password: </label></td>
 				</tr>
 				<tr>
-				<td><input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" value="<?php if( isset($magic_form['username'])){echo htmlentities($magic_form['username']);
+				<td><input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" value="<?php if( isset($magic_form['confirmpassword'])){echo htmlentities($magic_form['confirmpassword']);
 
 }?>"  /> </td>
 				</tr>
@@ -160,7 +160,7 @@ unset($_SESSION['magic_form']);
 			<tr><td><label for="countries">Country:</label></td></tr>	      
 			<tr><td><select id="countries" name="countries" >
 			<!--  the List of  countries was found at  http://www.state.gov/misc/list/-->
-					<option label="" value=""></option>
+		
 					<option label= "Afghanistan" value="Afghanistan"></option>
 					<option  label= "Albania" value="Albania"> </option>
 					<option  label= "Algeria"  value="Algeria"></option>
@@ -363,7 +363,7 @@ unset($_SESSION['magic_form']);
 			<tr><td><label for="states">State:</label></td></tr>
 			<tr>
 			<td><select id="states" name="states">
-					<option label="" value=""></option>
+			
 					<option label= "Alabama" value="Alabama"></option>
 					<option  label= "Alaska" value="Alaska "> </option>
 					<option  label= "Arizona"  value="Arizona"></option>

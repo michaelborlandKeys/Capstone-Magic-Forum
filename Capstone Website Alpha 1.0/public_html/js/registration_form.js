@@ -54,17 +54,17 @@ function submitRegistration() {
     Valid, or invalid data in each input field.  */
     //the if is using the test method on the data the user has enter, and using the regular expression to test with.
     // This is the same across the majority of the program see comments below for changes in the logic structure.
-
+         valid_form=true;
         if(regExpression_First_Name.test(valid_First_name))
         {
-            valid_form=true;
+           
             console.log("Valid First Name");
 
         }
         else
         {
 
-            valid_form = false; 
+           
             console.log("Invalid First Name");
 
 
@@ -194,6 +194,7 @@ function submitRegistration() {
         else
         {
             console.log("Invalid Country");
+
         }
         if(regexpression_States.test(valid_state))
         {
@@ -202,6 +203,7 @@ function submitRegistration() {
         else
         {
             console.log("Invalid State");
+           
         }
 
 // This validation check is different because it is checking for gender in a radio button form field, 
@@ -227,6 +229,7 @@ function submitRegistration() {
          else
          {
             console.log("Disagreed");
+            valid_form=false; 
          }
          // i have made some fields optional, so i have made a simple or to express the optional nature. 
 
@@ -280,6 +283,10 @@ function submitRegistration() {
         {
             // Declare form false and when style for errors is implemented make sure it shows up here.And is cleared before they re-attempt form. 
             valid_form == false;
+                  valid_country=$('#countries').val(valid_country);
+                   valid_state=$('#states').val(valid_state); 
+
+
      
             
        }
