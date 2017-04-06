@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php include("../resources/magic_navigation.php");?>
-<h1>HTML Documentation Page</h1>
+<h1>PHP Documentation Page</h1>
 
 
 

@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php include("../resources/magic_navigation.php");?>
-<h1> Welcome to Magicforumonline.com Documentation</h1>
+<h1>Terms of Service</h1>
 
 
 

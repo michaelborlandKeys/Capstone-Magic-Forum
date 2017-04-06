@@ -469,7 +469,7 @@ unset($_SESSION['magic_form']);
 		<input type="submit" id="form_submit"  name="submit_form"  value="Submit">
 </form>
 
-<?php include("../resources/magic_footer.php");?>
+
 <?php include("../resources/load_scripts.php");?>
 
 	</body>

@@ -4,24 +4,9 @@ body
 	color:white;
 }
 
-fieldset
-{
-	position: relative;
-	left: 0px; 
-	color: black; 
-}
-select
-{
-	color: black; 
-}
-input
-{
-	color: black;
-}
-textarea
-{
-	color:black
-}
+/*
+More Navigation Style changes 
+ */
 #button_nav_header
 {
 	position:absolute;
@@ -80,7 +65,9 @@ textarea
 	top: 0px;
 	left:5px; 
  }
-
+/*
+End of more navigation changes.
+ */
 
 .below_menu_container
 {
@@ -104,8 +91,37 @@ textarea
 	border-style: none;
 	color: black;
 }
+fieldset
+{
+	position: relative;
+	left: 0px; 
+	color: black; 
+	font-weight:bold;
+}
+select
+{
+	color: black; 
+}
+input
+{
+	color: black;
+}
+textarea
+{
+	color:black
+}
 
 
+/*
+end of form changes to make them readable to the user. 
+ */
+/*
+	Start of index.php site map style changes  
+ */
+.default_heading
+{
+	text-decoration: underline;
+}
 .color_1 
 {
 	background-color: black; 
@@ -114,6 +130,7 @@ textarea
 .color_1 a
 {
 	color: white;
+	font-weight: bold;
 }
 .color_1 a:hover
 {
@@ -122,10 +139,41 @@ textarea
 }
 .color_2 
 {
-	background-color: orange; 
-	color: brown; 
+	background-color: white; 
+	color: black; 
+}
+.color_1_txt
+{
+	background-color: black; 
+	color:white;
+	text-decoration:underline;
+	font-weight: bold;
+
 }
 
+
+.submenuItem 
+{
+	background-color: black
+}
+.submenuItem a 
+{
+	color:white;
+	background-color: darkblue;
+
+}
+.submenuItem a:hover
+{
+	color: lightgrey; 
+} 
+
+	/*
+	end of Index.php table css 
+	 */
+	
+	/*
+	Start of the large style modification of all navigation elements on the web site.
+	 */
 .nav
 { 
 	font-size: 12px; 
@@ -223,7 +271,6 @@ ul.dropdown-menu
 
 }
 
-/* defualt css to the buttons that won't change.*/
 
 .btn
 {
@@ -296,6 +343,7 @@ ul.dropdown-menu
     padding:25px;
     padding-top: 20px;
 }
+
 
 .footer_style h6
 {

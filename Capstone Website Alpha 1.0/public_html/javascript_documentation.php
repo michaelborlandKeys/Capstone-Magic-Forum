@@ -7,8 +7,13 @@
 	<?php include ("../resources/common_scripts_head.php");?>
 </head>
 <body>
-<?php include("../resources/magic_navigation.php");?>
-<h1> JavaScript Documentation Page</h1>
+	<?php include("../resources/magic_navigation.php");?>
+	<h1> JavaScript Documentation Page</h1>
+<pre id="scriptload">
+	
+	
+	
+</pre>
 
 
 
@@ -18,10 +23,7 @@
 
 
 
-
-
-
-<?php include("../resources/magic_footer.php");?>
-<?php include("../resources/load_scripts.php");?>
+	<?php include("../resources/magic_footer.php");?>
+	<?php include("../resources/load_scripts.php");?>
 </body>
 </html>

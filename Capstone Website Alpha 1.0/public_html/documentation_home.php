@@ -14,7 +14,7 @@
 		<h2>Documentation Separated by Language</h2>
 		<!--The First link is to test placing-->
 		<a href="documentation_home.php" class=" btn btn-lg" id="Docs1">Refresh</a>
-		<a href="html_documentation.php" class=" btn btn-lg" id="Docs2">HTML Documentation</a><br /><br /><br />
+		<a href="php_documentation.php" class=" btn btn-lg" id="Docs2">PHP Documentation</a><br /><br /><br />
 		<a href="javascript_documentation.php" class=" btn btn-lg" id="Docs3">JavaScript Documentation</a>
 		<a href="css_documentation.php" class=" btn btn-lg" id="Docs4">CSS Documentation</a><br /><br /><br />
 		<a href="mysql_t_sql_documentation.php" class="btn btn-lg" id="Docs5"> MySQL and T-SQL Documentation</a>
