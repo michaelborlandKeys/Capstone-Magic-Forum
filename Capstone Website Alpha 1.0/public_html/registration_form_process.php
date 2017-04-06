@@ -473,20 +473,20 @@ if(empty($_REQUEST['yes'])) {
 include("../resources/db_setup.php"); 
 
   
- $connection_to_database =mysql_connect($username,$password,$database,$serverName);
+ $connection_to_database =mysqli_connect($server,$username,$password,$database);
 
 
          $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
         $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
         $lastname_safe = mysqli_escape_string($connection_to_database,$magic_form['lastname']);
         $birthday_safe = mysqli_escape_string($connection_to_database,$magic_form['birthday']);
-        $email_safe = mysqli_escape_string($connection_to_database,$form['email']);
+        $email_safe = mysqli_escape_string($connection_to_database,$magic_form['email']);
         $confirmemail_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmemail']);
-        $newpassword_safe = mysqli_escape_string($connection_to_database,$form['newpassword']);
+        $newpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['newpassword']);
         $confirmpassword_safe = mysqli_escape_string($connection_to_database,$magic_form['confirmpassword']);
         $username_safe = mysqli_escape_string($connection_to_database,$magic_form['username']);
         $city_safe = mysqli_escape_string($connection_to_database,$magic_form['city']);
-        $zipcode_safe = mysqli_escape_string($connection_to_database,$form['zipcode']);
+        $zipcode_safe = mysqli_escape_string($connection_to_database,$magic_form['zipcode']);
         $phonenumber_safe = mysqli_escape_string($connection_to_database,$magic_form['phonenumber']);
         $countries_safe = mysqli_escape_string($connection_to_database,$magic_form['countries']);
          $state_safe = mysqli_escape_string($connection_to_database,$magic_form['states']);
@@ -517,8 +517,8 @@ include("../resources/db_setup.php");
 
           } 
 
-    mysql_connect($connection_to_database, $insert_query) or die("Insert query didn't excute!");
-    mysql_close($connection_to_database);
+    mysqli_query($connection_to_database, $insert_query) or die("Insert query didn't excute! $insert_query");
+    mysqli_close($connection_to_database);
 
  
     header("Location: registration_form_finished.php"); 
