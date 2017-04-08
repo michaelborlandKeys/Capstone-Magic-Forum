@@ -76,7 +76,7 @@ if(empty($_REQUEST['firstname'])) {
     $firstname = $_REQUEST['firstname'];
     $magic_form['firstname']=$firstname; 
 
-    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $firstname)) {
+    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,20}$/", $firstname)) {
     
         $error=TRUE;
   
@@ -101,7 +101,7 @@ if(empty($_REQUEST['lastname'])) {
     $lastname = $_REQUEST['lastname'];
     $magic_form['lastname']=$lastname; 
 
-    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/", $lastname)) {
+    if (!preg_match("/^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,20}$/", $lastname)) {
        
         $error=TRUE;
       
