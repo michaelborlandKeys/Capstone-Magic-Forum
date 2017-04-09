@@ -1,7 +1,15 @@
-	<form>
-	<label for="posts">Post</label>
+<div class="post_comments">
+		<form action="post_proceesing.php" class="below_menu_container" autocomplete="off" method="post" >
+
+		<label for="username_field">Username</label>
+		<input type="text" name="username_field" value="<?php if( isset($magic_form['username_field'])){echo htmlentities($magic_form['username_field']);
+	}	?>" />	
 	<br />
-    <textarea  name="posts" class="modal" id="posts" rows="6" cols="40" placeholder="Comments"  ><?php if( isset($magic_form['posts'])){echo htmlentities($magic_form['posts']);
-}	?></textarea>
-<input type="submit" name="post_dropdown" value="Post">
-</form>
+		<label for="posting">Post</label>
+		<br />
+	    <textarea  name="posting" id="posting" rows="6" cols="40" placeholder="Gatherer, what do you want to talk about?"  ><?php if( isset($magic_form['posting'])){echo htmlentities($magic_form['posting']);
+	}	?></textarea>
+	    <br />
+	<input type="submit" name="post_dropdown" value="Post">
+	</form>
+</div>

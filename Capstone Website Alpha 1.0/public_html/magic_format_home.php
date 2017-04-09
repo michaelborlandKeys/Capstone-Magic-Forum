@@ -19,6 +19,7 @@
 <button  class="btn" type="button"  id="description">View Site Description</button> 
 <br />
 <br />
+<?php include("../resources/posting_area.php");?>
 
 
 

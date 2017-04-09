@@ -14,9 +14,10 @@
 <div id="magic_description">
 
 
-
-
 </div>
+
+<?php include("../resources/posting_area.php");?>
+
 <button  class="btn" type="button"  id="description">View Site Description</button> 
 
 <?php include("../resources/magic_footer.php");?>
