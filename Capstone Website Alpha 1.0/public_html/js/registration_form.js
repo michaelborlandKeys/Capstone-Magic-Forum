@@ -26,11 +26,12 @@ function submitRegistration() {
     var valid_birthday= $('#birthday').val();
     var valid_country = $('#countries').val(); 
     var valid_city=$('#city').val(); 
-    var valid_password=$('#newpassword').val(); 
+    var valid_password=$('#newpassword').val();
+
     
 
 // Boolean variables to set the form state depending on whether the user has entered valid, or invalid data. 
-    var error = false;  
+    var error = false;
     var valid_form = false;
 
     // regular expressions that are used to test the validity of the form fields 
@@ -73,6 +74,7 @@ function submitRegistration() {
         {
             
             console.log("Valid Last Name");
+            
         }
         else
         {
