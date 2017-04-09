@@ -1,5 +1,5 @@
 	<form>
-	<label for="posts">Comments: &lpar;optional&rpar;</label>
+	<label for="posts">Post</label>
 	<br />
     <textarea  name="posts" class="modal" id="posts" rows="6" cols="40" placeholder="Comments"  ><?php if( isset($magic_form['posts'])){echo htmlentities($magic_form['posts']);
 }	?></textarea>

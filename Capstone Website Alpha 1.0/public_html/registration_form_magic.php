@@ -12,10 +12,11 @@
 <?php session_start(); 
 if(isset($_SESSION['messages'])) {
 $messages=$_SESSION['messages']; 
-$magic_form=$_SESSION['magic_form']; 
+$magic_form=$_SESSION['magic_form'];  
 unset($_SESSION['messages']); 
 unset($_SESSION['magic_form']); 
 }	
+
 ?>	
 <div>	
 <a  href="magic_home.php" class="btn-group btn-lg" id="backHome" role="button">Back Home</a><br /><br /><br />
@@ -45,10 +46,12 @@ unset($_SESSION['magic_form']);
 
           }
   }
+
+
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form action="registration_form_process.php"  class="Errors" id="form_register" autocomplete="off" method="post">
+<form action="registration_form_process.php"   id="form_register" autocomplete="off" method="post">
 		
  	<table id="registration_form">
 		 	<?php

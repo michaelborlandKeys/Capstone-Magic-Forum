@@ -57,7 +57,7 @@ function submitRegistration() {
          valid_form=true;
         if(regExpression_First_Name.test(valid_First_name))
         {
-           
+
             console.log("Valid First Name");
 
         }

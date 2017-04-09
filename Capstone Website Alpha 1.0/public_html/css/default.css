@@ -316,6 +316,19 @@ ul.dropdown-menu
 	color:black;
 	
 }
+.Errors
+{
+	background-color: white; 
+	color: red; 
+
+}
+/*.Success
+{
+background-color: brown; 
+	color: green; 
+
+
+}*/
 
 .form_label input
 {
