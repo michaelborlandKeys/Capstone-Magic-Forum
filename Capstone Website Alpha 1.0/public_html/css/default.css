@@ -276,7 +276,7 @@ ul.dropdown-menu
 {
 	position: relative;
 	top: 30px;
-	left: 55px; 
+	left: 5px; 
 
 }
 
@@ -322,13 +322,39 @@ ul.dropdown-menu
 	color: red; 
 
 }
-/*.Success
+
+.SubmitPost
 {
-background-color: brown; 
-	color: green; 
+	position: relative;
+	top: 0px;
+	left: 5px; 
+	background-color: black; 
+	color:red;
+}
 
 
-}*/
+.SubmitPost:hover
+{
+	color: white; 
+	background-color: 
+
+}
+.latest_posts
+{
+	position: relative;
+	top: 0px; 
+	left: 0px; 
+}
+
+.modal-header
+{
+	color: black;
+}
+.label-control
+{
+	color: black;
+
+}
 
 .form_label input
 {

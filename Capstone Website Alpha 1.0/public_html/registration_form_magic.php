@@ -42,7 +42,7 @@ unset($_SESSION['magic_form']);
 
  if(!empty($messages)) {
           foreach ($messages as $message) {
-              echo "<p class=Errors>$message</p>" ; 
+              echo "<p class=Errors Success>$message</p>" ; 
 
           }
   }

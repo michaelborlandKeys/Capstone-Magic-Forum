@@ -519,16 +519,14 @@ include("../resources/db_setup.php");
 
 
         /* Construct the SQL statement */
-
+/*
        $insert_query="INSERT INTO test_user (first,last,birthday,nemail,cemail,npassword,cpassword,username,
         city,zipcode,phonenumber,country,state,sex,terms,ecomplete,comments) VALUES ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe',' $confirmemail_safe','$newpassword_safe',
         '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
-   /*     
-        $first_register_query="INSERT INTO capstone_user_register_info (user_first_name,user_last_name,user_new_email,user_confirm_email,user_new_pass,user_confirm_pass,user_terms,user_complete,usercoments) VALUES ('$firstname_safe','$lastname_safe','$email_safe','$confirmemail_safe','$newpassword_safe','$confirmpassword_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
+      */
+        $first_register_query="INSERT INTO capstone_user_register_info (
+   user_first_name,user_last_name,user_birthday,user_new_email,user_confirm_email,user_new_pass , user_confirm_pass , user_username , user_city,user_zip,user_phone,user_country,user_state ,user_gender,user_terms,user_complete, user_comments)  VALUES ('$firstname_safe','$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe','$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
 
-        $second_register_query ="INSERT INTO capstone_users (user_username) VALUES ('username_safe')"; 
-        $third_register_query = "INSERT INTO capstone__user_demographic_info (user_username,user_birthday,user_gender) VALUES ('$username_safe','$birthday_safe','$sex_safe')"; 
-        $fourth_register_query="INSERT INTO capstone__location_info (user_city,user_zip,user_phone,user_country,user_state) VALUES ('city_safe','zipcode_safe','phonenumber_safe','countries_safe','state_safe')"; */
 
 
 
@@ -546,6 +544,9 @@ include("../resources/db_setup.php");
           } 
 
     mysqli_query($connection_to_database, $first_register_query) or die("Insert query didn't excute!  $first_register_query");
+
+
+
 
     mysqli_close($connection_to_database);
 

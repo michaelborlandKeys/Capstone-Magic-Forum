@@ -58,14 +58,22 @@ function submitRegistration() {
          valid_form=true;
         if(regExpression_First_Name.test(valid_First_name))
         {
+            $(document).ready(function(){
+            $("p").removeClass("Errors");
+            $("p").addClass("Success");
 
+        }); 
             console.log("Valid First Name");
 
         }
         else
         {
+              $(document).ready(function(){
 
-           
+             $("p").addClass("Errors");
+            $("p").removeClass("Success")
+        }); 
+
             console.log("Invalid First Name");
 
 
