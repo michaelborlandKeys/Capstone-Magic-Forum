@@ -94,8 +94,6 @@ if(empty($_REQUEST['firstname'])) {
     }
 }
   
- 
-
 
 if(empty($_REQUEST['lastname'])) {
 

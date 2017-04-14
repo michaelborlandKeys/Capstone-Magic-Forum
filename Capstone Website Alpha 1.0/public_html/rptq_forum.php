@@ -20,7 +20,7 @@
 							 <button  class="btn" type="button"  id="description_V_4">View Site Description</button> 
 						</div>
 
-							<?php include("../resources/posting_area.php");?> 
+							<?php include("posting_area.php");?> 
 
 								<?php include("../resources/magic_footer.php");?>
 								

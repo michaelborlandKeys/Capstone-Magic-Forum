@@ -24,7 +24,7 @@
 <div class="description_section"> 
 <button  class="btn" type="button"  id="description">View Site Description</button>
 </div>
-<?php include("../resources/posting_area.php");?>
+<?php include("posting_area.php");?>
 
 
 

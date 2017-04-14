@@ -2,12 +2,12 @@
 session_start(); 
 if(isset($_SESSION['messages'])) 
 {
-	$messages=$_SESSION['messages']; 
-	$posting=$_SESSION['posting']; 
-	unset($_SESSION['messages']); 
-	unset($_SESSION['posting']); 
-}	
-?>	
+  $messages=$_SESSION['messages']; 
+  $post=$_SESSION['post']; 
+  unset($_SESSION['messages']); 
+  unset($_SESSION['post']); 
+} 
+?>  
 <?php
 
  if(!empty($messages))
