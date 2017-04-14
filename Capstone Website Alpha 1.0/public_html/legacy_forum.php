@@ -8,18 +8,23 @@
 
 </head>
 <body>
+<?php  include("../resources/start_session_script.php"); ?>
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to the Magic: The Gathering Legacy Forum</h1>
 
-<div id="legacy_description">
-
-
+ <div id="legacy_description">
 
 
 </div>
-<button  class="btn" type="button"  id="description_Button_V_11">View Site Description</button> 
-<br />
-<br />
+
+<div class="post_section">
+  
+
+</div>
+<div class="description_section"> 
+	<button  class="btn" type="button"  id="description_Button_V_11">View Site Description</button> 
+</div>
+<?php include("../resources/posting_area.php");?>
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>

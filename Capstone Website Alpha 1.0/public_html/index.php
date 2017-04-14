@@ -7,6 +7,7 @@
 	<?php include ("../resources/common_scripts_head.php");?>
 </head>
 <body>
+	<?php  include("../resources/start_session_script.php"); ?>
   <?php include("../resources/magic_navigation.php");?>
   <h1 class="default_heading">Welcome to the Magic-Forum Index and Site Map</h1>
   <p><small>This Page is meant to be a spot where you can find all the main pages and sub-pages. </small></p>

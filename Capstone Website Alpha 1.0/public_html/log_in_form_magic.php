@@ -8,6 +8,7 @@
 
 </head>
 <body>
+<?php  include("../resources/start_session_script.php"); ?>
 
 
 <div id="logIn">

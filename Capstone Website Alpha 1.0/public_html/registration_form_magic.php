@@ -10,12 +10,13 @@
 <body>
 
 <?php session_start(); 
-if(isset($_SESSION['messages'])) {
-$messages=$_SESSION['messages']; 
-$magic_form=$_SESSION['magic_form'];  
-unset($_SESSION['messages']); 
-unset($_SESSION['magic_form']); 
-}	
+if(isset($_SESSION['messages']))
+ {
+	$messages=$_SESSION['messages']; 
+	$magic_form=$_SESSION['magic_form'];  
+	unset($_SESSION['messages']); 
+	unset($_SESSION['magic_form']); 
+ }	
 
 ?>	
 <div>	
@@ -40,14 +41,15 @@ unset($_SESSION['magic_form']);
 </div>
 <?php
 
- if(!empty($messages)) {
-          foreach ($messages as $message) {
-              echo "<p class=Errors Success>$message</p>" ; 
+ if(!empty($messages)) 
+ {
+      foreach ($messages as $message) 
+      {
+          echo "<p class=Errors Success>$message</p>" ; 
 
-          }
+      }
   }
-
-
+  
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
@@ -472,7 +474,7 @@ unset($_SESSION['magic_form']);
 		<input type="submit" id="form_submit"  name="submit_form"  value="Submit">
 </form>
 
-
+<?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>
 
 	</body>
