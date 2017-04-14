@@ -11,14 +11,14 @@
 			</div>
 			<div class="form-group">
 			 	<div class="modal-body">
-					<form action="../../post_proceesing.php" id="post" autocomplete="off" method="post" >
+					<form action="../insert_post_process.php" id="post" autocomplete="off" method="post" >
 
 					<label class="label-control" for="username_field">Username</label>
 					<input type="text" name="username_field" class="form-control" value="<?php if( isset($magic_form['username_field'])){echo htmlentities($magic_form['username_field']);
 				}	?>" />	
 
 					<label class="label-control " for="posting">Post</label><br />
-				    <textarea  name="posting" class="form-control" rows="6" cols="40" placeholder="Gatherer, what do you want to talk about?"  ><?php if( isset($magic_form['posting'])){echo htmlentities($magic_form['posting']);
+				    <textarea  name="posting" class="form-control" rows="6" cols="40" placeholder="Gatherer, what do you want to talk about?"  ><?php if( isset($posting['posting'])){echo htmlentities($posting['posting']);
 				}	?></textarea> 
 					</form> 
 				</div>
@@ -33,5 +33,6 @@
 				 				<div>
 				 					<h5 class="latest_posts" style="text-decoration: underline;">Latest Forum Posts</h5>
 								</div>
+								<?php include("insert_post_process.php") ?>
 
 

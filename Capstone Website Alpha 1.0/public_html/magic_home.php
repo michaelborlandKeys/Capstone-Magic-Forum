@@ -17,7 +17,7 @@
  
 </div>
 <div class="post_section">
-  
+<?php include("../resources/display_posts.php");  ?>
 
 </div>
 <div class="description_section"> 

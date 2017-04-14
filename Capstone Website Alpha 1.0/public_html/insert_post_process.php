@@ -45,6 +45,8 @@
 
     }
 
+
+
 	 
 	 
      if($error==FALSE) {
@@ -65,7 +67,7 @@
 
      
         /* Construct the SQL statement */
-        $posting_query="insert index_posts (Comments) values ('$post_safe')"; 
+        $posting_query="capstone_posts (user_post) values ('$post_safe')"; 
 
     }else {
 
