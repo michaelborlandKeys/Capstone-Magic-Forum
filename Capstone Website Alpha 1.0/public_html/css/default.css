@@ -342,8 +342,8 @@ ul.dropdown-menu
 .latest_posts
 {
 	position: relative;
-	top: 0px; 
-	left: 0px; 
+	top: 250px; 
+	left: 15px; 
 }
 
 .modal-header

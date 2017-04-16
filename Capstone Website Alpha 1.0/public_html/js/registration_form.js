@@ -37,7 +37,7 @@ function submitRegistration() {
     // regular expressions that are used to test the validity of the form fields 
     var regExpression_First_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
     var regExpression_Last_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
-    var regExpression_Email = /^([0-9a-zA-Z]+[-._+&amp;])+[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/;
+    var regExpression_Email = /^([0-9a-zA-Z]+[-._+&amp;]{4,10})+[0-9a-zA-Z]{4,}}+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/;
     var regExpression_Birthday = /^\d{4}\-\d{2}\-\d{2}$/;
     var regexpression_Pass = /^([a-zA-Z0-9_\.-]{8,16})$/; 
     var regexpression_User = /^([a-zA-Z0-9_]{4,12})$/; 
@@ -58,21 +58,15 @@ function submitRegistration() {
          valid_form=true;
         if(regExpression_First_Name.test(valid_First_name))
         {
-            $(document).ready(function(){
-            $("p").removeClass("Errors");
-            $("p").addClass("Success");
+        
 
-        }); 
+  
             console.log("Valid First Name");
 
         }
         else
         {
-              $(document).ready(function(){
-
-             $("p").addClass("Errors");
-            $("p").removeClass("Success")
-        }); 
+              
 
             console.log("Invalid First Name");
 

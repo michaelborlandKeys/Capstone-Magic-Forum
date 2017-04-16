@@ -10,22 +10,34 @@
 
 
   <?php
-    session_start(); 
-    $error=FALSE; 
 
-	   $post=$_REQUEST['post']; 
-    if (!preg_match("/^[A-Za-z àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,255}$/", $post)) {
+    session_start(); 
+    $error=FALSE;
+     $post=$_REQUEST['post']; 
+
+
+if(empty($_REQUEST['post']))
+  {
+    $error = TRUE;
+    $messages['post']="Error, post can't be empty! ";  	  
+
+  }  else  {
+
+    
+     $post=$_REQUEST['post']; 
+   if  (!preg_match("/^[A-Za-z àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,500}$/", $post)) {
         
         $error=TRUE;
        
-        $messages['post']="Error,You exceeded character amount, or it is too short."; 
+        $messages['post']="Error,You exceeded character amount, or typed invalid character"; 
 
     } else{
         $_SESSION['post']=$post; 
-
+ 
     }
+	}
 	 
-	 
+
      if($error==FALSE) 
      {
         
@@ -48,11 +60,7 @@
     header("Location: magic_home.php");
 
  }
-  /*  }else {
-
-    $post_query="UPDATE capstone_post SET user_post='$post_safe'";
-
-}*/
+  
            mysqli_query($connection_to_database_2, $post_query) or die("Insert query didn't excute! $post_query");
         mysqli_close($connection_to_database_2);
 

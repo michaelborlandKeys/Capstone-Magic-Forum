@@ -7,28 +7,19 @@
 			<div class="modal-header">
 			 	 <h4 class="modal-title">Add Post To Forum</h4>
 				 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-				
 			</div>
 			<div class="form-group">
 			 	<div class="modal-body">
-					<form action="insert_post_process.php"  autocomplete="off" method="post" >
-					<label class="label-control " for="posting">Post</label><br />
-				    <textarea  name="post" class="form-control" rows="6" cols="40" placeholder="Gatherer, what do you want to talk about?"  ><?php if( isset($post['post'])){echo htmlentities($post['post']);
-				}	?></textarea> 
+				<form action="magic_home_post_process.php"  autocomplete="off" method="post" >
+					<label class="label-control " for="post">Post</label><br />
+				    <textarea  name="post" class="form-control" id="post" rows="6" cols="40" placeholder="Gatherer, what do you want to talk about?"><?php if( isset($post['post'])){echo htmlentities($post['post']);}?></textarea> 
 					<button type="button" class="btn-group" data-dismiss="modal">Close</button>
 					<button type="submit" class="btn-group" id="post_to_site">Post</button>
-					</form> 
+				</form> 
 				</div>
-			</div>
-				 <div class="modal-footer">
-				
-				 </div>
-				 	</div>
-				 		</div>
-				 			</div>
-
-				 				<div>
-				 					<h5 class="latest_posts" style="text-decoration: underline;">Latest Forum Posts</h5>
+					</div>
+						</div>
+							</div>
 								</div>
-								
+									
 

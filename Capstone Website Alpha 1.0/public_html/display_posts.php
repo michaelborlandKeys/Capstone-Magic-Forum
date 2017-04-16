@@ -1,8 +1,5 @@
 
 
-
-
-
 <?php include("../resources/db_setup.php");?>
 
 <?php 

@@ -45,7 +45,7 @@ if(isset($_SESSION['messages']))
  {
       foreach ($messages as $message) 
       {
-          echo "<p class=Errors Success>$message</p>" ; 
+          echo "<p class=Errors>$message</p>" ; 
 
       }
   }
@@ -53,7 +53,7 @@ if(isset($_SESSION['messages']))
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form action="registration_form_process.php"   id="form_register" autocomplete="off" method="post">
+<form action="../processing/registration_form_process.php"   id="form_register" autocomplete="off" method="post">
 		
  	<table id="registration_form">
 		 	<?php
@@ -448,7 +448,7 @@ if(isset($_SESSION['messages']))
 
 			<input type="checkbox" id="termsofservice"  name="termsofservice" value="I Agree"  <?php if( isset($magic_form['termsofservice']) and $magic_form['termsofservice']=="I Agree" ) {echo "checked ";} ?> /> I Agree with the Terms of Service<br />
 			<input type="checkbox" id="termsofservice02" name="termsofservice" value="I Disagree" <?php if( isset($magic_form['termsofservice']) and $magic_form['termsofservice']=="I Disagree" )  {echo "checked ";} ?>/> I Disagree with the Terms of Service<br />
-			<a href="terms_of_service.php"> Terms of Service</a>
+			<a href="magic_terms_of_service.php"> Terms of Service</a>
 
  <br />
 </fieldset >
