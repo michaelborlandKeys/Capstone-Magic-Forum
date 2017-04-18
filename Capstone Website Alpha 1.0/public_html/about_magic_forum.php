@@ -12,7 +12,7 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">About Magic-Forum</h1>
 
-<?php include("../resources/posting_area.php");  ?>
+
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>

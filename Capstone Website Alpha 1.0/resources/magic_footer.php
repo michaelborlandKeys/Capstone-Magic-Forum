@@ -1,7 +1,7 @@
 
-<div  class="footer_style" id="footer_position" >
-
+<div  class="footer_style below_menu_container" id="footer_position" >
 	<footer>
+
 		<h6>Contact Information For Support for MagicOnlineForum.com</h6 >
 		<em>all contact info is fake, or created for project purposes, won't answer spam email.</em> <br />
 		Phone Number:458-555-9635<br /> 
