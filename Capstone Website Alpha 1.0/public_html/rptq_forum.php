@@ -15,13 +15,7 @@
 <div id="RPTQ_description">
 
 </div>
-<div class="post_section">
-		<div class="latest_posts">
-			<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
-			<?php include("../resources/display_posts_rptq.php"); ?>
-		</div>	
 
-</div>
 
 <div class="description_section"> 
 <button  class="btn" type="button"  id="description_V_4">View Site Description</button> 
@@ -49,6 +43,12 @@
 					</div>
 						</div>
 							</div>
+								<div class="post_section">
+									<div class="latest_posts">
+										<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
+										<?php include("../resources/display_posts_rptq.php"); ?>
+									</div>	
+								</div>
 									
 
 <?php include("../resources/magic_footer.php");?>

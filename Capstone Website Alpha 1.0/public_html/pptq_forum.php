@@ -16,14 +16,6 @@
 
 	</div>
 
-		<div class="post_section">
-			<div class="latest_posts">
-			<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
-			<?php include("../resources/display_posts_pptq.php"); ?>
-
-			</div>
-
-		</div>
 			<div class="description_section"> 
 			<button  class="btn" type="button"  id="description_Button_V_2">View Site Description</button> 
 			</div>
@@ -49,7 +41,13 @@
 										</div>
 											</div>
 												</div>
-										
+												<div class="post_section">
+													<div class="latest_posts">
+														<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
+														<?php include("../resources/display_posts_pptq.php"); ?>
+													</div>
+												</div>
+																					
 
 <?php include("../resources/magic_footer.php");?>
 <?php include("../resources/load_scripts.php");?>

@@ -9,32 +9,93 @@
 <body>
 
 
-<?php include("../resources/magic_navigation.php");?>
+  <?php
 
-<h1 class="changing_heading" id="default_heading">Welcome to Magic-Forum Home</h1>
-<div id="magic_description">
+    session_start(); 
+    $error=FALSE;
+
+/*
+  This is the hidden field check for when the log in management system gets 
+  implemented, so each person can delete only their individual  posts and edit their posts only. 
+  It is a big security flaw to allow users to edit others posts or delete them. 
+  This will need so modification to not be as broad of a delete, or edit.
+   Because this can edit any post, or delete any user parameter that has an $id set.
+
+  $id=$_REQUEST['id'];
+  
+
+
+  if(empty($_REQUEST['id'])) {
+    $id['id']="";
+} else {
+    
+     $id = $_REQUEST['id'];
+   
+    if (!preg_match("/^[0-9]{1,25}$/", $id)) {
+        
+        $error=TRUE;
+     
+        $messages['id']="Error, can't Alter that record.</p>";
+    }
+
+
+} */  
+
+     $post=$_REQUEST['post']; 
+if(empty($_REQUEST['post']))
+  {
+    $error = TRUE;
+    $messages['post']="Error, post can't be empty! ";  	  
 
 
 
+  }  else  {
+
+    
+     $post=$_REQUEST['post']; 
+   if  (!preg_match("/^[A-Za-z àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,500}$/", $post)) {
+        
+        $error=TRUE;
+       
+        $messages['post']="Error,You exceeded character amount, or typed invalid character"; 
+
+    } else{
+        $_SESSION['post']=$post; 
  
-</div>
-<div class="post_section">
-<?php include("../resources/start_session_script.php") ?>
+    }
+	}
+	 
 
-	<div class="latest_posts">
-		<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
-		<?php include("display_posts.php"); ?>
+     if($error==FALSE) 
+     {
+        
+        include ("../resources/db_setup.php");
+     
+     $connection_to_database_2 = mysqli_connect($server, $username, $password, $database) or die("Cannot Connect to the User database!");
+     
+    
+        $post_safe = mysqli_escape_string($connection_to_database_2,$post);
+	
+        $post_query="INSERT INTO capstone_commander_posts (user_commander_post) VALUES ('$post_safe')"; 
 
-	</div>
+              header("Location: commander_forum.php");
 
 
-</div>
-<div class="description_section"> 
-<button  class="btn" type="button"  id="description">View Site Description</button>
-</div>
+} else{
+  $error=TRUE; 
+  $_SESSION['messages']=$messages; 
+  $_SESSION['post']=$post;
+    header("Location: commander_forum.php");
 
-<?php include("posting_area.php");?>
+ }
+  
+           mysqli_query($connection_to_database_2, $post_query) or die("Insert query didn't excute! $post_query");
+        mysqli_close($connection_to_database_2);
 
+
+
+
+    ?>
 
 
 <?php include("../resources/magic_footer.php");?>

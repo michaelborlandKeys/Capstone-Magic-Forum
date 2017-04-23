@@ -23,7 +23,7 @@ if ($database_connection_post->connect_error) {
     die("Unable to Connect to Posts Databas! " . $database_connection_post->connect_error);
 } 
 
-$post_query = "SELECT * FROM capstone_posts";
+$post_query = "SELECT * FROM capstone_legacy_posts";
 //$post_count="SELECT COUNT(user_post_id) FROM capstone_posts "; 
 
 $query_result = $database_connection_post->query($post_query);
@@ -32,7 +32,7 @@ $query_result = $database_connection_post->query($post_query);
 if ($query_result->num_rows > 0) {
     // 
     while($forum_post = $query_result->fetch_assoc()) {
-        echo " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line." ". $post_username_temp. " ". $forum_post['user_post']." ".$date_time." ". $forum_post['user_time_posted']."<br />";
+        echo " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line." ". $post_username_temp. " ". $forum_post['user_legacy_post']." ".$date_time." ". $forum_post['user_time_legacy']."<br />";
     
     }
 } else {

@@ -10,6 +10,7 @@
 
 
 <?php include("../resources/magic_navigation.php");?>
+<?php include("../resources/start_session_script.php") ?>
 
 <h1 class="changing_heading" id="default_heading">Welcome to Magic-Forum Home</h1>
 <div id="magic_description">
@@ -18,15 +19,6 @@
 
  
 </div>
-	<div class="post_section">
-	<?php include("../resources/start_session_script.php") ?>
-
-		<div class="latest_posts">
-			<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
-			<?php include("../resources/display_posts.php"); ?>
-
-		</div>
-	</div>
 		<div class="description_section"> 
 			<button  class="btn" type="button"  id="description">View Site Description</button>
 		</div>
@@ -52,6 +44,12 @@
 									</div>
 										</div>
 											</div>
+												<div class="post_section">
+													<div class="latest_posts">
+														<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
+														<?php include("../resources/display_posts.php"); ?>
+													</div>
+												</div>
 										
 
 

@@ -63,7 +63,17 @@ More Navigation Style changes
  {
  	position:absolute;
 	top: 0px;
-	left:5px; 
+	left:5px;
+
+ }
+ .btn-group>.btn 
+ {
+ 	position: relative;	
+	float: right;
+ 	
+ 
+ 	
+
  }
 /*
 End of more navigation changes.
@@ -271,13 +281,11 @@ ul.dropdown-menu
 
 }
 
-
-.btn
+.description_section
 {
 	position: relative;
 	top: 30px;
-	left: 5px; 
-
+	left:5px; 
 }
 
 .btn 
@@ -285,6 +293,8 @@ ul.dropdown-menu
 	color: black; 
 	background-color: orange; 
 }
+
+
 
 #log_in 
 {
@@ -322,12 +332,18 @@ ul.dropdown-menu
 	color: red; 
 
 }
+.addPosthead
+{
+	position: relative;
+	top: 0px;
+	left: 15px; 
+}
 
 .SubmitPost
 {
 	position: relative;
 	top: 0px;
-	left: 5px; 
+	left: 15px; 
 	background-color: black; 
 	color:red;
 }
@@ -336,13 +352,14 @@ ul.dropdown-menu
 .SubmitPost:hover
 {
 	color: white; 
-	background-color: 
+	background-color:black; 
 
 }
+
 .latest_posts
 {
-	position: absolute;
-	top: 300px; 
+	position: relative;
+	top: 30px; 
 	left: 15px; 
 
 

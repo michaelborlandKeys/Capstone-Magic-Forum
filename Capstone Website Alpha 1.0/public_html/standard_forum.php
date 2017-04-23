@@ -20,13 +20,7 @@
 <div class="description_section"> 
 <button  class="btn" type="button"  id="description_Button_V_8">View Site Description</button>
 </div>
-	<div class="post_section">
-		<div class="latest_posts">
-			<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
-			<?php include("../resources/display_posts_standard.php"); ?>
-
-		</div>
-	</div>	
+	
 		
 	 <h4 class="below_menu_container">Add Forum Post</h4>
 <button type="button" id="addPost" class=" btn SubmitPost" data-toggle="modal" data-target="#postingModal">Add Post to Forum</button>
@@ -50,6 +44,14 @@
 					</div>
 						</div>
 							</div>
+							
+								<div class="post_section">
+									<div class="latest_posts">
+										<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
+										<?php include("../resources/display_posts_standard.php"); ?>
+
+									</div>
+								</div>	
 
 
 <?php include("../resources/magic_footer.php");?>
