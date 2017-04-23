@@ -1,0 +1,1036 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"form",
+				"form_label\t(default.css)"
+			],
+			[
+				"bo",
+				"bold"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"css",
+				"css_documentation.php\t(documentation_home.php)"
+			],
+			[
+				"ht",
+				"html_documentation.php\t(documentation_home.php)"
+			],
+			[
+				"colo",
+				"color_2"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"color_",
+				"color_1"
+			],
+			[
+				"col",
+				"color_2"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"clas",
+				"class\tAttr"
+			],
+			[
+				"sub",
+				"submenuItem"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"color",
+				"color_1"
+			],
+			[
+				"v",
+				"var"
+			],
+			[
+				"k",
+				"know\t(index.php)"
+			],
+			[
+				"res",
+				"resources"
+			],
+			[
+				"p",
+				"php"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"da",
+				"database"
+			],
+			[
+				"sta",
+				"state_safe"
+			],
+			[
+				"m",
+				"magic_form"
+			],
+			[
+				"my",
+				"mysql_connect"
+			],
+			[
+				"qu",
+				"querystr"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"co",
+				"connection_to_database"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"ses",
+				"session_start"
+			],
+			[
+				"t",
+				"table\tTag"
+			],
+			[
+				"conn",
+				"connectionInfo"
+			],
+			[
+				"con",
+				"confirmpassword"
+			],
+			[
+				"in",
+				"insert_query"
+			],
+			[
+				"COMM",
+				"commentsorcomplaints"
+			],
+			[
+				"CO",
+				"commentsorcomplaints"
+			],
+			[
+				"C",
+				"commentsorcomplaints"
+			],
+			[
+				"_",
+				"_REQUEST"
+			],
+			[
+				"se",
+				"setParams"
+			],
+			[
+				"comm",
+				"comments"
+			],
+			[
+				"coun",
+				"country"
+			],
+			[
+				"ph",
+				"phonenumber"
+			],
+			[
+				"c",
+				"cemail"
+			],
+			[
+				"br",
+				"birthday"
+			],
+			[
+				"l",
+				"lastname"
+			],
+			[
+				"f",
+				"firstname"
+			],
+			[
+				"valid_",
+				"valid_comment"
+			],
+			[
+				"valid_g",
+				"valid_gender"
+			],
+			[
+				"valid_c",
+				"valid_country"
+			],
+			[
+				"cout",
+				"countries"
+			],
+			[
+				"valid_p",
+				"valid_phone"
+			],
+			[
+				"confirm_",
+				"confirm_password"
+			],
+			[
+				"vali",
+				"valid_email"
+			],
+			[
+				"rer",
+				"registration"
+			],
+			[
+				"valiid",
+				"valid_First_name"
+			],
+			[
+				"confir",
+				"confirm_email"
+			],
+			[
+				"conf",
+				"confirm_email"
+			],
+			[
+				"valid_G",
+				"valid_goodForm"
+			],
+			[
+				"reg",
+				"regexpression_States"
+			],
+			[
+				"valid",
+				"valid_country"
+			],
+			[
+				"regexpression_C",
+				"regexpression_Countries"
+			],
+			[
+				"regexpress",
+				"regexpress_Zip"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"va",
+				"valid_email"
+			],
+			[
+				"ge",
+				"gender"
+			],
+			[
+				"conm",
+				"confirmpassword"
+			],
+			[
+				"val",
+				"valid_passward"
+			],
+			[
+				"n",
+				"newpassword"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"regi",
+				"Register"
+			],
+			[
+				"bt",
+				"btn-lg"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"app",
+				"appendString"
+			],
+			[
+				"d",
+				"displayOnce"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"BAC",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"texr",
+				"text-decoration"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bel",
+				"below_menu_container"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bacgr",
+				"background-color"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"bott",
+				"padding-bottom"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"fe",
+				"fieldset\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/default.css",
+			"settings":
+			{
+				"buffer_size": 4237,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php_documentation.php",
+			"settings":
+			{
+				"buffer_size": 459,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 6880,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "documentation_home.php",
+			"settings":
+			{
+				"buffer_size": 1828,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "magic_terms_of_service.php",
+			"settings":
+			{
+				"buffer_size": 450,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/description_load.js",
+			"settings":
+			{
+				"buffer_size": 9062,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "FAQ.php",
+			"settings":
+			{
+				"buffer_size": 448,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/micha_000/OneDrive/Documents/CIS_305/template.html",
+			"settings":
+			{
+				"buffer_size": 63,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "p",
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"Emmet",
+				"Toggle Comment"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/micha_000/Documents",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/css",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/js"
+	],
+	"file_history":
+	[
+		"/E/Program Files (x86)/New folder/test_user.sql",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/magic_navigation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/css/documentation_css.css",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/javascript_documentation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/registration_form_magic.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/db_setup.php",
+		"/C/Users/micha_000/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/js/registration_form.js",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/common_scripts_head.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/index.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/about_magic_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/posting_area.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/documentation_home.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/css/default.css",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/mysql_t-sql_documentation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/user_guide.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/support_magic_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/html_documentation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/FAQ.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/FAMQ.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/css_documentation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/bootstrap_ajs_documentation.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/registration_form_process.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/registration_form_process.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/registration_form.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/resources/db_setup.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/registration_form_finished.php",
+		"/C/Users/micha_000/Documents/Old homework files/com sci 150/Lab 04 - Camel/Camel text game.py",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/processing/registration_form_process.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/change_records_process.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/load_scripts.php",
+		"/C/Users/micha_000/Documents/2017_web_security/source/directory_traversal/directory_traversal.rst",
+		"/C/Users/micha_000/Documents/example.html",
+		"/C/Users/micha_000/Documents/2017_web_security/source/ddos/ddos.rst",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/js/description_load.js",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/css/load_descriptions.css",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/log_in_form_magic.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/login_page.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/standard_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/commander_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/legacy_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/magic_format_home.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/magic_home.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/magic_online_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/modern_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/fnm_discussion_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/tournament_home.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/rptq_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/pro_tour_forum.php",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public_html/pptq_forum.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/style/Game_store_sie_theme.css",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/resources/magic_footer.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Life-Point-Games/LifePoint_development/public_html/style/Game_store_site_theme.css",
+		"/C/Users/micha_000/AppData/Local/Microsoft/Windows/INetCache/IE/CM37KVJS/ATVPDKIKX0DER_B01CUYXMX0_[1].m4a",
+		"/C/Users/micha_000/Documents/Visual Studio 2015/Projects/Evaluate.java",
+		"/C/Users/micha_000/Documents/Visual Studio 2015/Projects/In2Post.java",
+		"/C/Users/micha_000/Documents/Capstone-Magic-Forum/Capstone Website Alpha 1.0/public html/index.php",
+		"/C/Users/micha_000/Documents/4Sports/source/soccer/soccer_fundamentals.rst",
+		"/C/Users/micha_000/OneDrive/Documents/CIS-320 Advanced Web Dev and Secruities/javaScript_test.js",
+		"/C/Users/micha_000/Documents/4Sports/source/soccer/soccer_global_stats.rst",
+		"/C/Users/micha_000/IdeaProjects/CIS 320 First Project/CIS 320 First Project/web/javascript_assignment.js",
+		"/C/Users/micha_000/Documents/4Sports/source/soccer/soccer_legends.rst",
+		"/C/Users/micha_000/Documents/4Sports/source/soccer/soccer.rst",
+		"/C/Users/micha_000/Documents/4Sports/source/RSTTableTemplate.rst",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/css/custom.css",
+		"/C/Users/micha_000/Documents/4Sports/Makefile",
+		"/C/Users/micha_000/OneDrive/Documents/lost and found photos/Sources for final 2 sections.rst",
+		"/C/Users/micha_000/Documents/4Sports/source/football/athletes_football.rst",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/siteRegistrationForm.php",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/index.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/old_magic_set_discussion.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/registration_form.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/new_magic_set_discussion.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/magic_singles_sales.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/login_page.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/life_terms_of_service.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/life_point_sales.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/life_point_News.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/life_point_magic_news.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/life_point_events.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/resources/regLogin.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/LAN_party_rental.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/index.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/aboutinfo.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/resources/navigation_menu.php",
+		"/C/Users/micha_000/Documents/LifePointGames-School-Project/Life-Point-Games/LifePoint_development/public_html/style/Game_store_site_theme.css",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/support_Ticket_Form.php",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/aboutDIYForum.php",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/DIY_Forum_Support.php",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Gamers_forum/gamersforum_development/public_html/style/Game_store_sie_theme.css",
+		"/C/xampp/apache/conf/extra/httpd-ssl.conf",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/support_Ticket_Form.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/deploy_script.php",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/siteRegistrationForm.html",
+		"/C/Users/micha_000/Documents/test.php",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Gamers_forum/gamersforum_development/public_html/registration_form_process.php",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/arts_crafts_videos.html",
+		"/F/random_Key/CIS120ServerKeyPair.pem",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/woodworking_videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/cooking_videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/DIY_Videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/fishing_videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/not_listed_here_videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/woodworking.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/not_listed_here.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/fishing.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/elementary_science.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/DIY_interests.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/cooking.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/arts_crafts.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/elementary_science_videos.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/aboutDIYForum.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/DIY_Forum_Support.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/DIY_News.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/FAQ.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/home.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/index.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/sign_in_Form.html",
+		"/C/Users/micha_000/Documents/DIY_Forum/DIY_FORUM/public_html/terms_And_Conditions.html",
+		"/C/Users/micha_000/OneDrive/Documents/CIS_305/Gamers_forum/gamersforum_development/resources/navigation_menu.php",
+		"/C/Users/micha_000/Documents/funny_dog_videos/public_html/signup_form.html",
+		"/C/Users/micha_000/Documents/bootstrap.html",
+		"/C/Users/micha_000/Documents/funny_dog_videos/public_html/home.html",
+		"/C/Users/micha_000/Documents/funny_dog_videos/public_html/sales.html",
+		"/C/Users/micha_000/Documents/funny_dog_videos/public_html/css/bootstrap_site_theme.css",
+		"/C/Users/micha_000/Documents/funny_dog_videos/public_html/login_form.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"default_heading",
+			"log_in_registar",
+			" \n",
+			"form",
+			"{",
+			"{ ",
+			"{ }",
+			"{ )",
+			"unv",
+			" prospective",
+			"\t\n",
+			"450px",
+			"form",
+			"15px",
+			"1",
+			"th",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"magic_form"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\micha_000\\Documents"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/default.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "php_documentation.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "documentation_home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "magic_terms_of_service.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/description_load.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9062,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8122,
+								8122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 2655.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "FAQ.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								156
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/micha_000/OneDrive/Documents/CIS_305/template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								3
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/Default/Syntax Tests.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
