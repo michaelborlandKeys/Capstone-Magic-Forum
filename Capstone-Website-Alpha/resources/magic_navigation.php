@@ -31,9 +31,9 @@
 					</li> 
 				<li class="dropdown">
 					<a href="tournament_home.php">Tournament Cental Forum</a>
-					<a href="tounament_home.php" class="dropdown-toggle" data-toggle="dropdown"></a> 
+					<a href="tounament_home.php" class="dropdown-toggle" data-toggle="dropdown">
 					<div class="caret">
-					</div>
+					</div></a> 
 					<ul class="dropdown-menu">	
 					<li class="dropdown-header">Tournament Discussion Forums</li>
 						<li>
