@@ -42,7 +42,7 @@ More Navigation Style changes
 #fourth_button_menu
 {
 	position:absolute;
-	top: 405px;
+	top: 450px;
 	right: 0px; 
 	font-size: 1em;
 	text-decoration: underline;
@@ -71,10 +71,30 @@ More Navigation Style changes
  	position: relative;	
 	float: right;
  	
- 
- 	
-
  }
+.postButtonColor
+{
+	color:white;
+	background-color:forestgreen;
+
+}
+.closeButtonColor
+{
+	color:red;
+	background-color:black
+
+}
+.docLinks a
+{
+	background-color: black;
+	color: lightblue; 
+}
+.docLinks a:hover
+{
+	background-color: forestgreen;
+	color: black; 
+}
+
 /*
 End of more navigation changes.
  */
@@ -288,10 +308,16 @@ ul.dropdown-menu
 	left:5px; 
 }
 
-.btn 
+.description_section button 
 {
-	color: black; 
-	background-color: orange; 
+	background-color: darkblue; 
+	color: white; 
+}
+
+.description_section button:hover 
+{
+	
+	color: ghostwhite; 
 }
 
 
@@ -316,7 +342,7 @@ ul.dropdown-menu
 #register
 {
 	color: white; 
-	background-color:darkgreen; 
+	background-color:forestgreen; 
 
 }
 

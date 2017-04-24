@@ -59,24 +59,24 @@
 	<div class="side_meenu">
 			<div  class="btn-group" id="button_nav_header">
 		<p id="log_in_register">Log In and Register Forms</p>
-		<a href="log_in_form_magic.php" class="btn btn-lg justifyLeft" id="log_in" >Log In</a>
-		<a href="registration_form_magic.php" class="btn btn-lg justifyLeft" id="register" >Register</a>
+		<a href="log_in_form_magic.php" class="btn btn-lg" id="log_in" >Log In</a>
+		<a href="registration_form_magic.php" class="btn btn-lg" id="register" >Register</a>
 </div>
-	<div class="docLinks btn-group below_menu_container" id="second_button_menu">
+	<div class=" docLinks btn-group  below_menu_container" id="second_button_menu">
 		<p>Documentation Separated by Language</p>
 		<!--The First link is to test placing-->
-		<a href="documentation_home.php" class="btn btn-lg justifyLeft" id="Docs1">Documentation Home</a>
+		<a href="documentation_home.php" class="btn btn-lg" id="Docs1">Documentation Home</a>
 	
 		
 	</div>
 
 		<div class="docLinks btn-group below_menu_container" id="third_button_menu">
 			<p>User Guide and Support Links</p>
-			<a href="user_guide.php" class=" btn btn-md justifyLeft" id="Docs7"> Site User Guide</a>
+			<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
 		
 		</div>
 
-				<div class="docLinks btn-group below_menu_container" id="fourth_button_menu">
+				<div class='' docLinks below_menu_container" id="fourth_button_menu">
 						<p>Magic Forum Online's Magic:The Gathering Resources Links</p>
 				</div>
 	</div>

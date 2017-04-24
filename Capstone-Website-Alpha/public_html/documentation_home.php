@@ -10,7 +10,7 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1> Welcome to Magicforumonline.com Documentation</h1>
 
-	<div class="docLinks btn-group below_menu_container">
+	<div class="btn-group below_menu_container">
 		<h2>Documentation Separated by Language</h2>
 		<!--The First link is to test placing-->
 		<a href="documentation_home.php" class=" btn btn-lg" id="Docs1">Refresh</a>
@@ -21,18 +21,12 @@
 		<a href="bootstrap_ajs_documentation.php" class="btn btn-lg" id="Docs6"> Bootstrap and Possibly AngularJS Documentation</a>
 	</div>
 
-		<div class="docLinks btn-group below_menu_container" id="userSupportGroup">
+		<div class="btn-group" id="userSupportGroup">
 			<h3>User Guide and Support Links</h3>
 			<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
-			<a href="support_magic_forum.php" class=" btn btn-lg" id="supportForm">Support Ticket Form</a><br /><br /><br />
-			<a href="FAMQ.php" class=" btn btn-lg" id="FAMQ">Frequently Asked Magic Questions</a>
-			<a href="FAQ.php" class=" btn btn-lg" id="FAQ">Magic Forum FAQ</a>
 		</div>
 
-				<div class="docLinks btn-group below_menu_container">
-			
-
-				</div>
+				
 
 
 
