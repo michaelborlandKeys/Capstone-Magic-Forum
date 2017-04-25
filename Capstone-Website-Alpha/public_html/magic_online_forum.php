@@ -18,7 +18,7 @@
 
 </div>
 
-ss="description_section"> 
+<div class="description_section"> 
 <button  class="btn btn-lg" type="button"  id="description_Button_V_10">View Site Description</button>
 </div>
 	 <h4 class="below_menu_container">Add Forum Post</h4>

@@ -134,18 +134,7 @@
 	        	<td class="color_1"><a href="user_guide.php">User Guide</a></td>
 	        	<td class="color_2">View Site Tutorial</td>
 	        </tr>
-	         <tr>
-	        	<td class="color_1"><a href="support_magic_forum.php">Send In Issues Form</a></td>
-	        	<td class="color_2">Site Problems send it here.</td>
-	        </tr>
-
-	        	<td class="color_1"><a href="FAQ.php">Magic Forum FAQ</a></td>
-	        	<td class="color_2">Site FAQ and Word definitions</td>
-	        </tr>
-	         <tr>
-	        	<td class="color_1"><a href="FAMQ.php">Magic The Gathering Frequently Asked Questions</a></td>
-	        	<td class="color_2">Magic: The Gathering Frequently Asked Questions</td>
-	        </tr>
+	        
 	       
 
 

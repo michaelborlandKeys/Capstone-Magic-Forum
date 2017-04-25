@@ -161,16 +161,18 @@ end of form changes to make them readable to the user.
 {
 	color: white;
 	font-weight: bold;
+	text-decoration: none;
 }
 .color_1 a:hover
 {
 	color: orange;
-	text-decoration: none;
+	
 }
 .color_2 
 {
 	background-color: white; 
-	color: black; 
+	color: black; 	
+
 }
 .color_1_txt
 {
@@ -184,17 +186,20 @@ end of form changes to make them readable to the user.
 
 .submenuItem 
 {
-	background-color: black
+	background-color: black;
+
 }
 .submenuItem a 
 {
 	color:white;
 	background-color: darkblue;
-
+	text-decoration: none;
+	
 }
 .submenuItem a:hover
 {
-	color: lightgrey; 
+	color: lightgrey;
+
 } 
 
 	/*
