@@ -8,19 +8,20 @@
 
 </head>
 <body>
-<?php  include("../resources/start_session_script.php"); ?>
+
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to the Magic: The Gathering Legacy Forum</h1>
 
  <div id="legacy_description">
 
+<?php  include("../resources/start_session_script.php"); ?>
 
 </div>
 
 
 	<div class="description_section"> 
 		<button  class="btn btn-lg" type="button"  id="description_Button_V_11">View Site Description</button> 
-	</div>
+	</div>	
 		 <h4 class="below_menu_container">Add Forum Post</h4>
 		 <button type="button" id="addPost" class=" btn btn-lg SubmitPost" data-toggle="modal" data-target="#postingModal">Add Post to Forum</button>
 		 <div class="modal fade" id="postingModal" role="dialog"> 	
@@ -44,7 +45,9 @@
 									</div>
 										</div>
 											<div class="post_section">
+
 											  	<div class="latest_posts">
+											  	
 													<h5  style="text-decoration: underline;">Latest Forum Posts</h5>
 													<?php include("../resources/display_posts_legacy.php"); ?>
 

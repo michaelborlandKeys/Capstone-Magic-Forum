@@ -8,12 +8,12 @@
 
 </head>
 <body>
-	<?php  include("../resources/start_session_script.php"); ?>
+	
 	<?php include("../resources/magic_navigation.php");?>
 	<h1 class="changing_heading" id="default_heading">Welcome to  Magic Peliminary Pro-Tour Qualifier Forum</h1>
 
 	<div id="PPTQ_description">
-
+		<?php  include("../resources/start_session_script.php"); ?>
 	</div>
 
 			<div class="description_section"> 

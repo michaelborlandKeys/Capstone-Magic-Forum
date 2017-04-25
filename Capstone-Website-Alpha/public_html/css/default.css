@@ -361,6 +361,7 @@ ul.dropdown-menu
 {
 	background-color: white; 
 	color: red; 
+	max-width: 200px;
 
 }
 .addPosthead
@@ -392,6 +393,8 @@ ul.dropdown-menu
 	position: relative;
 	top: 30px; 
 	left: 15px; 
+	max-width: 400px; 
+	word-wrap: break-word;
 
 
 }

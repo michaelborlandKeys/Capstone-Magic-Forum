@@ -11,13 +11,14 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading"> Welcome to Magic Format Home</h1>
  <div id="magic_description">
-
+	
 
 
 
 </div>
  
 <div class="description_section"> 
+<?php  include("../resources/start_session_script.php"); ?>
 <button  class="btn btn-lg" type="button"  id="description">View Site Description</button>
 </div>
 

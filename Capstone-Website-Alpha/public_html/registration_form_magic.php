@@ -53,7 +53,7 @@ if(isset($_SESSION['messages']))
   ?>
  
 		<!---This is where the magic_form goes after user presses go or submit--> 
-<form action="../processing/registration_form_process.php"   id="form_register" autocomplete="off" method="post">
+<form action="registration_form_process.php"   id="form_register" autocomplete="off" method="post">
 		
  	<table id="registration_form">
 		 	<?php

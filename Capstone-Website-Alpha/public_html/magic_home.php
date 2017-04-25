@@ -10,12 +10,12 @@
 
 
 <?php include("../resources/magic_navigation.php");?>
-<?php include("../resources/start_session_script.php") ?>
+
 
 <h1 class="changing_heading" id="default_heading">Welcome to Magic-Forum Home</h1>
 <div id="magic_description">
 
-
+<?php include("../resources/start_session_script.php") ?>
 
  
 </div>

@@ -8,14 +8,14 @@
 
 </head>
 <body>
-<?php  include("../resources/start_session_script.php"); ?>
+
 
 <?php include("../resources/magic_navigation.php");?>
 <h1 class="changing_heading" id="default_heading">Welcome to the Magic: The Gathering Modern Forum</h1>
 
 <div id="modern_description">
 
-
+<?php  include("../resources/start_session_script.php"); ?>
 
 
 </div>
