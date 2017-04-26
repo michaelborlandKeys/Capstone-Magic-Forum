@@ -32,8 +32,7 @@ $query_result = $database_connection_post->query($post_query);
 if ($query_result->num_rows > 0) {
     // 
     while($forum_post = $query_result->fetch_assoc()) {
-        echo " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line." ". $post_username_temp. " ". $forum_post['user_fnm_post']." ".$date_time." ". $forum_post['user_time_fnm']."<br />";
-    
+       echo "<p>". " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line."". $post_username_temp. "<br />"."<br />". $forum_post['user_fnm_post']."<br />"."<br />".$date_time." ". $forum_post['user_time_fnm']."<br />"."</p>";
     }
 } else {
     echo "0 Posts on this page";

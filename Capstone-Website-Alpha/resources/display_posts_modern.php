@@ -11,7 +11,7 @@ $forum_post_id="Post ID:";
 $post_by_line="Posted By: ";
 //  // default Username until i get a log system implemented
 $post_username_temp ="Anonymous_Magic_Player";
-$date_time="Date and Time";  
+$date_time="Date and Time Posted:";  
 
 
 // Connection mysqli object to generate the connect. 
@@ -32,7 +32,7 @@ $query_result = $database_connection_post->query($post_query);
 if ($query_result->num_rows > 0) {
     // 
     while($forum_post = $query_result->fetch_assoc()) {
-        echo " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line." ". $post_username_temp. " ". $forum_post['user_modern_post']." ".$date_time." ". $forum_post['user_time_modern']."<br />";
+    echo "<p>". " ".$forum_post_id." " .$forum_post['user_post_ID']. " ".$post_by_line."". $post_username_temp. "<br />"."<br />". $forum_post['user_modern_post']."<br />"."<br />".$date_time." ". $forum_post['user_time_modern']."<br />"."</p>";
     
     }
 } else {

@@ -1,18 +1,4 @@
 
-<!-- http://regexlib.com/UserPatterns.aspx?authorid=b33c56ba-2afe-4969-87a4-6322086085a3
-I used this regular expression by stephen lam  as a template for the date, but i modified it was modified.  
--->
-
- 
-<!--http://regexlib.com/UserPatterns.aspx?authorid=43570f70-d0fa-4e04-9082-acc5f9e2b846    The regular expession I am using is from 
-Luke Arms. 
-
-it is on page one for now 
- --> 
-
- <!-- used the same expression from Luke Arms for the password, 
- but i changed amount required and some of what characters are rquired. -->
-
 <!DOCTYPE html>
  
 <html lang="en">
@@ -82,12 +68,8 @@ if(empty($_REQUEST['firstname'])) {
   
         $messages['firstname']="Error, please retype First Name"; 
          
-    } else{
-        if($error==FALSE)
+    } else
     {
-        $messages['firstname']="The First Name you have typed is Correct!";
-
-    }
 
        $_SESSION['firstname']=$firstname;  
 
@@ -111,13 +93,8 @@ if(empty($_REQUEST['lastname'])) {
       
         $messages['lastname']="Error,please retype Last Name"; 
 
-    } else {
-
-               if($error==FALSE)
+    } else 
     {
-        $messages['lastname']="The Last Name you have typed is Correct!";
-
-    }
           $_SESSION['lastname']=$lastname;  
 
     }
@@ -143,11 +120,7 @@ if(empty($_REQUEST['birthday'])) {
 
     }else {
 
-        if($error==FALSE)
-    {
-        $messages['birthday']="The Birthday you have typed is Correct!";
-
-    }
+       
 
         $_SESSION['birthday']=$birthday; 
 
@@ -464,7 +437,7 @@ if(empty($_REQUEST['yes'])) {
         }
    
      $magic_form['commentsorcomplaints']=$commentsorcomplaints; 
-    if (!preg_match("/^.{0,255}$/", $commentsorcomplaints)) {
+    if (!preg_match("/^[a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ 0-9,!?$.]{0,2500}$/", $commentsorcomplaints)) {
         
         $error=TRUE;
        

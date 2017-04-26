@@ -393,9 +393,15 @@ ul.dropdown-menu
 	position: relative;
 	top: 30px; 
 	left: 15px; 
+
+
+}
+.latest_posts p
+{
 	max-width: 400px; 
 	word-wrap: break-word;
-
+	background-color: black;
+	border:1px solid orange;
 
 }
 
