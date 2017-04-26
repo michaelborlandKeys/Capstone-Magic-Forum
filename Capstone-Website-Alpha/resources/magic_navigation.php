@@ -66,17 +66,8 @@
 		<p>Documentation Separated by Language</p>
 		<!--The First link is to test placing-->
 		<a href="documentation_home.php" class="btn btn-lg" id="Docs1">Documentation Home</a>
-	
+		<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
 		
 	</div>
-
-		<div class="docLinks btn-group below_menu_container" id="third_button_menu">
-			<p>User Guide and Support Links</p>
-			<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
-		
-		</div>
-
-				<div class='' docLinks below_menu_container" id="fourth_button_menu">
-						<p>Magic Forum Online's Magic:The Gathering Resources Links</p>
-				</div>
+				
 	</div>

@@ -11,7 +11,7 @@ More Navigation Style changes
 {
 	position:absolute;
 	top: 0px;
-	right: 0px; 
+	right:0px;
 	font-size: 1.5em;
 	text-decoration: underline;
 	font-weight: bold;
@@ -20,44 +20,17 @@ More Navigation Style changes
 
 #second_button_menu
 {
-	position:absolute;
-	top: 150px;
-	right: 0px;
+	position:relative;
+	top: 100px;
+	left: 0px;
+	float: right;
 	padding-right: 0px;
 	font-size: 1.5em;
 	text-decoration: underline;
 	font-weight: bold;
 }
 
-#third_button_menu
-{
-	position:absolute;
-	top: 285px;
-	right: 0px; 
-	font-size: 1.25em;
-	text-decoration: underline;
-	font-weight: bold;
-}
 
-#fourth_button_menu
-{
-	position:absolute;
-	top: 450px;
-	right: 0px; 
-	font-size: 1em;
-	text-decoration: underline;
-	font-weight: bold;
-}
-
-#projectResources
-{
-	position:relative;
-	top: 350px;
-	right: 0px; 
-	font-size: 1em;
-	text-decoration: underline;
-	font-weight: bold;
-}
 
  .btn-group a
  {
@@ -93,6 +66,18 @@ More Navigation Style changes
 {
 	background-color: forestgreen;
 	color: black; 
+}
+.documentation a
+{
+	color: white;
+	background-color:black;
+	text-decoration: none;
+}
+.documentation a:hover
+{
+	color: white;
+	background-color:forestgreen;
+	text-decoration: none;
 }
 
 /*
@@ -351,10 +336,18 @@ ul.dropdown-menu
 
 }
 
-#backHome
+#backHome 
 {
 	background-color:green; 
 	color:black;
+	text-decoration: none; 
+	
+}
+#backHome:hover 
+{
+	background-color:white; 
+	color:green;
+	text-decoration: none; 
 	
 }
 .Errors

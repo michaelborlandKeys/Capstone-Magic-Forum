@@ -10,7 +10,7 @@
 <?php include("../resources/magic_navigation.php");?>
 <h1> Welcome to Magicforumonline.com Documentation</h1>
 
-	<div class="btn-group below_menu_container">
+	<div class="documentation btn-group below_menu_container">
 		<h2>Documentation Separated by Language</h2>
 		<!--The First link is to test placing-->
 		<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
