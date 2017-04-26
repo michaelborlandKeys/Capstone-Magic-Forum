@@ -15,8 +15,8 @@
  session_start(); 
 
     $error=FALSE;
-    // undefined variables 
 
+// field request variables 
 
     $firstname=$_REQUEST['firstname'];
     $lastname=$_REQUEST['lastname'];
@@ -35,8 +35,8 @@
     $yes=$_REQUEST['yes']; 
     $commentsorcomplaints=$_REQUEST['commentsorcomplaints'];
 
- 
-// seesions are not set for id yes sex, or termsofservice
+  // Validation logic for the back end using preg_match, and sending messages t the user if there is an error. 
+  // Using regular expression to validate back end, need to come up with stricter ones in the future. 
  if(empty($_REQUEST['id'])) {
     $magic_form['id']="";
 } else {
@@ -454,17 +454,17 @@ if(empty($_REQUEST['yes'])) {
 
 
 
-      /* Set up the database connection */
- 
+      
 
           if($error==FALSE) {
 
- //$serverName="VM01301-SQL2012\MSSQLSERVER";
+
 include("../resources/db_setup.php"); 
 
   
  $connection_to_database =mysqli_connect($server,$username,$password,$database);
 
+// function caqlled to prevent sql injection
 
          $id_safe = mysqli_escape_string($connection_to_database,$magic_form['id']); 
         $firstname_safe = mysqli_escape_string($connection_to_database,$magic_form['firstname']);
@@ -487,14 +487,9 @@ include("../resources/db_setup.php");
        
         if($id_safe==""){
 
+// queries to insert and alter  user records 
 
-
-        /* Construct the SQL statement */
-/*
-       $insert_query="INSERT INTO test_user (first,last,birthday,nemail,cemail,npassword,cpassword,username,
-        city,zipcode,phonenumber,country,state,sex,terms,ecomplete,comments) VALUES ('$firstname_safe', '$lastname_safe','$birthday_safe','$email_safe',' $confirmemail_safe','$newpassword_safe',
-        '$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
-      */
+        
         $first_register_query="INSERT INTO capstone_user_register_info (
    user_first_name,user_last_name,user_birthday,user_new_email,user_confirm_email,user_new_pass , user_confirm_pass , user_username , user_city,user_zip,user_phone,user_country,user_state ,user_gender,user_terms,user_complete, user_comments)  VALUES ('$firstname_safe','$lastname_safe','$birthday_safe','$email_safe','$confirmemail_safe','$newpassword_safe','$confirmpassword_safe','$username_safe','$city_safe','$zipcode_safe','$phonenumber_safe','$countries_safe','$state_safe','$sex_safe','$termsofservice_safe','$yes_safe','$commentsorcomplaints_safe')";
 
@@ -505,19 +500,18 @@ include("../resources/db_setup.php");
         } else {
 
 
-        $insert_query="UPDATE test_user SET first='$firstname_safe',last='$lastname_safe',birthday='$birthday_safe',nemail='$email_safe',cemail='$confirmemail_safe',npassword='$newpassword_safe',cpassword='$confirmpassword_safe',
-        username='$username_safe',address1='$addressline1_safe',address2='$addressline2_safe',city='$city_safe',zipcode='$zipcode_safe',phonenumber='$phonenumber_safe',country='$countries_safe',sex='$sex_safe',recommend='$recommendedsite_safe',
-        agree='$termsofservice_safe',ecomplete='$yes_safe',comments='$commentsorcomplaints_safe' where id='$id_safe'"; 
+        $insert_query="UPDATE capstone_user_register_info SET  user_first_name='$firstname_safe',user_last_name='$lastname_safe',user_birthday='$birthday_safe',user_new_email='$birthday_safe',user_confirm_email='$confirmemail_safe',user_new_pass='$newpassword_safe' , user_confirm_pass='$confirmpassword_safe' , user_username='$username_safe' , user_city='$city_safe',user_zip='$zipcode_safe',user_phone='$phonenumber_safe',user_country='$countries_safe',user_state= '$state_safe',user_gender='$sex_safe',user_terms='$termsofservice_safe',user_complete='$yes_safe', user_comments='$commentsorcomplaints_safe' WHERE='$id_safe'"; 
 
 
 
 
           } 
+          // ecuting the query function 
 
     mysqli_query($connection_to_database, $first_register_query) or die("Insert query didn't excute!  $first_register_query");
 
 
-
+// close database connection and redirects based on data that was sent in by user.  
 
     mysqli_close($connection_to_database);
 

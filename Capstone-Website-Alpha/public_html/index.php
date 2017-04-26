@@ -77,6 +77,7 @@
 	        	<td class="submenuItem"><a href="pptq_forum.php">Preliminary Pro-Tour Qualifier Forum</a></td>
 	        	<td class="color_2">This Forum is for people to discuss the Preliminary-Pro Tour Qualifiers&period;</td>
 	        </tr>
+	        <tr>
 	           	<td class="submenuItem"><a href="rptq_forum.php">Regional Pro-Tour Qualifier Forum</a></td>
 	        	<td class="color_2">This Forum is for people to discuss the Regional-Pro Tour Qualifiers&period;</td>
 	         <tr>
@@ -135,14 +136,6 @@
 	        	<td class="color_2">View Site Tutorial</td>
 	        </tr>
 	        
-	       
-
-
-
-
-
-
-
 	
  	    </tbody>
  	</table>

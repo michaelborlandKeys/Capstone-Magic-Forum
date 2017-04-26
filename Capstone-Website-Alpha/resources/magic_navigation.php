@@ -65,8 +65,8 @@
 	<div class=" docLinks btn-group  below_menu_container" id="second_button_menu">
 		<p>Documentation Separated by Language</p>
 		<!--The First link is to test placing-->
-		<a href="documentation_home.php" class="btn btn-lg" id="Docs1">Documentation Home</a>
-		<a href="user_guide.php" class=" btn btn-lg" id="Docs7"> Site User Guide</a>
+		<a href="documentation_home.php" class="btn btn-lg" id="Docs9">Documentation Home</a>
+		<a href="user_guide.php" class=" btn btn-lg" id="Docs8"> Site User Guide</a>
 		
 	</div>
 				

@@ -31,7 +31,7 @@ if(isset($_SESSION['messages']))
 	<?php include ("../resources/common_scripts_head.php");?>
 </head>
 <body>
-
+<!--page you are redirected to if you have successfully completed the for, and will be a member dependant page, what level of member you are. -->
 <h1>You have finished the registration process, start exploring now that you're registered</h1>
 <a href="magic_home.php">Go To the Home Page</a>
 

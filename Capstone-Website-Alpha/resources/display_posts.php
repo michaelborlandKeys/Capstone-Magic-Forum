@@ -24,6 +24,7 @@ if ($database_connection_post->connect_error) {
 } 
 
 $post_query = "SELECT * FROM capstone_posts";
+// attempt abandondoned to count number of posts on page becuase of time. 
 //$post_count="SELECT COUNT(user_post_id) FROM capstone_posts "; 
 
 $query_result = $database_connection_post->query($post_query);

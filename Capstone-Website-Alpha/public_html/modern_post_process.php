@@ -40,6 +40,7 @@ if(empty($_REQUEST['id'])) {
 
 } 
 */
+// This script is for inserting and validating on the back end before insert is performed. 
      $post=$_REQUEST['post']; 
 
 
