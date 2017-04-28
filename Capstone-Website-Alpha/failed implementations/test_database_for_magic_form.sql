@@ -4,18 +4,13 @@ IF DB_ID('Capstone_test_DataBase') IS NULL
 USE Capstone_test_DataBase;
 
 GO 
---CREATE SCHEMA AUTHORIZATION dbo
+CREATE SCHEMA AUTHORIZATION dbo
 
 GO 
 
 
 
---IF OBJECT_ID('dbo.Contractor_Is_Qualified', 'U') IS NOT NULL 
---	DROP TABLE dbo.Contractor_Is_Qualified
---IF OBJECT_ID('dbo.Availible_Job', 'U') IS NOT NULL 
---	DROP TABLE dbo.Availible_Job
---IF OBJECT_ID('dbo.Company', 'U') IS NOT NULL 
---	DROP TABLE dbo.Company
+
 
 
 IF OBJECT_ID('dbo.user_fortknox', 'U') IS NOT NULL 
@@ -63,80 +58,6 @@ CREATE TABLE dbo.User_basic_Info
 
 	
 	  );
-
-
-
-
-
-
-
---CREATE TABLE dbo.Contractor_Is_Qualified
---( Contractor_ID      INT           NOT NULL,
---  Qualification_Code NVARCHAR(15)  NOT NULL,
---  PRIMARY KEY(Contractor_ID,Qualification_Code),
---  FOREIGN KEY(Contractor_ID) REFERENCES  dbo.Contractor(Contractor_ID),
---  FOREIGN KEY(Qualification_Code) REFERENCES dbo.Qualification(Qualification_Code),
---  );
-
-	 -- Keeping passed table templates from another project, so it cuts my work down, reason being writing tables from scratch takes me quite awhile to achevie.
-	 -- especailly sense this project will have me re-learning a bunch about T-SQL as a whole considering it has been two year since i have done anything, but simple select quieries. 
-	 -- I will also be learning alot of new stuff about security and database functionality from my dad a database professional, to understand how to make things run smoother and more secure. 
-	 --Of course if you are okay with that
-
---CREATE TABLE dbo.Availible_Job
--- ( Job_ID INT                   NOT NULL,
---  Company_ID INT                NOT NULL,
---  Job_Description NVARCHAR(35)  NOT NULL,
---  Start_Date      DATE  NOT NULL,
---Qualification_Code NVARCHAR(15) NOT NULL,
---Hourly_Pay SMALLMONEY                  NOT NULL, 
---PRIMARY KEY(Job_ID),
---FOREIGN KEY(Company_ID) REFERENCES dbo.Company(Company_ID),
---FOREIGN KEY(Qualification_Code) REFERENCES dbo.Qualification(Qualification_Code),
---); 
-
-
-
-
-
-
-
---CREATE TABLE dbo.Job_History
--- ( Job_History_Record_ID INT   NOT NULL, 
---   Contractor_ID INT           NOT NULL,
---   Job_ID INT                  NOT NULL, 
---   Job_Description NVARCHAR(35)NOT NULL,
---   Company_ID INT              NOT NULL, 
---   Start_Date DATE               NOT NULL,
---   End_Date  DATE                NOT NULL,
---   Qualification_Code NVARCHAR(15)  NOT NULL, 
---   Hourly_Pay SMALLMONEY            NOT NULL, 
---   PRIMARY KEY(Job_History_Record_ID),
---   FOREIGN KEY(Contractor_ID) REFERENCES dbo.Contractor(Contractor_ID)
-  -- ); 
-
-
-  
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-   
-
-
-
-
-
 
 
 

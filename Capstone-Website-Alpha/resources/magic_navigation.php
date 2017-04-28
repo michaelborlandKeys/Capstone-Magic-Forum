@@ -66,7 +66,6 @@
 		<p>Documentation Separated by Language</p>
 		<!--The First link is to test placing-->
 		<a href="documentation_home.php" class="btn btn-lg" id="Docs9">Documentation Home</a>
-		<a href="user_guide.php" class=" btn btn-lg" id="Docs8"> Site User Guide</a>
 		
 	</div>
 				

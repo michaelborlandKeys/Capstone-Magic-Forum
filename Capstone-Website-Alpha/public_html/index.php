@@ -93,10 +93,6 @@
 	        	<td class="color_2">Programming Documentation and explanation for implementation</td>
 	        </tr>
 	        <tr>
-	        	<td class="submenuItem"><a href="php_documentation.php">PHP</a></td>
-	        	<td class="color_2">PHP Documentation</td>
-	        </tr>
-	        <tr>
 	        	<td class="submenuItem"><a href="javascript_documentation.php">JavaScript</a></td>
 	        	<td class="color_2">JavaScript Documentation</td>
 	        </tr>
@@ -109,11 +105,6 @@
 	        	<td class="color_2">MySQL and T-SQL Documentation</td>
 	        </tr>
 
-	        <tr>
-	        	<td class="submenuItem"><a href="bootstrap_ajs_documentation.php">Bootstrap</a></td>
-	        	<td class="color_2">Bootstrap Documentation</td>
-	        </tr>
-	       
 	         <tr>
 	        	<td class="color_1"><a href="log_in_form_magic.php"> Log In</a></td>
 	        	<td class="color_2">Log In</td>
@@ -126,17 +117,7 @@
 	        	<td class="submenuItem"><a href="magic_terms_of_service.php" >Terms Of Service</a></td>
 	        	<td class="color_2">View Site Terms Of Service</td>
 	        </tr>
-	         <tr>
-	        	<td class="color_1_txt">Under the Support umbrella, but not linked together</td>
-	        	<td class="color_2"></td>
-	        </tr>
-	        <tr>
-
-	        	<td class="color_1"><a href="user_guide.php">User Guide</a></td>
-	        	<td class="color_2">View Site Tutorial</td>
-	        </tr>
-	        
-	
+	       
  	    </tbody>
  	</table>
 

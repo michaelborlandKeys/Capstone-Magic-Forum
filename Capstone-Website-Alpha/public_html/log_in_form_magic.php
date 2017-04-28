@@ -9,11 +9,13 @@
 </head>
 <body>
 <?php  include("../resources/start_session_script.php"); ?>
+<a class="postButtonColor" href="magic_home.php">Back Home</a>
 
 
-<div id="logIn">
+<div  style="position: relative;top:10px;left:550px;float: center;" class="below_menu_container" id="logIn">
+<h1 style="color: white;text-decoration: underline;"> MagicFormOnline.com Log In</h1>
 
-	<form action="login_process.php"   autocomplete="off"  method="post">
+	<form   autocomplete="off"  method="post">
 <table class="loginUserPass">
 		<tr>
 		<td><label for="loginusername"> Username: </label></td>
@@ -31,7 +33,7 @@
 
 
 <tr>
-<td><input name="enterButton" id="enterButton"  type="submit"  value="Log In"  /></td>
+<td><input name="enterButton" id="enterButton"  type="submit" onclick="window.alert('This Log In Page has yet to be developed for submissions')"  value="Log In"  /></td>
 
 </tr>	
 </table>
