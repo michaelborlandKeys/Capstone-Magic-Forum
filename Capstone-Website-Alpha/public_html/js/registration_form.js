@@ -34,7 +34,7 @@ function submitRegistration() {
     var error = false;
     var valid_form = false;
 
-    // regular expressions that are used to test the validity of the form fields 
+    // Regular Expressions are used to test the validity of the form fields. 
     var regExpression_First_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
     var regExpression_Last_Name = /^[A-Za-z  àèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ]{2,15}$/;
     var regExpression_Email = /^([0-9a-zA-Z]+[-._+&amp;])+[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/;
@@ -51,9 +51,9 @@ function submitRegistration() {
 
 
 
-    /* Logic on the front end User side that checks for if the user has entered
-    Valid, or invalid data in each input field.  */
-    //the if is using the test method on the data the user has enter, and using the regular expression to test with.
+    /* Logic on the front-end user side checks, if the user has entered
+    valid, or invalid data in each input field.  */
+    //The if is using the test method on the data the user has enter, and using the regular expression to test with.
     // This is the same across the majority of the program see comments below for changes in the logic structure.
          valid_form=true;
         if(regExpression_First_Name.test(valid_First_name))
@@ -188,8 +188,8 @@ function submitRegistration() {
             console.log("Invalid Phone");
 
         }
-// i could validate state and country the same way, as the check box, but it would be really inefficient, and take a long time. 
-// regular expression is the better way to validate in this case. 
+// I could validate state and country the same way, as the check box, but it would be really inefficient, and take a long time. 
+// Regular Expression is the better way to validate in this case. 
 
         if(regexpression_Countries.test(valid_country))
         {
@@ -213,7 +213,7 @@ function submitRegistration() {
         }
 
 // This validation check is different because it is checking for gender in a radio button form field, 
-//and they are handled differently, when testing for valid, or invalid data 
+// and they are handled differently, when testing for valid, or invalid data.  
   
   // The check box field is validated in a similar manner as the radio button, i have to check for the value the button will send me. 
 
@@ -237,7 +237,7 @@ function submitRegistration() {
             console.log("Disagreed");
             valid_form=false; 
          }
-         // i have made some fields optional, so i have made a simple or to express the optional nature. 
+         // I have made some fields optional, so i have made a simple or to express the optional nature. 
 
         if(valid_goodForm =="Yes"|| valid_goodForm =="No")
         {
@@ -261,7 +261,7 @@ function submitRegistration() {
 
        if(valid_form == true){
      
-            // make sure it is true, and send it to the back end 
+            // Make sure it is true, and send it to the the server for processing. 
            
         console.log("form is valid")
 
@@ -287,7 +287,7 @@ function submitRegistration() {
 
         else
         {
-            // Declare form false and when style for errors is implemented make sure it shows up here.And is cleared before they re-attempt form. 
+            // Declare form false and when style for errors is implemented make sure it shows up here. Make sure to have the for refresh either, here or in Jquery in the HTML. 
             valid_form == false;
                   valid_country=$('#countries').val(valid_country);
                    valid_state=$('#states').val(valid_state); 
@@ -299,7 +299,7 @@ function submitRegistration() {
 
 
 }
-// Button that the sunmitRegistration is attached to 
+// Button that the submitRegistration is attached to 
 
  var registration_magic = $('#form_submit');
 registration_magic.on("click",submitRegistration);
