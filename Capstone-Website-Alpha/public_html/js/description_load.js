@@ -1,4 +1,8 @@
 /*  
+ 
+******** Adding this not 2 years down the road i realize now, after a couple more years of study and implementing my own projects. 
+*This method site wide, is very time consuming and can be decreased in repetitiveness by creating a class.
+* Now, most of JavaScript can be done without this, but this repetitiveness needs to disappear, because it is 250 lines of the same logic repeated with different paragraphs. 
 
 Basically, I combined part of 2 assignments from my CIS-320 class to achieve the functionality i wanted for this function,
  with 3 minor modifications to get the function below.
